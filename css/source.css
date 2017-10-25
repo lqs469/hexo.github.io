@@ -6,7 +6,7 @@ $black-bold: $111;
 $black-light: #222;
 $grey: #aeb4b9;
 $grey-bold: #777;
-$grey-light: #cacdd0;
+$grey-light: #888;
 $scooter: #22C5E5;
 $content-width: 60%;
 
@@ -49,6 +49,10 @@ body, h1, h2, h3, h4, h5, h6 {
 
 body {
   font-size: 20px;
+}
+
+#cnzz_stat_icon_1264607064 {
+  display: none;
 }
 
 
@@ -220,6 +224,7 @@ em {
     }
 
     h1 {
+      display: inline;
       width: calc(100% - 120px);
       font-size: 100%;
       margin: 0;
@@ -572,7 +577,7 @@ $code-font-size: 14px;
 $code-line-height: 1.8;
 
 
-$highlight-background: #ffffff;
+$highlight-background: #eee;
 $highlight-current-line: #efefef;
 $highlight-selection: #e6e6e6;
 $highlight-foreground: #4d4d4c;
@@ -740,6 +745,7 @@ pre {
 
     .archive-article-header {
       > a, > h1 {
+        display: inline;
         width: 100%;
       }
     }
