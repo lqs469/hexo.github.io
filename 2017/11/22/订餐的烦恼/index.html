@@ -11,10 +11,22 @@
 <meta property="og:url" content="http://yoursite.com/2017/11/22/订餐的烦恼/index.html">
 <meta property="og:site_name" content="lqs469">
 <meta property="og:description" content="美餐。一种服务于阿里部分BU的神奇机构，主要任务是每天定时定点的饲养加班的程序猿，如果你错过了申请投食的时间，那么抱歉，对于没有时间出去吃一顿的加班汪来说，你就要饿肚子了…  又过了订餐时间?”啪啪啪…“，在一阵急促的键盘敲击声中，时间已经到了4点60分，忙碌的硕硕已经伏案在显示器前超过3个小时了，办公室又热又闷，可以明显觉察到空气是不流通的，电脑的风扇散热提醒他应该调整一下姿势，于是他决定起来">
-<meta property="og:updated_time" content="2017-11-22T08:35:29.899Z">
+<meta property="og:image" content="http://yoursite.com/2017/11/22/订餐的烦恼/4DC01FB4-6A94-4A15-A498-48722B222DE8.png">
+<meta property="og:image" content="http://yoursite.com/2017/11/22/订餐的烦恼/938F90EE-15CB-4BDE-9C9D-9D988E885812.png">
+<meta property="og:image" content="http://yoursite.com/2017/11/22/订餐的烦恼/15E03D39-2C29-4009-AFDF-818D92E74790.png">
+<meta property="og:image" content="http://yoursite.com/2017/11/22/订餐的烦恼/2FCBE32A-7675-4D4D-A7D7-9689D84F57FA.png">
+<meta property="og:image" content="http://yoursite.com/2017/11/22/订餐的烦恼/C97B9855-B098-4456-BCF9-D2920D87AB7B.png">
+<meta property="og:image" content="http://yoursite.com/2017/11/22/订餐的烦恼/9C521295-8480-450C-85EC-9DD68582E95A.png">
+<meta property="og:image" content="http://yoursite.com/2017/11/22/订餐的烦恼/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png">
+<meta property="og:image" content="http://yoursite.com/2017/11/22/订餐的烦恼/749E6AD5-7507-4136-B9C0-4997234B6C03.png">
+<meta property="og:image" content="http://yoursite.com/2017/11/22/订餐的烦恼/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png">
+<meta property="og:image" content="http://yoursite.com/2017/11/22/订餐的烦恼/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png">
+<meta property="og:image" content="http://yoursite.com/2017/11/22/订餐的烦恼/51E15540-5B67-4332-9169-BB79D4F49ED5.png">
+<meta property="og:updated_time" content="2017-11-22T08:48:07.049Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="订餐的烦恼">
 <meta name="twitter:description" content="美餐。一种服务于阿里部分BU的神奇机构，主要任务是每天定时定点的饲养加班的程序猿，如果你错过了申请投食的时间，那么抱歉，对于没有时间出去吃一顿的加班汪来说，你就要饿肚子了…  又过了订餐时间?”啪啪啪…“，在一阵急促的键盘敲击声中，时间已经到了4点60分，忙碌的硕硕已经伏案在显示器前超过3个小时了，办公室又热又闷，可以明显觉察到空气是不流通的，电脑的风扇散热提醒他应该调整一下姿势，于是他决定起来">
+<meta name="twitter:image" content="http://yoursite.com/2017/11/22/订餐的烦恼/4DC01FB4-6A94-4A15-A498-48722B222DE8.png">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -69,23 +81,23 @@
 <p>从接口数据可以知道，订餐结束的时间，地点以及当前是否可订的状态（还有一个uniqueId，这个会在下面的接口使用到）。</p>
 <p>继续进入我们想要的时间地点组合，例如上面的 “18：30  高德地图（首开外卖）晚餐1”，就会得到所有可选店铺的列表：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">// API: https://meican.com/preorder/api/v2.1/restaurants/list?&amp;tabUniqueId=ff4df9a0-9851-4205-adae-b154cc05d811&amp;targetTime=2017-11-01+16:30</div><div class="line">// 可以看到，使用了上一步的 uniqueId 作为query参数，</div><div class="line">&#123;</div><div class="line">	restaurantList: [</div><div class="line">		&#123;</div><div class="line">			availableDishCount: 80,</div><div class="line">			dishLimit: 100,</div><div class="line">			latitude: 39.991464,</div><div class="line">			longitude: 116.396763,</div><div class="line">			name: "宅食送(UBP店)",</div><div class="line">			...</div><div class="line">		&#125;,</div><div class="line">		...</div><div class="line">	]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>返回数据里不光有点名和地理位置，居然还有可以总订餐量（dishLimit）和当前可订量（availableDishCount），这就十分美好了，这个数据就可以用来做我们之前计划的订餐情况分析。</p>
-<h3 id="发发推送"><a href="#发发推送" class="headerlink" title="发发推送"></a>发发推送</h3><p>我们已经得到了数据，那么就需要完成计划的第一步，做一个钉钉机器人来告诉我“该订餐了”。打开钉钉的聊天窗口，找到机器人：<br>[image:830E3D8E-536C-4018-BC7C-AFB2863A2B05-60231-00013ACE206716E9/4DC01FB4-6A94-4A15-A498-48722B222DE8.png]</p>
-<p>[image:61E72834-E6A1-4F15-A393-C1EDADE28ED9-60231-00013ADE917F43A7/938F90EE-15CB-4BDE-9C9D-9D988E885812.png]</p>
+<h3 id="发发推送"><a href="#发发推送" class="headerlink" title="发发推送"></a>发发推送</h3><p>我们已经得到了数据，那么就需要完成计划的第一步，做一个钉钉机器人来告诉我“该订餐了”。打开钉钉的聊天窗口，找到机器人：<br><img src="4DC01FB4-6A94-4A15-A498-48722B222DE8.png" alt=""></p>
+<p><img src="938F90EE-15CB-4BDE-9C9D-9D988E885812.png" alt=""></p>
 <p>直接添加机器人，然后选择自定义机器人</p>
-<p>[image:B9C56203-09FE-4609-A6CE-F95CE5E397E5-60231-00013AED19CDAE64/15E03D39-2C29-4009-AFDF-818D92E74790.png]</p>
+<p><img src="15E03D39-2C29-4009-AFDF-818D92E74790.png" alt=""></p>
 <p>然后下一步，知道最后会给你一个webhook，那个就是用来发送推送的hook：</p>
-<p>[image:92A45442-241F-4DA5-A640-DF5090CCAAFF-60231-00013B062A1FEA81/2FCBE32A-7675-4D4D-A7D7-9689D84F57FA.png]</p>
+<p><img src="2FCBE32A-7675-4D4D-A7D7-9689D84F57FA.png" alt=""></p>
 <p>然后只需要在代码里合适的时机post这个webhook 就可以触发机器人在当前聊天群里的动作了：</p>
-<p>[image:F237F858-DDB2-4C55-89DB-2EB1A1D3A5E8-60231-00013B1DF47F02A6/C97B9855-B098-4456-BCF9-D2920D87AB7B.png]</p>
+<p><img src="C97B9855-B098-4456-BCF9-D2920D87AB7B.png" alt=""></p>
 <p>相关的推送内容格式和方法参考这里的官方文档<a href="https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.karFPe&amp;treeId=257&amp;articleId=105735&amp;docType=1" target="_blank" rel="external">钉钉开放平台 - 文档中心</a>，推送格式有个很好的地方就是支持markdown，这样的话就可以很方便的组织内容。</p>
 <p>我选用NodeJS来做推送服务，首先是抓取数据，做过滤，格式转换，然后当 ”status“值为“AVAILABLE”且当前时间比结束时间早3个小时的时候通知我，代码会隔一分钟访问一次接口，这样就不会在同一分钟内通知我两遍，这样推送的代码就完成了（代码我会放在文章结束）。另外我还在推送内容里加上一张来自<code>lorempixel.com</code>的随机美图来促进我的食欲。</p>
-<p>[image:C619B60C-B1E1-4B97-B904-1B21F1F5E4CD-60231-00013BE3F3A656D7/9C521295-8480-450C-85EC-9DD68582E95A.png]</p>
+<p><img src="9C521295-8480-450C-85EC-9DD68582E95A.png" alt=""></p>
 <p>最后把工程放入Docker里，每天在后台跑着，通过机器人定时推送给我消息，就再也不用担心错过订餐啦~</p>
 <h3 id="看看数据"><a href="#看看数据" class="headerlink" title="看看数据"></a>看看数据</h3><p>吾日三省吾身，早中晚餐该吃啥。我已经能够得到我想要的时间地点的订餐数据了，那么我干嘛不把所有时间店铺的数据抓下来看看呢。</p>
-<p>但是真实情况是总共的数据并不多，我有尝试过抓取几个月前半年以前的数据，但是发现美餐好像定期的删除之前的数据，所有数据大概只会保存一个月左右的。<br>店铺数据：<br>[image:6D7478B7-B320-4E21-B138-B6BA83B4A98A-60231-00015E446049BF25/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png]</p>
-<p>店铺地理位置图：<br>[image:CF34B802-D38B-4E62-BF88-BCAA14A11D3A-60231-00013C72B74CD461/749E6AD5-7507-4136-B9C0-4997234B6C03.png]<br>可以看到店铺大致都是分布在望京周围，毕竟太远的也不会承接这么大规模的送餐。<br>有一个比较好玩的是有一个很奇葩的店铺开在黄海上，恩… 这一定是个脏数据…（这家店是JYJ…）<br>[image:3E529B78-CB87-42FD-9346-044FBBFD1BB3-60231-00013C9BA598C031/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png]</p>
-<p>然后我先统计了每日的订餐率，取了60天的数据，但是中间有一些天是缺少的，不知道美餐的数据统计部门是怎么做的… 可以看到起数据还是有明显起伏的。然后我检查了他们对应的时间，其中10-29日达到了100%订餐，也就是所有店铺的餐全部订光了，检查了一下数据，发现那一天只有一家店铺在提供晚饭，所以被订光也是可以理解的了。<br>[image:0152D2AC-A05E-4021-82FB-E0D65D35C824-60231-00015E24E8183F86/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png]</p>
-<p>之后做了一个餐厅的平均订餐率统计，发现订餐率最高的是金百万，有87.7%的订餐率，成为最受大家欢迎的店铺，其次是丽华快餐，订餐率达到87.1%，而最不受欢迎的店铺果然是兰州牛肉拉面，订餐率只有12.3%，这也挺符合大家平时的评价…<br>[image:5B3197A8-CFFA-493F-8A56-3780D92DD006-60231-00015E37AC432490/51E15540-5B67-4332-9169-BB79D4F49ED5.png]</p>
+<p>但是真实情况是总共的数据并不多，我有尝试过抓取几个月前半年以前的数据，但是发现美餐好像定期的删除之前的数据，所有数据大概只会保存一个月左右的。<br>店铺数据：<br><img src="DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png" alt=""></p>
+<p>店铺地理位置图：<br><img src="749E6AD5-7507-4136-B9C0-4997234B6C03.png" alt=""><br>可以看到店铺大致都是分布在望京周围，毕竟太远的也不会承接这么大规模的送餐。<br>有一个比较好玩的是有一个很奇葩的店铺开在黄海上，恩… 这一定是个脏数据…（这家店是JYJ…）<br><img src="AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png" alt=""></p>
+<p>然后我先统计了每日的订餐率，取了60天的数据，但是中间有一些天是缺少的，不知道美餐的数据统计部门是怎么做的… 可以看到起数据还是有明显起伏的。然后我检查了他们对应的时间，其中10-29日达到了100%订餐，也就是所有店铺的餐全部订光了，检查了一下数据，发现那一天只有一家店铺在提供晚饭，所以被订光也是可以理解的了。<br><img src="53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png" alt=""></p>
+<p>之后做了一个餐厅的平均订餐率统计，发现订餐率最高的是金百万，有87.7%的订餐率，成为最受大家欢迎的店铺，其次是丽华快餐，订餐率达到87.1%，而最不受欢迎的店铺果然是兰州牛肉拉面，订餐率只有12.3%，这也挺符合大家平时的评价…<br><img src="51E15540-5B67-4332-9169-BB79D4F49ED5.png" alt=""></p>
 <p>通过这样就找到公司附近这段时间最优质的外卖，对于我这种选择恐惧症来说，大大缩短了选择的时间，还可以定期的看一看最近的店铺情况，会第一时间发现有新的店铺加入，这样就在订餐的时候，掌握更多更好的信息。</p>
 <p>最后附上<a href="https://github.com/lqs469/meicanRobot" target="_blank" rel="external">代码</a>，欢迎大家和我交流。</p>
 
@@ -102,7 +114,7 @@
         </li>
         
           <li>
-            <span class="label">Category:</span>
+            <span class="label">Categoría:</span>
             
   <div class="article-category">
     <a class="article-category-link" href="/categories/弱鸡之路/">弱鸡之路</a>
@@ -124,7 +136,7 @@
   
   
     <a href="/2017/10/25/Reactv16-0新特性探究/" id="article-nav-older" class="article-nav-link-wrap older">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Viejo</strong>
       <div class="article-nav-title">React 16.0新特性探究</div>
     </a>
   
