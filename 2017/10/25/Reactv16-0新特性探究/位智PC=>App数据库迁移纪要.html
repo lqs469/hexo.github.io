@@ -1,0 +1,55 @@
+<h1 id="位智PC-gt-App数据库迁移纪要"><a href="#位智PC-gt-App数据库迁移纪要" class="headerlink" title="位智PC=&gt;App数据库迁移纪要"></a>位智PC=&gt;App数据库迁移纪要</h1><p>建表SQL<br>PC：</p>
+<pre><code class="SQL"><span class="comment">/******************************************/</span>
+<span class="comment">/*   数据库全名 = amap_index_vip   */</span>
+<span class="comment">/*   表名称 = auth   */</span>
+<span class="comment">/******************************************/</span>
+<span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`auth`</span> (
+  <span class="string">`id`</span> <span class="built_in">bigint</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT,
+  <span class="string">`uid`</span> <span class="built_in">varchar</span>(<span class="number">255</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span>,
+  <span class="string">`aoiid`</span> <span class="built_in">varchar</span>(<span class="number">255</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span>,
+  <span class="string">`starttime`</span> <span class="built_in">int</span>(<span class="number">10</span>) <span class="keyword">DEFAULT</span> <span class="string">'0'</span>,
+  <span class="string">`endtime`</span> <span class="built_in">int</span>(<span class="number">10</span>) <span class="keyword">DEFAULT</span> <span class="string">'0'</span>,
+  <span class="string">`status`</span> <span class="built_in">int</span>(<span class="number">2</span>) <span class="keyword">DEFAULT</span> <span class="string">'0'</span>,
+  <span class="string">`radius`</span> <span class="built_in">int</span>(<span class="number">10</span>) <span class="keyword">DEFAULT</span> <span class="string">'-1'</span>,
+  <span class="string">`username`</span> <span class="built_in">varchar</span>(<span class="number">128</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span>,
+  <span class="string">`createtime`</span> <span class="built_in">int</span>(<span class="number">10</span>) <span class="keyword">DEFAULT</span> <span class="string">'0'</span>,
+  PRIMARY <span class="keyword">KEY</span> (<span class="string">`id`</span>)
+) <span class="keyword">ENGINE</span>=<span class="keyword">InnoDB</span> AUTO_INCREMENT=<span class="number">237</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8
+;
+</code></pre>
+<p>App：</p>
+<pre><code class="SQL"><span class="comment">/******************************************/</span>
+<span class="comment">/*   数据库全名 = amap_insight_server   */</span>
+<span class="comment">/*   表名称 = t_location   */</span>
+<span class="comment">/******************************************/</span>
+<span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`t_location`</span> (
+  <span class="string">`id`</span> <span class="built_in">bigint</span>(<span class="number">20</span>) <span class="keyword">unsigned</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT <span class="keyword">COMMENT</span> <span class="string">'主键'</span>,
+  <span class="string">`uid`</span> <span class="built_in">bigint</span>(<span class="number">20</span>) <span class="keyword">unsigned</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'AOS uid'</span>,
+  <span class="string">`poiid`</span> <span class="built_in">varchar</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'poiid/aoiid'</span>,
+  <span class="string">`name`</span> <span class="built_in">varchar</span>(<span class="number">200</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'位置名称，冗余方便展现'</span>,
+  <span class="string">`remark`</span> <span class="built_in">varchar</span>(<span class="number">200</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'备注'</span>,
+  <span class="string">`is_deleted`</span> tinyint(<span class="number">1</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="string">'0'</span> <span class="keyword">COMMENT</span> <span class="string">'删除标记'</span>,
+  <span class="string">`created_at`</span> datetime <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'创建时间'</span>,
+  <span class="string">`modified_at`</span> datetime <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'修改时间'</span>,
+  <span class="string">`address`</span> <span class="built_in">text</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'位置地址，冗余方便展现'</span>,
+  <span class="string">`adcode`</span> <span class="built_in">varchar</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'adcode'</span>,
+  <span class="string">`citycode`</span> <span class="built_in">varchar</span>(<span class="number">10</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'cityname'</span>,
+  <span class="string">`cityname`</span> <span class="built_in">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'citycode'</span>,
+  PRIMARY <span class="keyword">KEY</span> (<span class="string">`id`</span>),
+  <span class="keyword">KEY</span> <span class="string">`idx_uid`</span> (<span class="string">`uid`</span>)
+) <span class="keyword">ENGINE</span>=<span class="keyword">InnoDB</span> AUTO_INCREMENT=<span class="number">779</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8mb4 <span class="keyword">COMMENT</span>=<span class="string">'评估位置表'</span>
+;
+</code></pre>
+<p>补: name, username, address, adcode, citycode, cityname （通过API重新GET）<br>改: createtime =&gt; create_at, createtime =&gt; modify_at<br>加: radius default -1, starttime default -1, endtime default -1(暂时留一个有问题的值，万一要改呢), is_deleted default 0, remark<br>新加入：</p>
+<pre><code class="SQL">`data_starttime` datetime NOT NULL <span class="keyword">COMMENT</span> <span class="string">'数据可追溯开始时间'</span>
+<span class="string">`data_endtime`</span> datetime <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'数据可追溯开始时间'</span>
+</code></pre>
+<p>待定: status</p>
+<ol>
+<li>扩展新表</li>
+<li>补齐新表中缺失字段默认值</li>
+<li>基于新表重写vip前后台相关代码</li>
+<li>编写迁移脚本，生成迁移后结果预览，review</li>
+<li>执行迁移脚本</li>
+</ol>
+<p>3、4并行</p>
