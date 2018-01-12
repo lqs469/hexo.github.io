@@ -14,7 +14,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/01/11/跳一跳全自动化”辅助工具”iOS版/IMB_eQlAvL.gif">
 <meta property="og:image" content="http://yoursite.com/2018/01/11/跳一跳全自动化”辅助工具”iOS版/inspec.png">
 <meta property="og:image" content="http://yoursite.com/2018/01/11/跳一跳全自动化”辅助工具”iOS版/demo.jpg">
-<meta property="og:updated_time" content="2018-01-12T02:45:20.263Z">
+<meta property="og:updated_time" content="2018-01-12T03:01:25.690Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="跳一跳全自动化”辅助工具”iOS版">
 <meta name="twitter:description" content="自从微信开放小游戏平台，跳一跳这个小清新（CHAOXI）的小游戏突然火了起来，对于资深手残党的我来说，虽然只是简简单单的一按一放，但是有句古话说的好：“听过很多道理，依然过不好这一生”。无数次挫败的感觉让我想起来被魂系列折磨的一个个深夜… 随着各种各样的“辅助工具”也是层出不穷，我也决定抽业余时间也来实现了一个吧。使用JS实现，已开源，需要的同学自取：微信跳一跳全自动化“辅助”工具ios版 话不多">
@@ -92,22 +92,21 @@
 <p><a href="https://github.com/facebook/WebDriverAgent" target="_blank" rel="external">WebDriverAgent</a>是Facebook出的一套iOS的WebDriver工具, 简单来说可以实时把连接的iOS设备状态模拟到一个Web服务器上, 提供一系列调试接口. 更多信息可以在项目主页里看到, 安装过程为:</p>
 <ol>
 <li><p>克隆到本地</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/facebook/WebDriverAgent.git</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/facebook/WebDriverAgent.git</div></pre></td></tr></table></figure>
 </li>
 <li><p>进入文件夹运行脚本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./Scripts/bootstrap.sh</div></pre></td></tr></table></figure>
-</li>
-</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./Scripts/bootstrap.sh</div></pre></td></tr></table></figure>
 <p>脚本运行需要<a href="https://github.com/Carthage/Carthage" target="_blank" rel="external"><code>Carthage</code></a>和<code>npm</code>, 这两个都是用来安装WDA的依赖包的, 看样子是依赖了node和iOS两种生态, 分别负责原生和Web两个模块, 安装<code>carthage</code>直接 <code>brew install carthage</code>.</p>
-<ol>
+</li>
 <li><p>用Xcode打开文件夹里的 <code>WebDriverAgent.xcodeproj</code></p>
 </li>
-<li><p>如果是真机调试, 连接iOS设备后需要iOS开发者签名, 这一部分不做说明, 跟正常iOS开发一样, 需要注意的是, 要对项目内<code>WebDriverAgentLib</code>, <code>WebDriverRunner</code>, <code>integrationApp</code>都需填入开发者签名. 提供一个很好的中文参考文档<a href="https://testerhome.com/topics/7220" target="_blank" rel="external">iOS 真机如何安装 WebDriverAgent</a>. 还有就是国行的iOS设备需要端口转发才能访问, 需要将手机的端口转发到Mac上. 使用工具<code>imobiledevice</code>即可</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ brew install libimobiledevice</div><div class="line">$ iproxy 8100 8100</div></pre></td></tr></table></figure>
+<li><p>如果是真机调试, 连接iOS设备后需要iOS开发者签名, 这一部分不做说明, 跟正常iOS开发一样, 需要注意的是, 要对项目内<code>WebDriverAgentLib</code>, <code>WebDriverRunner</code>, <code>integrationApp</code>都需填入开发者签名. 提供一个很好的中文参考文档<a href="https://testerhome.com/topics/7220" target="_blank" rel="external">iOS 真机如何安装 WebDriverAgent</a>. 还有就是国行的iOS设备需要端口转发才能访问, 需要将手机的端口转发到Mac上. 使用工具<code>imobiledevice</code>即可:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ brew install libimobiledevice</div><div class="line">$ iproxy 8100 8100</div></pre></td></tr></table></figure>
+<p>运行WDA的test: [Product] -&gt; [test], 或者<code>CMD + U</code>. 之后iOS设备会安装一个WebDriverAgent App, 自动打开黑屏然后自动退出, 期间不用管它, 如果迟迟不退出, 有可能是失败了, 断开设备重连再运行test(还是失败可以删除App再试一试). 在App退出之后就可以正确运行js脚本了.</p>
+</li>
+<li>然后在项目根目录安装npm依赖(单独目录clone本项目, 和WDA结构上是独立分开的…), 运行:<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>运行WDA的test: [Product] -&gt; [test], 或者<code>CMD + U</code>. 之后iOS设备会安装一个WebDriverAgent App, 自动打开黑屏然后自动退出, 期间不用管它, 如果迟迟不退出, 有可能是失败了, 断开设备重连再运行test(还是失败可以删除App再试一试). 在App退出之后就可以正确运行js脚本了.</p>
-<p>然后在项目根目录安装npm依赖(单独目录clone本项目, 和WDA结构上是独立分开的…), 运行:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i</div></pre></td></tr></table></figure></p>
 <h3 id="运行脚本"><a href="#运行脚本" class="headerlink" title="运行脚本"></a>运行脚本</h3><p>WDA启动之后, 可以尝试打开<code>http://127.0.0.1:8100/status</code>查看设备状态, 正常情况会有JSON返回, 打开<code>http://127.0.0.1:8100/inspector</code> 能看到这样：</p>
 <p><img src="inspec.png" alt=""></p>
 <p>其他API看<a href="https://github.com/facebook/WebDriverAgent/wiki/Queries" target="_blank" rel="external">这里</a>, 其实这里的Wiki也不全, 我看过WDA源码之后找到这个<a href="https://github.com/facebook/WebDriverAgent/blob/master/WebDriverAgentLib/Commands/FBElementCommands.m#L60" target="_blank" rel="external">文件</a>, 里面应该是完整的API代码, 比较语义化, 应该能看得懂(主要会用到<code>screenshot</code>和<code>touchAndHold</code>的API).</p>
@@ -120,9 +119,9 @@
 <ul>
 <li>[X] iPhoneX</li>
 <li>[X] iPhone7</li>
+<li>[X] iPhoneSE</li>
 <li style="list-style: none"><input type="checkbox"> iPhone7P</li>
 <li style="list-style: none"><input type="checkbox"> iPhone6P</li>
-<li style="list-style: none"><input type="checkbox"> iPhoneSE</li>
 <li style="list-style: none"><input type="checkbox"> iPhone8</li>
 <li style="list-style: none"><input type="checkbox"> iPhone8P</li>
 </ul>
