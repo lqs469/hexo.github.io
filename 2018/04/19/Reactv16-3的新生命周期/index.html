@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>Reactv16.3的新生命周期 | lqs469</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="随着 react 16 版本的不断迭代, 更多新的特性也逐渐稳定下来. 本文主要介绍 react 16.3 版本中官方已经稳定下的新版生命周期. 新生命周期模型为了配合异步渲染机制, 并且简化渲染更新流程, react 将去除三种生命周期方法, 加入两种生命周期方法. 在逐渐替换的版本迭代中, 旧版本将方法定位为不安全, 未来将不再继续维护, 预计下一次大版本更新会被废除. 在这个示意图中能够很清">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Reactv16.3的新生命周期">
+<meta property="og:url" content="http://yoursite.com/2018/04/19/Reactv16-3的新生命周期/index.html">
+<meta property="og:site_name" content="lqs469">
+<meta property="og:description" content="随着 react 16 版本的不断迭代, 更多新的特性也逐渐稳定下来. 本文主要介绍 react 16.3 版本中官方已经稳定下的新版生命周期. 新生命周期模型为了配合异步渲染机制, 并且简化渲染更新流程, react 将去除三种生命周期方法, 加入两种生命周期方法. 在逐渐替换的版本迭代中, 旧版本将方法定位为不安全, 未来将不再继续维护, 预计下一次大版本更新会被废除. 在这个示意图中能够很清">
+<meta property="og:image" content="http://yoursite.com/2018/04/19/Reactv16-3的新生命周期/lifecycle.png">
+<meta property="og:updated_time" content="2018-04-19T01:04:03.966Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Reactv16.3的新生命周期">
+<meta name="twitter:description" content="随着 react 16 版本的不断迭代, 更多新的特性也逐渐稳定下来. 本文主要介绍 react 16.3 版本中官方已经稳定下的新版生命周期. 新生命周期模型为了配合异步渲染机制, 并且简化渲染更新流程, react 将去除三种生命周期方法, 加入两种生命周期方法. 在逐渐替换的版本迭代中, 旧版本将方法定位为不安全, 未来将不再继续维护, 预计下一次大版本更新会被废除. 在这个示意图中能够很清">
+<meta name="twitter:image" content="http://yoursite.com/2018/04/19/Reactv16-3的新生命周期/lifecycle.png">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/typing.css">
+  
+</head>
+
+  
+    
+      <body>
+    
+  
+      <div id="container" class="container">
+        <article id="post-Reactv16-3的新生命周期" class="article article-type-post" itemscope itemprop="blogPost">
+  <header id="header" class="header">
+  <nav id="main-nav" class="main-nav">
+    
+      <a class="main-nav-link" href="/">Home</a>
+    
+      <a class="main-nav-link" href="/archives">Archives</a>
+    
+      <a class="main-nav-link" href="/about">About</a>
+    
+  </nav>
+</header>
+
+  <hr/>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Reactv16.3的新生命周期
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry typo" itemprop="articleBody">
+      
+        <p>随着 react 16 版本的不断迭代, 更多新的特性也逐渐稳定下来. 本文主要介绍 react 16.3 版本中官方已经稳定下的新版生命周期.</p>
+<h3 id="新生命周期模型"><a href="#新生命周期模型" class="headerlink" title="新生命周期模型"></a>新生命周期模型</h3><p>为了配合异步渲染机制, 并且简化渲染更新流程, react 将去除三种生命周期方法, 加入两种生命周期方法. 在逐渐替换的版本迭代中, 旧版本将方法定位为不安全, 未来将不再继续维护, 预计下一次大版本更新会被废除.</p>
+<p>在这个示意图中能够很清晰的看到改版后的组件渲染更新和数据之间的逻辑和生命周期的步骤:<br><img src="lifecycle.png" alt=""><br>在线查看示意图: <a href="http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/" target="_blank" rel="external">React lifecycle methods diagram</a></p>
+<h3 id="计划去除的三个方法"><a href="#计划去除的三个方法" class="headerlink" title="计划去除的三个方法"></a>计划去除的三个方法</h3><ul>
+<li><code>componentWillMount</code></li>
+<li><code>componentWillReceiveProps</code></li>
+<li><code>componentWillUpdate</code></li>
+</ul>
+<p>不过在 v16 这个大版本这些方法都不会立刻废除, 有足够时间完成迁移工作, 只是都会增加一个别名( UNSAFE 前缀):</p>
+<ul>
+<li><code>componentWillMount</code> -&gt; <code>UNSAFE_componentWillMount</code></li>
+<li><code>componentWillReceiveProps</code>  -&gt; <code>UNSAFE_componentWillReceiveProps</code></li>
+<li><code>componentWillUpdate</code>  -&gt; <code>UNSAFE_componentWillUpdate</code></li>
+</ul>
+<p>在 v16.3 包括之后的 v16版本两种写法你都可以使用, 不过在 v16.3 后面的版本使用旧的方法会得到一个警告. 而在 v17 版本将会彻底去掉旧方法, 只保留 UNSAFE 前缀的兼容方法.</p>
+<h3 id="新增了两个生命周期方法"><a href="#新增了两个生命周期方法" class="headerlink" title="新增了两个生命周期方法"></a>新增了两个生命周期方法</h3><ul>
+<li><code>getDerivedStateFromProps</code></li>
+<li><code>getSnapshotBeforeUpdate</code></li>
+</ul>
+<p><strong>getDerivedStateFromProps</strong><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Example</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</div><div class="line">  <span class="keyword">static</span> getDerivedStateFromProps(nextProps, prevState) &#123;</div><div class="line">	  <span class="keyword">if</span> (...) &#123;</div><div class="line">      <span class="keyword">return</span> <span class="literal">null</span></div><div class="line">    &#125;</div><div class="line">	  <span class="keyword">return</span> &#123;</div><div class="line">	    counter: prevState.counter++,</div><div class="line">      ...</div><div class="line">	  &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>随着 <code>componentWillReceiveProps</code> 被废除, 接替前者地位的就是这个方法, 而且更加强大,  <code>componentWillReceiveProps</code>  只能在初次渲染之后的组件 props 更新时执行, 主要负责渲染之前的数据处理工作, 而 <code>getDerivedStateFromProps</code> 有着类似的功能, 但是在初次渲染和组件 props 更新都会被执行. 第一个参数是新传入的 props, 第二个参数是当前的 state. 他的返回和 <code>setState</code> 方法类似, 当返回 <code>null</code> 时不会更新任何状态, 而有返回的对象就内容是被更新的状态.</p>
+<p>值得注意的是, <code>getDerivedStateFromProps</code> 是一个静态方法(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static" target="_blank" rel="external">static - JavaScript | MDN</a>). 它不能直接在非静态方法中使用 this 关键字来访问, 也不能访问到 this 上的方法. 但其实我们没有必要在这个周期使用到 this 上的方法, 一个是我们本来不应该在这个环节进行逻辑处理, 而且实际上这个周期中的所有逻辑处理都可以放到下一个周期去做.</p>
+<p>如果你同时用了 <code>getDerivedStateFromProps</code> 和 <code>componentWillReceiveProps</code>, 那么只有 <code>getDerivedStateFromProps</code> 会起作用, 而且还会收到一个警告.</p>
+<p>你也可以使用静态方法的写法:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Example.getDerivedStateFromProps = <span class="function">(<span class="params">nextProps, prevState</span>) =&gt;</span> &#123;</div><div class="line">	<span class="keyword">return</span> ...</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>getSnapshotBeforeUpdate</strong><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Example</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</div><div class="line">  getSnapshotBeforeUpdate(prevProps, prevState) &#123;</div><div class="line">    <span class="comment">// ...</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>这是一个新加入的周期, 基本上替代了方法 <code>componentWillUpdate</code>. 它发生在组件被渲染和更新之前的一点点, 是最贴近 VDOM 发生变化之前的一次执行方法. 参数是当前状态的 props, state 值. 他返回的值会被 <code>componentDidUpdate</code> 当做第三个参数.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">componentDidUpdate(prevProps, prevState, snapshot) &#123;</div><div class="line">    <span class="keyword">if</span> (snapshot !== <span class="literal">null</span>) &#123;</div><div class="line">		...</div><div class="line">    &#125;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<h3 id="StrictMode"><a href="#StrictMode" class="headerlink" title="StrictMode"></a>StrictMode</h3><p>在版本迁移中, 我们可以使用官方提供的高亮组件工具来指导我们熟悉新的特性 —— <code>StrictMode</code>. 这个不会实际生成 DOM 的工具组件适用于在这个版本过渡阶段的开发环境中, 用于检查其子组件的是否存在问题, 并且高亮有问题的代码. 在 v16.3 中,  <code>StrictMode</code> 能够:</p>
+<ul>
+<li>确定使用了不安全的生命周期的组件</li>
+<li>高亮旧版不安全的 ref 用法</li>
+<li>检测意料之外的副作用</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;React.StrictMode&gt;</div><div class="line">  	&lt;div&gt;</div><div class="line">    &lt;ComponentOne /&gt;</div><div class="line">    &lt;ComponentTwo /&gt;</div><div class="line">  &lt;<span class="regexp">/div&gt;</span></div><div class="line"><span class="regexp">&lt;/</span>React.StrictMode&gt;</div></pre></td></tr></table></figure>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以上就是 v16.3 生命周期的新特性, 以前的应用逻辑基本都能比较完美的转换成新的周期方法, 而且新周期会对以前代码逻辑规范有一定提升, 逻辑上较之前的逻辑更为清晰, 对于HOC, render props 都能够比较好的支持. 对于更具体场景的迁移方法请看官方提供的一个示例<a href="https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#examples" target="_blank" rel="external">Update on Async Rendering - React Blog</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <ul class="article-meta">
+        <li>
+          <span class="label">Published Date:</span>
+          <a href="/2018/04/19/Reactv16-3的新生命周期/" class="article-date">
+  <time datetime="2018-04-19T00:58:57.000Z" itemprop="datePublished">2018-04-19</time>
+</a>
+
+        </li>
+        
+          <li>
+            <span class="label">Category:</span>
+            
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/弱鸡之路/">弱鸡之路</a>
+  </div>
+
+
+          </li>
+        
+        
+        <hr/>
+      </ul>
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav" class="article-nav">
+  
+    <span id="article-nav-newer" class="article-nav-link-wrap newer"></span>
+  
+  
+    <a href="/2018/03/20/从小事做起/" id="article-nav-older" class="article-nav-link-wrap older">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">留个纪念, 从小事做起</div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+
+
+
+
+
+
+      </div>
+      
+    <footer id="footer" class="post-footer footer">
+      
+      <hr/>
+      <div id="footerContent" class="footer-content">
+        
+
+      </div>
+    </footer>
+
+      
+
+
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/typing.js"></script>
+<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+
+
+
+
+
+
+<script type="text/javascript">
+  console.log('anlysis')
+  var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+  document.write(unescape("%3Cspan id='cnzz_stat_icon_1264607064'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1264607064' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+    </div>
+  </body>
+</html>
