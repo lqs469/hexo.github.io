@@ -5,16 +5,16 @@
   
   <title>Node.js Streams 中的背压(backpressure) | lqs469</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="数据处理过程中经常出现一个称为背压(backpressure)的常见问题，用来描述数据传输过程中缓冲区后面的数据累积。当传送的接收端操作复杂时，或者由于某种原因而较慢时，来自传入源的数据有积聚的趋势，如堵塞。 为了解决这个问题，必须有一个授权系统来确保从一个源到另一个源的数据的平滑流动。不同的社区有根据其程序特点的独特解决方案，Unix pipes 和 TCP sockets 就是这方面的很好的例">
+  <meta name="description" content="原文 数据处理过程中经常出现一个称为背压(backpressure)的常见问题，用来描述数据传输过程中缓冲区后面的数据累积。当传送的接收端操作复杂时，或者由于某种原因而较慢时，来自传入源的数据有积聚的趋势，如堵塞。 为了解决这个问题，必须有一个授权系统来确保从一个源到另一个源的数据的平滑流动。不同的社区有根据其程序特点的独特解决方案，Unix pipes 和 TCP sockets 就是这方面的很">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Node.js Streams 中的背压(backpressure)">
 <meta property="og:url" content="http://yoursite.com/2018/07/03/Backpressure/index.html">
 <meta property="og:site_name" content="lqs469">
-<meta property="og:description" content="数据处理过程中经常出现一个称为背压(backpressure)的常见问题，用来描述数据传输过程中缓冲区后面的数据累积。当传送的接收端操作复杂时，或者由于某种原因而较慢时，来自传入源的数据有积聚的趋势，如堵塞。 为了解决这个问题，必须有一个授权系统来确保从一个源到另一个源的数据的平滑流动。不同的社区有根据其程序特点的独特解决方案，Unix pipes 和 TCP sockets 就是这方面的很好的例">
-<meta property="og:updated_time" content="2018-07-03T13:10:30.807Z">
+<meta property="og:description" content="原文 数据处理过程中经常出现一个称为背压(backpressure)的常见问题，用来描述数据传输过程中缓冲区后面的数据累积。当传送的接收端操作复杂时，或者由于某种原因而较慢时，来自传入源的数据有积聚的趋势，如堵塞。 为了解决这个问题，必须有一个授权系统来确保从一个源到另一个源的数据的平滑流动。不同的社区有根据其程序特点的独特解决方案，Unix pipes 和 TCP sockets 就是这方面的很">
+<meta property="og:updated_time" content="2018-07-05T14:49:21.524Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Node.js Streams 中的背压(backpressure)">
-<meta name="twitter:description" content="数据处理过程中经常出现一个称为背压(backpressure)的常见问题，用来描述数据传输过程中缓冲区后面的数据累积。当传送的接收端操作复杂时，或者由于某种原因而较慢时，来自传入源的数据有积聚的趋势，如堵塞。 为了解决这个问题，必须有一个授权系统来确保从一个源到另一个源的数据的平滑流动。不同的社区有根据其程序特点的独特解决方案，Unix pipes 和 TCP sockets 就是这方面的很好的例">
+<meta name="twitter:description" content="原文 数据处理过程中经常出现一个称为背压(backpressure)的常见问题，用来描述数据传输过程中缓冲区后面的数据累积。当传送的接收端操作复杂时，或者由于某种原因而较慢时，来自传入源的数据有积聚的趋势，如堵塞。 为了解决这个问题，必须有一个授权系统来确保从一个源到另一个源的数据的平滑流动。不同的社区有根据其程序特点的独特解决方案，Unix pipes 和 TCP sockets 就是这方面的很">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -58,7 +58,8 @@
     
     <div class="article-entry typo" itemprop="articleBody">
       
-        <p>数据处理过程中经常出现一个称为<strong>背压(backpressure)</strong>的常见问题，用来描述数据传输过程中缓冲区后面的数据累积。当传送的接收端操作复杂时，或者由于某种原因而较慢时，来自传入源的数据有积聚的趋势，如堵塞。</p>
+        <p><a href="https://nodejs.org/en/docs/guides/backpressuring-in-streams/" target="_blank" rel="external">原文</a></p>
+<p>数据处理过程中经常出现一个称为<strong>背压(backpressure)</strong>的常见问题，用来描述数据传输过程中缓冲区后面的数据累积。当传送的接收端操作复杂时，或者由于某种原因而较慢时，来自传入源的数据有积聚的趋势，如堵塞。</p>
 <p>为了解决这个问题，必须有一个授权系统来确保从一个源到另一个源的数据的平滑流动。不同的社区有根据其程序特点的独特解决方案，Unix pipes 和 TCP sockets 就是这方面的很好的例子，并且通常被称为流量控制。在Node.js中，Stream 是已被采用的解决方案。</p>
 <p>本指南的目的是进一步详细说明背压是什么，以及流如何在Node.js的源代码中解决这个问题。本指南的第二部分将介绍建议的最佳实践，以确保您的应用程序的代码在实现流时安全和优化。</p>
 <p>我们假设身为读者的你对 Node.js 中背压，<code>Buffer</code> 和 <code>EventEmitters</code> 的一般定义以及 Stream 的一些经验有点熟悉。如果您还没有阅读这些文档，首先查看API文档并不是一个坏主意，因为这将有助于在阅读本指南时扩展您的理解。</p>
