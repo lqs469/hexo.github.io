@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lqs469]]></title><description><![CDATA[lqs469 Blog]]></description><link>https://lqs469.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 13 Jul 2019 17:29:17 GMT</lastBuildDate><item><title><![CDATA[10x工程师]]></title><description><![CDATA[硅谷里提到了一个很有趣的概念， 叫做“10x工程师”。Big Head 形容 Richard 的时候说到： “Richard is a 10xer. I’m barely a 1xer.” — Big Head, HBO’s Silicon Valley Silicon…]]></description><link>https://lqs469.github.io/10x工程师/10x工程师/</link><guid isPermaLink="false">https://lqs469.github.io/10x工程师/10x工程师/</guid><pubDate>Sun, 14 Jul 2019 00:36:41 GMT</pubDate><content:encoded>&lt;p&gt;硅谷里提到了一个很有趣的概念， 叫做“10x工程师”。Big Head 形容 Richard 的时候说到：&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lqs469]]></title><description><![CDATA[lqs469 Blog]]></description><link>https://lqs469.github.io</link><generator>RSS for Node</generator><lastBuildDate>Mon, 15 Jul 2019 02:42:18 GMT</lastBuildDate><item><title><![CDATA[10x工程师]]></title><description><![CDATA[硅谷里提到了一个很有趣的概念， 叫做“10x工程师”。Big Head 形容 Richard 的时候说到： “Richard is a 10xer. I’m barely a 1xer.” — Big Head, HBO’s Silicon Valley Silicon…]]></description><link>https://lqs469.github.io/10x工程师/10x工程师/</link><guid isPermaLink="false">https://lqs469.github.io/10x工程师/10x工程师/</guid><pubDate>Sun, 14 Jul 2019 00:36:41 GMT</pubDate><content:encoded>&lt;p&gt;硅谷里提到了一个很有趣的概念， 叫做“10x工程师”。Big Head 形容 Richard 的时候说到：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“Richard is a 10xer. I’m barely a 1xer.”&lt;/p&gt;
 &lt;p&gt;— Big Head, HBO’s Silicon Valley&lt;/p&gt;
@@ -12,46 +12,24 @@
 &lt;p&gt;最近在twitter看到一个10x工程师的特点， 分享一下：
 来自&lt;a href=&quot;https://twitter.com/skirani/status/1149302828420067328&quot;&gt;Shekhar Kirani&lt;/a&gt;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;10x工程师讨厌会议。他们认为这是浪费时间，而且讨论的都是很明显的事情。他们参加会议是因为经理的要求而召开的“员工会议”，以讨论一些feature和status。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;10x工程师办公室的时间安排非常不规律。他们往往当周围很少有人在他们身边的时候工作。如果有人群或全员会议，则不可见。他们大多数是深夜编码员。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;10x工程师笔记本电脑屏幕背景颜色通常是黑色（它们总是更改默认值）。他们的键盘键如i，f，x通常比a，s和e（电子邮件发件人）都要破旧。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;10x工程师了解已投入生产的每一行代码。如果QA或支持人员提出问题，他们确切地知道故障（或错误）的位置，并且可以在几小时内修复别人需要天级别的任务量。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;大多数10x工程师都是全栈工程师。对于他们来说，代码是代码，他们不关心它是前端，后端，API，数据库，无服务器等。我很少看到他们做UI工作。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;10x工程师可以在他们的脑海中将“思想”转换为“代码”，并一口气将他们编写完成。给出产品功能的具体要求，他们可以用一杯含咖啡因的饮料在4到6个小时的一到两个座位内写下整个功能而不会分心。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;10x工程师很少查看类或方法的帮助文档。他们在记忆中知道它并且可以从记忆中回忆起来。他们编写代码与编写英文一样简单。没有休息，没有暂停，只是输入。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;10倍的工程师总是在公司的每个人之前学习新的框架，语言。他们不怕任何新事物。如果有新的东西（例如区块链），他们会在任何人开始之前吞噬，配置，实验。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;10x工程师是糟糕的导师，因为他们不能很好的教会别人如何去做或者如何包装处理。他们总是认为“教导或与他人讨论需要太长时间，我宁愿自己做。”他们也是不好的面试官。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;10x工程师不是hack东西。他们编写高质量代码并确切知道代码的演变方式，并在心里拥有整体代码结构的设计模型。他们最多写一个设计文档，其余的都在代码中。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;10x工程师很少找工作或离开公司。他们离开是因为你通过会议，培训和其他这类没有增加价值的活动使他们的生活变得不愉快。&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;10x工程师讨厌会议。他们认为这是浪费时间，而且讨论的都是很明显的事情。他们参加会议是因为经理的要求而召开的“员工会议”，以讨论一些feature和status。&lt;/li&gt;
+&lt;li&gt;10x工程师办公室的时间安排非常不规律。他们往往当周围很少有人在他们身边的时候工作。如果有人群或全员会议，则不可见。他们大多数是深夜编码员。&lt;/li&gt;
+&lt;li&gt;10x工程师笔记本电脑屏幕背景颜色通常是黑色（它们总是更改默认值）。他们的键盘键如i，f，x通常比a，s和e（电子邮件发件人）都要破旧。&lt;/li&gt;
+&lt;li&gt;10x工程师了解已投入生产的每一行代码。如果QA或支持人员提出问题，他们确切地知道故障（或错误）的位置，并且可以在几小时内修复别人需要天级别的任务量。&lt;/li&gt;
+&lt;li&gt;大多数10x工程师都是全栈工程师。对于他们来说，代码是代码，他们不关心它是前端，后端，API，数据库，无服务器等。我很少看到他们做UI工作。&lt;/li&gt;
+&lt;li&gt;10x工程师可以在他们的脑海中将“思想”转换为“代码”，并一口气将他们编写完成。给出产品功能的具体要求，他们可以用一杯含咖啡因的饮料在4到6个小时的一到两个座位内写下整个功能而不会分心。&lt;/li&gt;
+&lt;li&gt;10x工程师很少查看类或方法的帮助文档。他们在记忆中知道它并且可以从记忆中回忆起来。他们编写代码与编写英文一样简单。没有休息，没有暂停，只是输入。&lt;/li&gt;
+&lt;li&gt;10倍的工程师总是在公司的每个人之前学习新的框架，语言。他们不怕任何新事物。如果有新的东西（例如区块链），他们会在任何人开始之前吞噬，配置，实验。&lt;/li&gt;
+&lt;li&gt;10x工程师是糟糕的导师，因为他们不能很好的教会别人如何去做或者如何包装处理。他们总是认为“教导或与他人讨论需要太长时间，我宁愿自己做。”他们也是不好的面试官。&lt;/li&gt;
+&lt;li&gt;10x工程师不是hack东西。他们编写高质量代码并确切知道代码的演变方式，并在心里拥有整体代码结构的设计模型。他们最多写一个设计文档，其余的都在代码中。&lt;/li&gt;
+&lt;li&gt;10x工程师很少找工作或离开公司。他们离开是因为你通过会议，培训和其他这类没有增加价值的活动使他们的生活变得不愉快。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;这中间有的内容的确比较主观且绝对，虽然有的总结并不能完全同意他的看法，但说的还蛮有趣的。&lt;/p&gt;
+&lt;p&gt;这中间有的内容的确比较主观且绝对，并不完全同意他的看法，但说的还蛮有趣的。&lt;/p&gt;
 &lt;p&gt;大家都想成为10x工程师，因为能体现自身价值且报酬丰厚。初创公司的雇主当然会更喜欢10x工程师，毕竟低成本还大大提效，而大公司可能就不太一样，大团队中如果全是“superstar”类型的程序员，且不说这现不现实，在各个环节的沟通合作，指责互补等方面来讲不一定有强弱搭配来的有效，而且还带来了一定的管理风险。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[学习的意义]]></title><description><![CDATA[我现在回想起我的大学学到的东西, 发现这是一段我人生最浪费时间的阶段, 整个…]]></description><link>https://lqs469.github.io/学习的意义/</link><guid isPermaLink="false">https://lqs469.github.io/学习的意义/</guid><pubDate>Tue, 10 Jul 2018 14:26:26 GMT</pubDate><content:encoded>&lt;p&gt;我现在回想起我的大学学到的东西, 发现这是一段我人生最浪费时间的阶段, 整个4年都处在无聊, 故作忙碌, 迷茫困惑中度过的, 在那个本该最有冲劲和热情的时间里, 我基本不知道方向在哪里, 目标是什么. 只是跟着密集的课程, 学校的安排去学一些我根本不喜欢或者早就学会的东西, 我没有哪门课获得过100分或者95分, 哪怕是我早就会的内容, 但是我依然在某些感兴趣的科目可以自学不复习就到达90分, 当时只是觉得一点点茫然或者无所谓, 现在我才幡然醒悟, 我特么就是在浪费时间.&lt;/p&gt;
 &lt;p&gt;等到我真正走上社会, 开始面对真实世界的考验的时候, 我才发现我什么都不会, 之前的我是被隔离的. 我说的走上社会的真实世界, 并不是指什么校招, 什么笔试, 那些会考大学书本, 考你绩点里要求的东西. 我说的是当你跟全世界竞争, 跟比你年纪大或比你有经验的同行或非同行竞争的时候, 那些你需要会的东西, 使用的技能, 这时你才发现自己是真的稚嫩. 学校安排学习的内容是早二三十年早已跟社会脱节的人制定的, 技术的世界日新月异, 你拿什么跟他们争呢?&lt;/p&gt;
 &lt;p&gt;四年时间, 比一万小时定律还宽裕的时间, 足以让一个人成为某一领域的佼佼者, 但是实际上毕业的时候呢, 像我读的这样中等偏上的大学中, 应届生的平均能力真的令人叹息. 我看到最多的就是对自己的迷茫, 对人生的迷茫, 用四年的时间依然没有找到自己想走的方向. 最后20出头的年纪级就选择了户口, 稳定, 轻松简单的工作, 我也不敢说这样的路正不正确, 因为我也年轻, 还没到后悔的年纪, 但是如果是我, 我只是觉得走这样路我会有点亏. 也许未来我会后悔.&lt;/p&gt;
 &lt;p&gt;在学术道路和职业道路的选择中, 其实只要一个月时间, 大部分人都能找到自己的答案,  但是人们依然前赴后继去考研. 我当时也是这样, 要是问我原因的话, 我应该和大部分人一样, 首先我回答不清楚这个问题, 然后带着迷茫地告诉你研究生是现在社会对人才的基本要求… 我特么还考了两次, 差点还考第三次… 可是我根本不喜欢搞学术, 我就喜欢写代码, 当码农, 想写一辈子代码, 这一点在高中时候参加NOIP的时候我就想清楚的事情, 隔了这么久居然给忘了…&lt;/p&gt;
-&lt;p&gt;并不是在说知识无用, 知识任何时候都是最好的资本, 技术永远是推动社会前进的最大动力. 只是知识不是只有在大学四年里才能获得的, 教育制度的好赖公平与否不由我们说的算, 是否过时也无从得证, 毕竟每年有那么多人才从大学走出. 但是学习的自主权是真真实实在每个人自己手上的, 可以是按兴趣, 也可以是职业规划要求, 哪怕从事职业多年之后再去深造学术. 当你发现没有什么能限制你去学习的时候, 你才真的明白了自己为何而学, 才不会被制度的镣铐锁住手脚. 你是理科, 也可以去学艺术, 你读文学, 一样可以写出美妙的代码. 不给自己设限, 终身学习, 不断学习, 才能到达自己的巅峰, 同时充满快乐. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Node.js Streams 中的背压(backpressure)]]></title><description><![CDATA[原文 数据处理过程中经常出现一个称为 背压(backpressure…]]></description><link>https://lqs469.github.io/Backpressure/</link><guid isPermaLink="false">https://lqs469.github.io/Backpressure/</guid><pubDate>Tue, 03 Jul 2018 21:09:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/docs/guides/backpressuring-in-streams/&quot;&gt;原文&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;并不是在说知识无用, 知识任何时候都是最好的资本, 技术永远是推动社会前进的最大动力. 只是知识不是只有在大学四年里才能获得的, 教育制度的好赖公平与否不由我们说的算, 是否过时也无从得证, 毕竟每年有那么多人才从大学走出. 但是学习的自主权是真真实实在每个人自己手上的, 可以是按兴趣, 也可以是职业规划要求, 哪怕从事职业多年之后再去深造学术. 当你发现没有什么能限制你去学习的时候, 你才真的明白了自己为何而学, 才不会被制度的镣铐锁住手脚. 你是理科, 也可以去学艺术, 你读文学, 一样可以写出美妙的代码. 不给自己设限, 终身学习, 不断学习, 才能到达自己的巅峰, 同时充满快乐. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Node.js Streams 中的背压(backpressure)]]></title><description><![CDATA[原文 数据处理过程中经常出现一个称为背压(backpressure…]]></description><link>https://lqs469.github.io/Backpressure/</link><guid isPermaLink="false">https://lqs469.github.io/Backpressure/</guid><pubDate>Tue, 03 Jul 2018 21:09:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/docs/guides/backpressuring-in-streams/&quot;&gt;原文&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;数据处理过程中经常出现一个称为&lt;strong&gt;背压(backpressure)&lt;/strong&gt;的常见问题，用来描述数据传输过程中缓冲区后面的数据累积。当传送的接收端操作复杂时，或者由于某种原因而较慢时，来自传入源的数据有积聚的趋势，如堵塞。&lt;/p&gt;
 &lt;p&gt;为了解决这个问题，必须有一个授权系统来确保从一个源到另一个源的数据的平滑流动。不同的社区有根据其程序特点的独特解决方案，Unix pipes 和 TCP sockets 就是这方面的很好的例子，并且通常被称为流量控制。在Node.js中，Stream 是已被采用的解决方案。&lt;/p&gt;
 &lt;p&gt;本指南的目的是进一步详细说明背压是什么，以及流如何在Node.js的源代码中解决这个问题。本指南的第二部分将介绍建议的最佳实践，以确保您的应用程序的代码在实现流时安全和优化。&lt;/p&gt;
@@ -331,8 +309,8 @@ function doUncork(stream) {
 &lt;h2&gt;结论&lt;/h2&gt;
 &lt;p&gt;Streams是Node.js中经常使用的模块。它们对于内部结构非常重要，对于开发人员来说，它们可以跨Node.js模块生态系统进行扩展和连接。&lt;/p&gt;
 &lt;p&gt;希望您现在能够排除故障，安全地编写您自己的可写和可读流的背景，并与同事和朋友分享您的知识。&lt;/p&gt;
-&lt;p&gt;在使用Node.js构建应用程序时，请务必阅读有关其他API函数的Stream的更多信息，以帮助改进和释放您的流功能。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JavaScript ES2018/ES9 新增标准]]></title><description><![CDATA[6 月 27 号, TC39 正式完成了 ES2018/ES9 的语言规范  开始进入 ES2019 阶段.
-最终阶段详情:  finished-proposals 
+&lt;p&gt;在使用Node.js构建应用程序时，请务必阅读有关其他API函数的Stream的更多信息，以帮助改进和释放您的流功能。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JavaScript ES2018/ES9 新增标准]]></title><description><![CDATA[6 月 27 号, TC39 正式完成了ES2018/ES9 的语言规范 开始进入 ES2019 阶段.
+最终阶段详情: finished-proposals
 来看看 ES2018 比之前的 ES2017 新增了哪些规范. Object Rest/Spread…]]></description><link>https://lqs469.github.io/JavaScript-ES2018-ES9-新增标准/</link><guid isPermaLink="false">https://lqs469.github.io/JavaScript-ES2018-ES9-新增标准/</guid><pubDate>Fri, 29 Jun 2018 22:14:06 GMT</pubDate><content:encoded>&lt;p&gt;6 月 27 号, TC39 正式完成了&lt;a href=&quot;https://tc39.github.io/ecma262/&quot;&gt;ES2018/ES9 的语言规范&lt;/a&gt; 开始进入 ES2019 阶段.
 最终阶段详情: &lt;a href=&quot;https://github.com/tc39/proposals/blob/master/finished-proposals.md&quot;&gt;finished-proposals&lt;/a&gt;
 来看看 ES2018 比之前的 ES2017 新增了哪些规范.&lt;/p&gt;
@@ -441,7 +419,7 @@ let result = &amp;#39;2015-01-02&amp;#39;.replace(re, &amp;#39;$&amp;lt;day&amp;
 regexGreekSymbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;π&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;// → true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;最后&lt;/h2&gt;
-&lt;p&gt;目前大部分特性已经应用于主流浏览器了, 甚至有的早早就有, 也有一些正在实现过程中的. 但如果遇到要解决兼容性的问题还是得老老实实查 MDN, caniuse. 而 Node 端依然落后于标准设计, 这个有历史原因也有稳定性的要求. 新的标准出来的速度快其实大家也不用捉急, 原因在于生产中大部分时候我们其实用不到最新的标准, 或者已有其他的途径或老方法解决掉问题. 写出炫酷的代码不一定是最重要的, 能够解决掉问题才是最重要的. 而新标准更多的意义在于遇到真正刁钻问题的时候能够有解决方法或语言支持, 以及对代码抽象能力的提升, 性能的优化等.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[土豆🥔周报生成器]]></title><description><![CDATA[这是一个  Trello 风格的 Todolist + 根据模板自动生成带时间与签名的周报  的工具.
+&lt;p&gt;目前大部分特性已经应用于主流浏览器了, 甚至有的早早就有, 也有一些正在实现过程中的. 但如果遇到要解决兼容性的问题还是得老老实实查 MDN, caniuse. 而 Node 端依然落后于标准设计, 这个有历史原因也有稳定性的要求. 新的标准出来的速度快其实大家也不用捉急, 原因在于生产中大部分时候我们其实用不到最新的标准, 或者已有其他的途径或老方法解决掉问题. 写出炫酷的代码不一定是最重要的, 能够解决掉问题才是最重要的. 而新标准更多的意义在于遇到真正刁钻问题的时候能够有解决方法或语言支持, 以及对代码抽象能力的提升, 性能的优化等.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[土豆🥔周报生成器]]></title><description><![CDATA[这是一个 Trello 风格的 Todolist + 根据模板自动生成带时间与签名的周报 的工具.
 (基于 React + Redux. 支持拖拽操作, Markdown…]]></description><link>https://lqs469.github.io/土豆🥔周报生成器/</link><guid isPermaLink="false">https://lqs469.github.io/土豆🥔周报生成器/</guid><pubDate>Fri, 15 Jun 2018 17:58:38 GMT</pubDate><content:encoded>&lt;p&gt;这是一个 &lt;em&gt;Trello 风格的 Todolist + 根据模板自动生成带时间与签名的周报&lt;/em&gt; 的工具.
 (基于 React + Redux. 支持拖拽操作, Markdown, 缓存本地)&lt;/p&gt;
 &lt;p&gt;为解决我日益增长的忘记写周报以及写周报起来太麻烦的问题, 我做了这个工具帮我自己脱离苦海.用了一段时间, 发觉还不错, 推荐给有缘人使用…&lt;/p&gt;
@@ -453,7 +431,7 @@ regexGreekSymbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&l
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f0acdb3251454126dd58f441a5823f56/d9ff4/todoweek.jpg&quot;
+    href=&quot;/static/f0acdb3251454126dd58f441a5823f56/caf50/todoweek.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -465,28 +443,27 @@ regexGreekSymbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&l
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 62.13373403456048%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMCBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAepqwmoP/8QAGRABAAMBAQAAAAAAAAAAAAAAAAECEhET/9oACAEBAAEFAsQxV5UZql1//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFxAAAwEAAAAAAAAAAAAAAAAAAAExEP/aAAgBAQAGPwJkIRb/AP/EABkQAAMBAQEAAAAAAAAAAAAAAAERIQAQ8f/aAAgBAQABPyGpRKDSHA8rCgFx/9oADAMBAAIAAwAAABD7H//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPxBtf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAQACAwEBAAAAAAAAAAAAAAEAESExUUFx/9oACAEBAAE/EL7KqMVj7E0pbvMWbTf2BthvQjA1ma3FcJ//2Q==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 62.13373403456048%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMCBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAepqwmoP/8QAGRABAAMBAQAAAAAAAAAAAAAAAAECEhET/9oACAEBAAEFAsQxV5UZql1//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFxAAAwEAAAAAAAAAAAAAAAAAAAExEP/aAAgBAQAGPwJkIRb/AP/EABkQAAMBAQEAAAAAAAAAAAAAAAERIQAQ8f/aAAgBAQABPyGpRKDSHA8rCgFx/9oADAMBAAIAAwAAABD7D//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/EFf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAbEAEAAgMBAQAAAAAAAAAAAAABABEhMVFBcf/aAAgBAQABPxC+wqDFY+xNKW7zFm039gbYb0IwNZmtxXCf/9k=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;todoweek&quot;
         title=&quot;&quot;
-        src=&quot;/static/f0acdb3251454126dd58f441a5823f56/4b3ab/todoweek.jpg&quot;
-        srcset=&quot;/static/f0acdb3251454126dd58f441a5823f56/f8bb1/todoweek.jpg 148w,
-/static/f0acdb3251454126dd58f441a5823f56/900ac/todoweek.jpg 295w,
-/static/f0acdb3251454126dd58f441a5823f56/4b3ab/todoweek.jpg 590w,
-/static/f0acdb3251454126dd58f441a5823f56/78641/todoweek.jpg 885w,
-/static/f0acdb3251454126dd58f441a5823f56/38a35/todoweek.jpg 1180w,
-/static/f0acdb3251454126dd58f441a5823f56/d4d4c/todoweek.jpg 1770w,
-/static/f0acdb3251454126dd58f441a5823f56/d9ff4/todoweek.jpg 2662w&quot;
+        src=&quot;/static/f0acdb3251454126dd58f441a5823f56/c739e/todoweek.jpg&quot;
+        srcset=&quot;/static/f0acdb3251454126dd58f441a5823f56/8ee9c/todoweek.jpg 148w,
+/static/f0acdb3251454126dd58f441a5823f56/ebbe7/todoweek.jpg 295w,
+/static/f0acdb3251454126dd58f441a5823f56/c739e/todoweek.jpg 590w,
+/static/f0acdb3251454126dd58f441a5823f56/5413e/todoweek.jpg 885w,
+/static/f0acdb3251454126dd58f441a5823f56/4efde/todoweek.jpg 1180w,
+/static/f0acdb3251454126dd58f441a5823f56/caf50/todoweek.jpg 2662w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
   
   &lt;/a&gt;
-    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Reach-Router“真香👍”]]></title><description><![CDATA[Reach-Router  是 前  ReactRouter 成员 Ryan Florence 开发的一套基于 react 的路由控件. 那么已经有比较成熟的 ReactRouter 了, 为什么要”再”做一套 Router 呢, 最初的原因有兴趣(hào shi…]]></description><link>https://lqs469.github.io/Reach-Router“真香👍”/</link><guid isPermaLink="false">https://lqs469.github.io/Reach-Router“真香👍”/</guid><pubDate>Tue, 05 Jun 2018 15:03:29 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;/3910365c6be928469d0afb130c0ccee3-679f2858c4fa2dd342df5fc27b44dcc2.gif&quot;&gt;&lt;/p&gt;
+    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Reach-Router“真香👍”]]></title><description><![CDATA[Reach-Router 是前 ReactRouter 成员 Ryan Florence 开发的一套基于 react 的路由控件. 那么已经有比较成熟的 ReactRouter 了, 为什么要”再”做一套 Router 呢, 最初的原因有兴趣(hào shi…]]></description><link>https://lqs469.github.io/Reach-Router“真香👍”/</link><guid isPermaLink="false">https://lqs469.github.io/Reach-Router“真香👍”/</guid><pubDate>Tue, 05 Jun 2018 15:03:29 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;/3910365c6be928469d0afb130c0ccee3-679f2858c4fa2dd342df5fc27b44dcc2.gif&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&quot;https://reach.tech/router&quot;&gt;Reach-Router&lt;/a&gt; 是&lt;strong&gt;前&lt;/strong&gt; ReactRouter 成员 Ryan Florence 开发的一套基于 react 的路由控件. 那么已经有比较成熟的 ReactRouter 了, 为什么要”再”做一套 Router 呢, 最初的原因有兴趣(hào shi)的同学可以去了解一下, 本文会介绍 ReachRouter 并且说明具体比 React-Router 好在哪里.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -494,7 +471,7 @@ regexGreekSymbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&l
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a1ae7f25f0842a04f991cc43c8a25bc5/088db/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png&quot;
+    href=&quot;/static/a1ae7f25f0842a04f991cc43c8a25bc5/a5ed1/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -513,11 +490,11 @@ regexGreekSymbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&l
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;7B44554A 6DDF 4F85 B1C8 263D85F6EB43&quot;
         title=&quot;&quot;
-        src=&quot;/static/a1ae7f25f0842a04f991cc43c8a25bc5/6255c/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png&quot;
-        srcset=&quot;/static/a1ae7f25f0842a04f991cc43c8a25bc5/375dc/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png 148w,
-/static/a1ae7f25f0842a04f991cc43c8a25bc5/6b157/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png 295w,
-/static/a1ae7f25f0842a04f991cc43c8a25bc5/6255c/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png 590w,
-/static/a1ae7f25f0842a04f991cc43c8a25bc5/088db/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png 620w&quot;
+        src=&quot;/static/a1ae7f25f0842a04f991cc43c8a25bc5/b9e4f/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png&quot;
+        srcset=&quot;/static/a1ae7f25f0842a04f991cc43c8a25bc5/cf440/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png 148w,
+/static/a1ae7f25f0842a04f991cc43c8a25bc5/d2d38/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png 295w,
+/static/a1ae7f25f0842a04f991cc43c8a25bc5/b9e4f/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png 590w,
+/static/a1ae7f25f0842a04f991cc43c8a25bc5/a5ed1/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png 620w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -750,14 +727,13 @@ regexGreekSymbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&l
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;lifecycle&quot;
         title=&quot;&quot;
-        src=&quot;/static/f427f1e779602498d7cd3a411101caa7/6255c/lifecycle.png&quot;
-        srcset=&quot;/static/f427f1e779602498d7cd3a411101caa7/375dc/lifecycle.png 148w,
-/static/f427f1e779602498d7cd3a411101caa7/6b157/lifecycle.png 295w,
-/static/f427f1e779602498d7cd3a411101caa7/6255c/lifecycle.png 590w,
-/static/f427f1e779602498d7cd3a411101caa7/dcf9c/lifecycle.png 885w,
-/static/f427f1e779602498d7cd3a411101caa7/43c8a/lifecycle.png 1180w,
-/static/f427f1e779602498d7cd3a411101caa7/dc8c4/lifecycle.png 1770w,
-/static/f427f1e779602498d7cd3a411101caa7/ecce2/lifecycle.png 2194w&quot;
+        src=&quot;/static/f427f1e779602498d7cd3a411101caa7/b9e4f/lifecycle.png&quot;
+        srcset=&quot;/static/f427f1e779602498d7cd3a411101caa7/cf440/lifecycle.png 148w,
+/static/f427f1e779602498d7cd3a411101caa7/d2d38/lifecycle.png 295w,
+/static/f427f1e779602498d7cd3a411101caa7/b9e4f/lifecycle.png 590w,
+/static/f427f1e779602498d7cd3a411101caa7/f9b6a/lifecycle.png 885w,
+/static/f427f1e779602498d7cd3a411101caa7/2d849/lifecycle.png 1180w,
+/static/f427f1e779602498d7cd3a411101caa7/ddfd0/lifecycle.png 2194w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -827,9 +803,8 @@ regexGreekSymbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&l
   &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
 &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;StrictMode&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;总结&lt;/h3&gt;
-&lt;p&gt;以上就是 v16.3 生命周期的新特性, 以前的应用逻辑基本都能比较完美的转换成新的周期方法, 而且新周期会对以前代码逻辑规范有一定提升, 逻辑上较之前的逻辑更为清晰, 对于HOC, render props 都能够比较好的支持. 对于更具体场景的迁移方法请看官方提供的一个示例&lt;a href=&quot;https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#examples&quot;&gt;Update on Async Rendering - React Blog&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[留个纪念吧]]></title><description><![CDATA[Cnode.org 
- Babel.js Author tweet.
-]]></description><link>https://lqs469.github.io/_从小事做起/</link><guid isPermaLink="false">https://lqs469.github.io/_从小事做起/</guid><pubDate>Tue, 20 Mar 2018 21:36:41 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://cnodejs.org/topic/5aae1cc8f5dfc27d7ad98909&quot;&gt;Cnode.org&lt;/a&gt;
+&lt;p&gt;以上就是 v16.3 生命周期的新特性, 以前的应用逻辑基本都能比较完美的转换成新的周期方法, 而且新周期会对以前代码逻辑规范有一定提升, 逻辑上较之前的逻辑更为清晰, 对于HOC, render props 都能够比较好的支持. 对于更具体场景的迁移方法请看官方提供的一个示例&lt;a href=&quot;https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#examples&quot;&gt;Update on Async Rendering - React Blog&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[留个纪念吧]]></title><description><![CDATA[Cnode.org
+ Babel.js Author tweet.]]></description><link>https://lqs469.github.io/_从小事做起/</link><guid isPermaLink="false">https://lqs469.github.io/_从小事做起/</guid><pubDate>Tue, 20 Mar 2018 21:36:41 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://cnodejs.org/topic/5aae1cc8f5dfc27d7ad98909&quot;&gt;Cnode.org&lt;/a&gt;
 
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
@@ -844,14 +819,13 @@ regexGreekSymbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&l
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;egg&quot;
         title=&quot;&quot;
-        src=&quot;/static/972fda499884fcf59550ebd4b6bdb31a/4b3ab/egg.jpg&quot;
-        srcset=&quot;/static/972fda499884fcf59550ebd4b6bdb31a/f8bb1/egg.jpg 148w,
-/static/972fda499884fcf59550ebd4b6bdb31a/900ac/egg.jpg 295w,
-/static/972fda499884fcf59550ebd4b6bdb31a/4b3ab/egg.jpg 590w,
-/static/972fda499884fcf59550ebd4b6bdb31a/78641/egg.jpg 885w,
-/static/972fda499884fcf59550ebd4b6bdb31a/38a35/egg.jpg 1180w,
-/static/972fda499884fcf59550ebd4b6bdb31a/d4d4c/egg.jpg 1770w,
-/static/972fda499884fcf59550ebd4b6bdb31a/185f3/egg.jpg 2178w&quot;
+        src=&quot;/static/972fda499884fcf59550ebd4b6bdb31a/c739e/egg.jpg&quot;
+        srcset=&quot;/static/972fda499884fcf59550ebd4b6bdb31a/8ee9c/egg.jpg 148w,
+/static/972fda499884fcf59550ebd4b6bdb31a/ebbe7/egg.jpg 295w,
+/static/972fda499884fcf59550ebd4b6bdb31a/c739e/egg.jpg 590w,
+/static/972fda499884fcf59550ebd4b6bdb31a/5413e/egg.jpg 885w,
+/static/972fda499884fcf59550ebd4b6bdb31a/4efde/egg.jpg 1180w,
+/static/972fda499884fcf59550ebd4b6bdb31a/4fd1a/egg.jpg 2178w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -861,7 +835,7 @@ regexGreekSymbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&l
 
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/5320c6ed47bcc19e57079e85501dd32e/b7f86/HenryZhu.png&quot;
+    href=&quot;/static/5320c6ed47bcc19e57079e85501dd32e/4db5f/HenryZhu.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -880,13 +854,13 @@ regexGreekSymbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&l
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;HenryZhu&quot;
         title=&quot;&quot;
-        src=&quot;/static/5320c6ed47bcc19e57079e85501dd32e/6255c/HenryZhu.png&quot;
-        srcset=&quot;/static/5320c6ed47bcc19e57079e85501dd32e/375dc/HenryZhu.png 148w,
-/static/5320c6ed47bcc19e57079e85501dd32e/6b157/HenryZhu.png 295w,
-/static/5320c6ed47bcc19e57079e85501dd32e/6255c/HenryZhu.png 590w,
-/static/5320c6ed47bcc19e57079e85501dd32e/dcf9c/HenryZhu.png 885w,
-/static/5320c6ed47bcc19e57079e85501dd32e/43c8a/HenryZhu.png 1180w,
-/static/5320c6ed47bcc19e57079e85501dd32e/b7f86/HenryZhu.png 1188w&quot;
+        src=&quot;/static/5320c6ed47bcc19e57079e85501dd32e/b9e4f/HenryZhu.png&quot;
+        srcset=&quot;/static/5320c6ed47bcc19e57079e85501dd32e/cf440/HenryZhu.png 148w,
+/static/5320c6ed47bcc19e57079e85501dd32e/d2d38/HenryZhu.png 295w,
+/static/5320c6ed47bcc19e57079e85501dd32e/b9e4f/HenryZhu.png 590w,
+/static/5320c6ed47bcc19e57079e85501dd32e/f9b6a/HenryZhu.png 885w,
+/static/5320c6ed47bcc19e57079e85501dd32e/2d849/HenryZhu.png 1180w,
+/static/5320c6ed47bcc19e57079e85501dd32e/4db5f/HenryZhu.png 1188w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -936,9 +910,7 @@ regexGreekSymbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&l
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;./Scripts/bootstrap.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;脚本运行需要&lt;a href=&quot;https://github.com/Carthage/Carthage&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Carthage&lt;/code&gt;&lt;/a&gt;和&lt;code class=&quot;language-text&quot;&gt;npm&lt;/code&gt;, 这两个都是用来安装WDA的依赖包的, 看样子是依赖了node和iOS两种生态, 分别负责原生和Web两个模块, 安装&lt;code class=&quot;language-text&quot;&gt;carthage&lt;/code&gt;直接 &lt;code class=&quot;language-text&quot;&gt;brew install carthage&lt;/code&gt;.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;用Xcode打开文件夹里的 &lt;code class=&quot;language-text&quot;&gt;WebDriverAgent.xcodeproj&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;用Xcode打开文件夹里的 &lt;code class=&quot;language-text&quot;&gt;WebDriverAgent.xcodeproj&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;如果是真机调试, 连接iOS设备后需要iOS开发者签名, 这一部分不做说明, 跟正常iOS开发一样, 需要注意的是, 要对项目内&lt;code class=&quot;language-text&quot;&gt;WebDriverAgentLib&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;WebDriverRunner&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;integrationApp&lt;/code&gt;都需填入开发者签名. 提供一个很好的中文参考文档&lt;a href=&quot;https://testerhome.com/topics/7220&quot;&gt;iOS 真机如何安装 WebDriverAgent&lt;/a&gt;. 还有就是国行的iOS设备需要端口转发才能访问, 需要将手机的端口转发到Mac上. 使用工具&lt;code class=&quot;language-text&quot;&gt;imobiledevice&lt;/code&gt;即可:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ brew &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; libimobiledevice
@@ -955,7 +927,7 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/371358516a4155f6b3f29d19ddf5c9a2/11c1f/inspec.png&quot;
+    href=&quot;/static/371358516a4155f6b3f29d19ddf5c9a2/87846/inspec.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -974,14 +946,13 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;inspec&quot;
         title=&quot;&quot;
-        src=&quot;/static/371358516a4155f6b3f29d19ddf5c9a2/6255c/inspec.png&quot;
-        srcset=&quot;/static/371358516a4155f6b3f29d19ddf5c9a2/375dc/inspec.png 148w,
-/static/371358516a4155f6b3f29d19ddf5c9a2/6b157/inspec.png 295w,
-/static/371358516a4155f6b3f29d19ddf5c9a2/6255c/inspec.png 590w,
-/static/371358516a4155f6b3f29d19ddf5c9a2/dcf9c/inspec.png 885w,
-/static/371358516a4155f6b3f29d19ddf5c9a2/43c8a/inspec.png 1180w,
-/static/371358516a4155f6b3f29d19ddf5c9a2/dc8c4/inspec.png 1770w,
-/static/371358516a4155f6b3f29d19ddf5c9a2/11c1f/inspec.png 2462w&quot;
+        src=&quot;/static/371358516a4155f6b3f29d19ddf5c9a2/b9e4f/inspec.png&quot;
+        srcset=&quot;/static/371358516a4155f6b3f29d19ddf5c9a2/cf440/inspec.png 148w,
+/static/371358516a4155f6b3f29d19ddf5c9a2/d2d38/inspec.png 295w,
+/static/371358516a4155f6b3f29d19ddf5c9a2/b9e4f/inspec.png 590w,
+/static/371358516a4155f6b3f29d19ddf5c9a2/f9b6a/inspec.png 885w,
+/static/371358516a4155f6b3f29d19ddf5c9a2/2d849/inspec.png 1180w,
+/static/371358516a4155f6b3f29d19ddf5c9a2/87846/inspec.png 2462w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -997,7 +968,7 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/bb6f44fa707fcbbb77fc1269d41aebec/ebaca/demo.jpg&quot;
+    href=&quot;/static/bb6f44fa707fcbbb77fc1269d41aebec/48a11/demo.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1009,17 +980,17 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 46%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMEBf/EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/aAAwDAQACEAMQAAAB7cqxO6Qmf//EABgQAQEAAwAAAAAAAAAAAAAAAAExABAR/9oACAEBAAEFAm9wjon/xAAVEQEBAAAAAAAAAAAAAAAAAAAQQf/aAAgBAwEBPwGH/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAx/9oACAECAQE/ARV//8QAFxABAAMAAAAAAAAAAAAAAAAAEAAhgf/aAAgBAQAGPwKW6f/EABoQAAIDAQEAAAAAAAAAAAAAAAABITFBUYH/2gAIAQEAAT8hYqOJ6Vl/R4Kz/9oADAMBAAIAAwAAABDsH//EABYRAQEBAAAAAAAAAAAAAAAAAAABQf/aAAgBAwEBPxDUR//EABYRAAMAAAAAAAAAAAAAAAAAAAEQIf/aAAgBAgEBPxA6X//EAB4QAAIBAwUAAAAAAAAAAAAAAAERABAhMUFhcYHw/9oACAEBAAE/EFIrEZcSRBQgbMaQ2RLaYeE8O6T/2Q==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 46%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMEBf/EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/aAAwDAQACEAMQAAAB7cqxO6Qmf//EABgQAQEAAwAAAAAAAAAAAAAAAAExABAR/9oACAEBAAEFAm9wjon/xAAVEQEBAAAAAAAAAAAAAAAAAAAQQf/aAAgBAwEBPwGH/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAx/9oACAECAQE/ARV//8QAFxABAAMAAAAAAAAAAAAAAAAAEAAhgf/aAAgBAQAGPwKW6f/EABoQAAIDAQEAAAAAAAAAAAAAAAABITFBUYH/2gAIAQEAAT8hYqOJ6Vl/R4Kj/9oADAMBAAIAAwAAABDsH//EABYRAQEBAAAAAAAAAAAAAAAAAAABQf/aAAgBAwEBPxDUR//EABYRAAMAAAAAAAAAAAAAAAAAAAEQIf/aAAgBAgEBPxA6X//EAB0QAAICAQUAAAAAAAAAAAAAAAERACEQMWFxgfD/2gAIAQEAAT8QUioiy4kiFUDZiGyJbTR4Tw7xv//Z&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;demo&quot;
         title=&quot;&quot;
-        src=&quot;/static/bb6f44fa707fcbbb77fc1269d41aebec/ebaca/demo.jpg&quot;
-        srcset=&quot;/static/bb6f44fa707fcbbb77fc1269d41aebec/61443/demo.jpg 148w,
-/static/bb6f44fa707fcbbb77fc1269d41aebec/3db2b/demo.jpg 295w,
-/static/bb6f44fa707fcbbb77fc1269d41aebec/ebaca/demo.jpg 500w&quot;
+        src=&quot;/static/bb6f44fa707fcbbb77fc1269d41aebec/48a11/demo.jpg&quot;
+        srcset=&quot;/static/bb6f44fa707fcbbb77fc1269d41aebec/8ee9c/demo.jpg 148w,
+/static/bb6f44fa707fcbbb77fc1269d41aebec/ebbe7/demo.jpg 295w,
+/static/bb6f44fa707fcbbb77fc1269d41aebec/48a11/demo.jpg 500w&quot;
         sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1045,7 +1016,7 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b01df5aefb62e8041b5c7fa772192815/f48b0/1.png&quot;
+    href=&quot;/static/b01df5aefb62e8041b5c7fa772192815/d19c0/1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1064,10 +1035,10 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;1&quot;
         title=&quot;&quot;
-        src=&quot;/static/b01df5aefb62e8041b5c7fa772192815/f48b0/1.png&quot;
-        srcset=&quot;/static/b01df5aefb62e8041b5c7fa772192815/0a0ea/1.png 148w,
-/static/b01df5aefb62e8041b5c7fa772192815/8b54b/1.png 295w,
-/static/b01df5aefb62e8041b5c7fa772192815/f48b0/1.png 500w&quot;
+        src=&quot;/static/b01df5aefb62e8041b5c7fa772192815/d19c0/1.png&quot;
+        srcset=&quot;/static/b01df5aefb62e8041b5c7fa772192815/cf440/1.png 148w,
+/static/b01df5aefb62e8041b5c7fa772192815/d2d38/1.png 295w,
+/static/b01df5aefb62e8041b5c7fa772192815/d19c0/1.png 500w&quot;
         sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1141,7 +1112,7 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/9d00a3eaf5e5c95a6a7f53f9371cb66d/f48b0/2.png&quot;
+    href=&quot;/static/9d00a3eaf5e5c95a6a7f53f9371cb66d/d19c0/2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1160,10 +1131,10 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;2&quot;
         title=&quot;&quot;
-        src=&quot;/static/9d00a3eaf5e5c95a6a7f53f9371cb66d/f48b0/2.png&quot;
-        srcset=&quot;/static/9d00a3eaf5e5c95a6a7f53f9371cb66d/0a0ea/2.png 148w,
-/static/9d00a3eaf5e5c95a6a7f53f9371cb66d/8b54b/2.png 295w,
-/static/9d00a3eaf5e5c95a6a7f53f9371cb66d/f48b0/2.png 500w&quot;
+        src=&quot;/static/9d00a3eaf5e5c95a6a7f53f9371cb66d/d19c0/2.png&quot;
+        srcset=&quot;/static/9d00a3eaf5e5c95a6a7f53f9371cb66d/cf440/2.png 148w,
+/static/9d00a3eaf5e5c95a6a7f53f9371cb66d/d2d38/2.png 295w,
+/static/9d00a3eaf5e5c95a6a7f53f9371cb66d/d19c0/2.png 500w&quot;
         sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1176,7 +1147,7 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a5712efaa549b7c9f6fb74b6c3d4f984/f48b0/3.png&quot;
+    href=&quot;/static/a5712efaa549b7c9f6fb74b6c3d4f984/d19c0/3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1195,10 +1166,10 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;3&quot;
         title=&quot;&quot;
-        src=&quot;/static/a5712efaa549b7c9f6fb74b6c3d4f984/f48b0/3.png&quot;
-        srcset=&quot;/static/a5712efaa549b7c9f6fb74b6c3d4f984/0a0ea/3.png 148w,
-/static/a5712efaa549b7c9f6fb74b6c3d4f984/8b54b/3.png 295w,
-/static/a5712efaa549b7c9f6fb74b6c3d4f984/f48b0/3.png 500w&quot;
+        src=&quot;/static/a5712efaa549b7c9f6fb74b6c3d4f984/d19c0/3.png&quot;
+        srcset=&quot;/static/a5712efaa549b7c9f6fb74b6c3d4f984/cf440/3.png 148w,
+/static/a5712efaa549b7c9f6fb74b6c3d4f984/d2d38/3.png 295w,
+/static/a5712efaa549b7c9f6fb74b6c3d4f984/d19c0/3.png 500w&quot;
         sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1215,7 +1186,7 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f5942573ebd119b9f37731a135afec2e/424af/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png&quot;
+    href=&quot;/static/f5942573ebd119b9f37731a135afec2e/93430/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1234,11 +1205,11 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;DDE43401 A029 4CFE A246 9ECFD3FA9EB1&quot;
         title=&quot;&quot;
-        src=&quot;/static/f5942573ebd119b9f37731a135afec2e/6255c/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png&quot;
-        srcset=&quot;/static/f5942573ebd119b9f37731a135afec2e/375dc/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png 148w,
-/static/f5942573ebd119b9f37731a135afec2e/6b157/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png 295w,
-/static/f5942573ebd119b9f37731a135afec2e/6255c/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png 590w,
-/static/f5942573ebd119b9f37731a135afec2e/424af/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png 784w&quot;
+        src=&quot;/static/f5942573ebd119b9f37731a135afec2e/b9e4f/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png&quot;
+        srcset=&quot;/static/f5942573ebd119b9f37731a135afec2e/cf440/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png 148w,
+/static/f5942573ebd119b9f37731a135afec2e/d2d38/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png 295w,
+/static/f5942573ebd119b9f37731a135afec2e/b9e4f/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png 590w,
+/static/f5942573ebd119b9f37731a135afec2e/93430/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png 784w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1250,7 +1221,7 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/bf6b98cb148e668e1b3daff521b49a1f/1f2c1/749E6AD5-7507-4136-B9C0-4997234B6C03.png&quot;
+    href=&quot;/static/bf6b98cb148e668e1b3daff521b49a1f/e4620/749E6AD5-7507-4136-B9C0-4997234B6C03.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1269,13 +1240,13 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;749E6AD5 7507 4136 B9C0 4997234B6C03&quot;
         title=&quot;&quot;
-        src=&quot;/static/bf6b98cb148e668e1b3daff521b49a1f/6255c/749E6AD5-7507-4136-B9C0-4997234B6C03.png&quot;
-        srcset=&quot;/static/bf6b98cb148e668e1b3daff521b49a1f/375dc/749E6AD5-7507-4136-B9C0-4997234B6C03.png 148w,
-/static/bf6b98cb148e668e1b3daff521b49a1f/6b157/749E6AD5-7507-4136-B9C0-4997234B6C03.png 295w,
-/static/bf6b98cb148e668e1b3daff521b49a1f/6255c/749E6AD5-7507-4136-B9C0-4997234B6C03.png 590w,
-/static/bf6b98cb148e668e1b3daff521b49a1f/dcf9c/749E6AD5-7507-4136-B9C0-4997234B6C03.png 885w,
-/static/bf6b98cb148e668e1b3daff521b49a1f/43c8a/749E6AD5-7507-4136-B9C0-4997234B6C03.png 1180w,
-/static/bf6b98cb148e668e1b3daff521b49a1f/1f2c1/749E6AD5-7507-4136-B9C0-4997234B6C03.png 1602w&quot;
+        src=&quot;/static/bf6b98cb148e668e1b3daff521b49a1f/b9e4f/749E6AD5-7507-4136-B9C0-4997234B6C03.png&quot;
+        srcset=&quot;/static/bf6b98cb148e668e1b3daff521b49a1f/cf440/749E6AD5-7507-4136-B9C0-4997234B6C03.png 148w,
+/static/bf6b98cb148e668e1b3daff521b49a1f/d2d38/749E6AD5-7507-4136-B9C0-4997234B6C03.png 295w,
+/static/bf6b98cb148e668e1b3daff521b49a1f/b9e4f/749E6AD5-7507-4136-B9C0-4997234B6C03.png 590w,
+/static/bf6b98cb148e668e1b3daff521b49a1f/f9b6a/749E6AD5-7507-4136-B9C0-4997234B6C03.png 885w,
+/static/bf6b98cb148e668e1b3daff521b49a1f/2d849/749E6AD5-7507-4136-B9C0-4997234B6C03.png 1180w,
+/static/bf6b98cb148e668e1b3daff521b49a1f/e4620/749E6AD5-7507-4136-B9C0-4997234B6C03.png 1602w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1288,7 +1259,7 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/c36b55ee2c2cb979a6f561ca18e1a2b0/c0f3a/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png&quot;
+    href=&quot;/static/c36b55ee2c2cb979a6f561ca18e1a2b0/1589a/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1307,13 +1278,13 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;AFAC8BC9 008E 4097 8D44 08942DFDE6C8&quot;
         title=&quot;&quot;
-        src=&quot;/static/c36b55ee2c2cb979a6f561ca18e1a2b0/6255c/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png&quot;
-        srcset=&quot;/static/c36b55ee2c2cb979a6f561ca18e1a2b0/375dc/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png 148w,
-/static/c36b55ee2c2cb979a6f561ca18e1a2b0/6b157/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png 295w,
-/static/c36b55ee2c2cb979a6f561ca18e1a2b0/6255c/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png 590w,
-/static/c36b55ee2c2cb979a6f561ca18e1a2b0/dcf9c/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png 885w,
-/static/c36b55ee2c2cb979a6f561ca18e1a2b0/43c8a/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png 1180w,
-/static/c36b55ee2c2cb979a6f561ca18e1a2b0/c0f3a/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png 1276w&quot;
+        src=&quot;/static/c36b55ee2c2cb979a6f561ca18e1a2b0/b9e4f/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png&quot;
+        srcset=&quot;/static/c36b55ee2c2cb979a6f561ca18e1a2b0/cf440/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png 148w,
+/static/c36b55ee2c2cb979a6f561ca18e1a2b0/d2d38/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png 295w,
+/static/c36b55ee2c2cb979a6f561ca18e1a2b0/b9e4f/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png 590w,
+/static/c36b55ee2c2cb979a6f561ca18e1a2b0/f9b6a/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png 885w,
+/static/c36b55ee2c2cb979a6f561ca18e1a2b0/2d849/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png 1180w,
+/static/c36b55ee2c2cb979a6f561ca18e1a2b0/1589a/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png 1276w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1327,7 +1298,7 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4f1a9e79e542802a870b6a7799a1a757/f3358/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png&quot;
+    href=&quot;/static/4f1a9e79e542802a870b6a7799a1a757/b241b/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1346,12 +1317,12 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;53EC41A0 2753 4FDA 8B7B C383DA2400AF&quot;
         title=&quot;&quot;
-        src=&quot;/static/4f1a9e79e542802a870b6a7799a1a757/6255c/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png&quot;
-        srcset=&quot;/static/4f1a9e79e542802a870b6a7799a1a757/375dc/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png 148w,
-/static/4f1a9e79e542802a870b6a7799a1a757/6b157/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png 295w,
-/static/4f1a9e79e542802a870b6a7799a1a757/6255c/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png 590w,
-/static/4f1a9e79e542802a870b6a7799a1a757/dcf9c/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png 885w,
-/static/4f1a9e79e542802a870b6a7799a1a757/f3358/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png 888w&quot;
+        src=&quot;/static/4f1a9e79e542802a870b6a7799a1a757/b9e4f/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png&quot;
+        srcset=&quot;/static/4f1a9e79e542802a870b6a7799a1a757/cf440/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png 148w,
+/static/4f1a9e79e542802a870b6a7799a1a757/d2d38/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png 295w,
+/static/4f1a9e79e542802a870b6a7799a1a757/b9e4f/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png 590w,
+/static/4f1a9e79e542802a870b6a7799a1a757/f9b6a/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png 885w,
+/static/4f1a9e79e542802a870b6a7799a1a757/b241b/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png 888w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1365,7 +1336,7 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0ae615ea1b60da0a5470261f0334ffa6/d0656/51E15540-5B67-4332-9169-BB79D4F49ED5.png&quot;
+    href=&quot;/static/0ae615ea1b60da0a5470261f0334ffa6/059c1/51E15540-5B67-4332-9169-BB79D4F49ED5.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1384,11 +1355,11 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;51E15540 5B67 4332 9169 BB79D4F49ED5&quot;
         title=&quot;&quot;
-        src=&quot;/static/0ae615ea1b60da0a5470261f0334ffa6/6255c/51E15540-5B67-4332-9169-BB79D4F49ED5.png&quot;
-        srcset=&quot;/static/0ae615ea1b60da0a5470261f0334ffa6/375dc/51E15540-5B67-4332-9169-BB79D4F49ED5.png 148w,
-/static/0ae615ea1b60da0a5470261f0334ffa6/6b157/51E15540-5B67-4332-9169-BB79D4F49ED5.png 295w,
-/static/0ae615ea1b60da0a5470261f0334ffa6/6255c/51E15540-5B67-4332-9169-BB79D4F49ED5.png 590w,
-/static/0ae615ea1b60da0a5470261f0334ffa6/d0656/51E15540-5B67-4332-9169-BB79D4F49ED5.png 877w&quot;
+        src=&quot;/static/0ae615ea1b60da0a5470261f0334ffa6/b9e4f/51E15540-5B67-4332-9169-BB79D4F49ED5.png&quot;
+        srcset=&quot;/static/0ae615ea1b60da0a5470261f0334ffa6/cf440/51E15540-5B67-4332-9169-BB79D4F49ED5.png 148w,
+/static/0ae615ea1b60da0a5470261f0334ffa6/d2d38/51E15540-5B67-4332-9169-BB79D4F49ED5.png 295w,
+/static/0ae615ea1b60da0a5470261f0334ffa6/b9e4f/51E15540-5B67-4332-9169-BB79D4F49ED5.png 590w,
+/static/0ae615ea1b60da0a5470261f0334ffa6/059c1/51E15540-5B67-4332-9169-BB79D4F49ED5.png 877w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1408,7 +1379,7 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/bff5ebc77ea50ac8f6079716541835ce/430d5/1.png&quot;
+    href=&quot;/static/bff5ebc77ea50ac8f6079716541835ce/8e7c5/1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1427,10 +1398,10 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;1&quot;
         title=&quot;&quot;
-        src=&quot;/static/bff5ebc77ea50ac8f6079716541835ce/430d5/1.png&quot;
-        srcset=&quot;/static/bff5ebc77ea50ac8f6079716541835ce/10295/1.png 148w,
-/static/bff5ebc77ea50ac8f6079716541835ce/dd66a/1.png 295w,
-/static/bff5ebc77ea50ac8f6079716541835ce/430d5/1.png 581w&quot;
+        src=&quot;/static/bff5ebc77ea50ac8f6079716541835ce/8e7c5/1.png&quot;
+        srcset=&quot;/static/bff5ebc77ea50ac8f6079716541835ce/cf440/1.png 148w,
+/static/bff5ebc77ea50ac8f6079716541835ce/d2d38/1.png 295w,
+/static/bff5ebc77ea50ac8f6079716541835ce/8e7c5/1.png 581w&quot;
         sizes=&quot;(max-width: 581px) 100vw, 581px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1451,7 +1422,7 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2d6f76460c4b1a47889899f09977f130/5584b/2.png&quot;
+    href=&quot;/static/2d6f76460c4b1a47889899f09977f130/34e8a/2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1470,11 +1441,11 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;2&quot;
         title=&quot;&quot;
-        src=&quot;/static/2d6f76460c4b1a47889899f09977f130/6255c/2.png&quot;
-        srcset=&quot;/static/2d6f76460c4b1a47889899f09977f130/375dc/2.png 148w,
-/static/2d6f76460c4b1a47889899f09977f130/6b157/2.png 295w,
-/static/2d6f76460c4b1a47889899f09977f130/6255c/2.png 590w,
-/static/2d6f76460c4b1a47889899f09977f130/5584b/2.png 600w&quot;
+        src=&quot;/static/2d6f76460c4b1a47889899f09977f130/b9e4f/2.png&quot;
+        srcset=&quot;/static/2d6f76460c4b1a47889899f09977f130/cf440/2.png 148w,
+/static/2d6f76460c4b1a47889899f09977f130/d2d38/2.png 295w,
+/static/2d6f76460c4b1a47889899f09977f130/b9e4f/2.png 590w,
+/static/2d6f76460c4b1a47889899f09977f130/34e8a/2.png 600w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1489,7 +1460,7 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2944689de58540873e661adbc35689d2/5584b/3.png&quot;
+    href=&quot;/static/2944689de58540873e661adbc35689d2/34e8a/3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1508,11 +1479,11 @@ $ iproxy 8100 8100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;3&quot;
         title=&quot;&quot;
-        src=&quot;/static/2944689de58540873e661adbc35689d2/6255c/3.png&quot;
-        srcset=&quot;/static/2944689de58540873e661adbc35689d2/375dc/3.png 148w,
-/static/2944689de58540873e661adbc35689d2/6b157/3.png 295w,
-/static/2944689de58540873e661adbc35689d2/6255c/3.png 590w,
-/static/2944689de58540873e661adbc35689d2/5584b/3.png 600w&quot;
+        src=&quot;/static/2944689de58540873e661adbc35689d2/b9e4f/3.png&quot;
+        srcset=&quot;/static/2944689de58540873e661adbc35689d2/cf440/3.png 148w,
+/static/2944689de58540873e661adbc35689d2/d2d38/3.png 295w,
+/static/2944689de58540873e661adbc35689d2/b9e4f/3.png 590w,
+/static/2944689de58540873e661adbc35689d2/34e8a/3.png 600w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1553,7 +1524,7 @@ render() {
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/d4502ecaed8f9857d85cf19df4d6ca68/a9cac/4.png&quot;
+    href=&quot;/static/d4502ecaed8f9857d85cf19df4d6ca68/6d51e/4.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1572,12 +1543,12 @@ render() {
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;4&quot;
         title=&quot;&quot;
-        src=&quot;/static/d4502ecaed8f9857d85cf19df4d6ca68/6255c/4.png&quot;
-        srcset=&quot;/static/d4502ecaed8f9857d85cf19df4d6ca68/375dc/4.png 148w,
-/static/d4502ecaed8f9857d85cf19df4d6ca68/6b157/4.png 295w,
-/static/d4502ecaed8f9857d85cf19df4d6ca68/6255c/4.png 590w,
-/static/d4502ecaed8f9857d85cf19df4d6ca68/dcf9c/4.png 885w,
-/static/d4502ecaed8f9857d85cf19df4d6ca68/a9cac/4.png 1010w&quot;
+        src=&quot;/static/d4502ecaed8f9857d85cf19df4d6ca68/b9e4f/4.png&quot;
+        srcset=&quot;/static/d4502ecaed8f9857d85cf19df4d6ca68/cf440/4.png 148w,
+/static/d4502ecaed8f9857d85cf19df4d6ca68/d2d38/4.png 295w,
+/static/d4502ecaed8f9857d85cf19df4d6ca68/b9e4f/4.png 590w,
+/static/d4502ecaed8f9857d85cf19df4d6ca68/f9b6a/4.png 885w,
+/static/d4502ecaed8f9857d85cf19df4d6ca68/6d51e/4.png 1010w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
