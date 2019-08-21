@@ -3,8 +3,8 @@
 <p>Gitlab 的接入文档写的还是很完善的, 基本上你全都看下来也花不了半天时间. Gitlab文档 <a href="https://gitlab.com/help/api/README.md">https://gitlab.com/help/api/README.md</a></p>
 <h2>TL;TR</h2>
 <p>当然, 你可以选择跳过上面的文档, 这也是写这篇文章的目的. 你只需要了解两件事:</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">1. 所有 API 都需要权限, 需要在 `URL` 或`header`中加一个`private_token`字段. 你可以在个人资料里找到这个`private_token`值.</code></pre></div>
-<ol start="2">
+<ol>
+<li>所有 API 都需要权限, 需要在 <code class="language-text">URL</code> 或<code class="language-text">header</code>中加一个<code class="language-text">private_token</code>字段. 你可以在个人资料里找到这个<code class="language-text">private_token</code>值.</li>
 <li>
 <p>请求URL格式为</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">GET http://example.com/api/v3/projects?private_token<span class="token operator">=</span>QVy1PB7sTxfy4pqfZM1U</code></pre></div>
