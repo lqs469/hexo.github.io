@@ -1,4 +1,376 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lqs469]]></title><description><![CDATA[lqs469 Blog]]></description><link>https://lqs469.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 21 Aug 2019 02:48:06 GMT</lastBuildDate><item><title><![CDATA[Gitlab API 指北]]></title><description><![CDATA[前段时间为手上的项目做了一个自动化构建平台, 需求大致就是实现从 gitlab 中拿到新的代码, 并且也会对分支做一些增删改查的操作, 基本实现方法当然就是一系列 gitlab 开放的 API 能力. 本文会整理出来以方便大家学习使用. Docs Gitlab…]]></description><link>https://lqs469.github.io/Gitlab API 指北/Gitlab API 指北/</link><guid isPermaLink="false">https://lqs469.github.io/Gitlab API 指北/Gitlab API 指北/</guid><pubDate>Tue, 20 Aug 2019 04:51:01 GMT</pubDate><content:encoded>&lt;p&gt;前段时间为手上的项目做了一个自动化构建平台, 需求大致就是实现从 gitlab 中拿到新的代码, 并且也会对分支做一些增删改查的操作, 基本实现方法当然就是一系列 gitlab 开放的 API 能力. 本文会整理出来以方便大家学习使用.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lqs469]]></title><description><![CDATA[lqs469 Blog]]></description><link>https://lqs469.github.io</link><generator>RSS for Node</generator><lastBuildDate>Mon, 30 Sep 2019 06:57:55 GMT</lastBuildDate><item><title><![CDATA[Vue.js服务端渲染(SSR)不完全指北]]></title><description><![CDATA[What’s this? SSR(Server-Side Rendering) — 服务端渲染 服务端渲染是相对于客户端渲染而言的(Client Side Render), 它的渲染行为发生在服务器端, 渲染完成之后再将完整页面以HTML…]]></description><link>https://lqs469.github.io/Vue.js服务端渲染(SSR)不完全指北/</link><guid isPermaLink="false">https://lqs469.github.io/Vue.js服务端渲染(SSR)不完全指北/</guid><pubDate>Mon, 30 Sep 2019 14:46:40 GMT</pubDate><content:encoded>&lt;h3&gt;What’s this?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;SSR(Server-Side Rendering) — 服务端渲染&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;服务端渲染是相对于客户端渲染而言的(Client Side Render), 它的渲染行为发生在服务器端, 渲染完成之后再将完整页面以HTML字符串的形式交给浏览器, 最后经过”注水”&lt;code class=&quot;language-text&quot;&gt;hydrate&lt;/code&gt;过程将一些事件绑定和Vue状态等注入到输出的静态的页面中, 由同步下发给浏览器的的Vue bundle接管状态, 继续处理接下来的交互逻辑. 这也是一种同构应用的实现(代码可以运行在客户端和服务端中).&lt;/p&gt;
+&lt;h3&gt;When SSR?&lt;/h3&gt;
+&lt;p&gt;那么 &lt;strong&gt;什么情况下该使用SSR方案呢&lt;/strong&gt; , 其实一句话总结下来就是展示型应用:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;对SEO有需求. CSR无法直接满足SEO, 他需要切换成SSR或者借助Prerendering方案. Prerendering: 一种在服务端使用无头浏览器渲染出页面, 再输出静态页面的解决方案, 也能实现SEO需求, 好处是比较简单(通过webpack插件就可以实现)可以保持前端模块不需要SSR改造, 但是性能比SSR差不少.&lt;/li&gt;
+&lt;li&gt;对首屏渲染速度和性能有需求. 如果需要更早的将页面展现给用户而不是白屏的话, 最好的方案还是把渲染工作交给服务端, CSR(SPA)应用的更适合场景应该是中后台web应用, 一般有较多的交互逻辑和页面数据处理, 同时CSR会使用更多的内存, 对浏览器造成较大的压力.&lt;/li&gt;
+&lt;li&gt;过多依赖客户端环境的场景. 直接将渲染工作全部交给客户端和JavaScript来处理其实对于web应用来说是很脆弱的, 浏览器的情况千差万别, 网络环境也是无法预测, 即使做了再多的兼容工作, 也无法保证任何情况下都能完美展示. 有时候即使框架本身也不足以(不愿意)支持所有情况.&lt;/li&gt;
+&lt;li&gt;安全性考量. 对于有权限控制和内容限制的应用, 使用SPA的时候就要考虑很多安全性限制的问题, 对于应用结构的设计增加了不少复杂度.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Why SSR ?&lt;/h3&gt;
+&lt;p&gt;在早期的web开发技术栈中, 实际上都是服务端渲染, 像是Java, PHP, ROR, ASP.NET. 当前端MVC出现之后, 浏览器端渲染模型开始出现并且流行 — “开局一块HTML模板, 元素全靠JS加载”. 这种方式带来了比较快速的页面切换体验和极好的开发效率, 以及丰富的技术生态.
+但是CSR也不是没有缺点, &lt;strong&gt;缺点很明显&lt;/strong&gt;而且不改变其核心思路的话没办法克服:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;SEO不友好
+首先因为开局服务器丢给浏览器的是一块空白(有标记)的HTML模板和一坨打包好的JS代码, 所以做SEO时候普通的爬虫没办法实抓取到真实的web内容, 虽然现代爬虫号称已经能够处理CSR页面, 但是处理成本过高等问题还是让CSR的SEO结果不尽如人意.&lt;/li&gt;
+&lt;li&gt;首屏加载速度
+同样因为浏览器会在接受到完整的一坨JS代码之后才能执行他, 导致了首屏加载经历了:
+解析HTML(渲染HTML模板) -&gt; 获取JS -&gt; 执行JS -&gt; JS渲染页面 -&gt; JS处理数据相关逻辑 -&gt; 页面加载完成. 这样一个过程之后才能完整呈献给用户, 速度自然就下来了, 更不用说网络因素和客户端环境因素对体验的影响. 即使有前端缓存的存在, 但是页面渲染过程仍然不会轻松.&lt;/li&gt;
+&lt;li&gt;鉴权等安全性功能实现起来较复杂
+其次, 因为是服务端一股脑把打包好的JS代码交给用户, 所以如果在应用中有鉴权的逻辑, 就会牵扯到鉴权逻辑的设计. 这时候就要前后端合作来保证安全性, 复杂度增加.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;其实在大多数场景下, 你都没必要使用SPA的方案(可以看看&lt;a href=&quot;https://journal.plausible.io/you-probably-dont-need-a-single-page-app&quot;&gt;这篇文章&lt;/a&gt; ). 那么既然某些场景下不适合使用CSR方案, 我们直接退回到以前的web开发方式就好了, 干嘛要去踩SSR新的坑呢?  那么&lt;strong&gt;对比传统的web应用, 使用框架SSR的好处&lt;/strong&gt;有哪些呢:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;对比传统方式, 首先最大的好处当然就是技术栈生态, Vue, React等前端MVC给开发带来很大便利, 相应的生态也蓬勃发展, 配套的UI套件, 框架组件, 设计语言, API设计很多程度上已经改变了如今的开发方式. 换句话说, 使用jQuery纯手撸的人原来越少了.&lt;/li&gt;
+&lt;li&gt;其次是同构带来的便利. 一套代码由两边的执行环境使用, 可以同时支持SSR和CSR的渲染, 当SSR失效的时候还可以降级为CSR, 或者当服务器压力过大的时候主动降级以增强鲁棒性.&lt;/li&gt;
+&lt;li&gt;对技术人员的技术栈统一. SSR还是使用的前端工程师常规熟悉的技术栈, 没有过大的技术门槛, 也没有太多的技术债, 更适合项目的可持续维护和前端团队的技术发展.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;构建逻辑&lt;/h3&gt;
+&lt;p&gt;在Vue-SSR构建过程中, 会将代码打包分成两个部分: 服务端bundle; 客户端bundle.
+Node.js会处理服务端bundle用于SSR, 客户端bundle会在用户请求时和已经由SSR渲染出的页面一起返回给用户, 然后在浏览器执行”注水”(&lt;code class=&quot;language-text&quot;&gt;hydrate&lt;/code&gt;), 接管Vue接下来的业务逻辑. 这里就会有一个问题, 服务端是如何将store状态交给客户端的呢, 因为整个构建流程是彼此独立的, 数据预取(在进入渲染页面之前获取到页面所需要的数据)之后交给了store, 而注水过程怎么接收store数据? 其实中间有一个特殊的状态保存: &lt;code class=&quot;language-text&quot;&gt;window.__INITIAL_STATE__&lt;/code&gt;, 这个state会在服务端渲染执行&lt;code class=&quot;language-text&quot;&gt;context.state = store.state;&lt;/code&gt;的时候自动写入&lt;code class=&quot;language-text&quot;&gt;window&lt;/code&gt;中, 所以在客户端代码中就就可以直接通过&lt;code class=&quot;language-text&quot;&gt;store.replaceState()&lt;/code&gt;接收服务端预取的数据了.&lt;/p&gt;
+&lt;p&gt;构建逻辑示意图很经典, 如下:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/15d4e944e835243e004ab08e46fa7cd3/41fac/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 45.83761562178828%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAABeElEQVQoz21SyU7DMBDNl3MHiU/gwIUDB4R6AdELCIrEoiK6sURFbVM1KU2adMviJY+x3aRBYMnyeGb0np/fWHmeo9hqSSmRpFmZk2XN1Iu+opcxrs9iWeoiZQ4hJASnohCI40Q3VUk0gQbcgarMPFogJdBcCt1niS36bObD8ebg2K11wtAbUU4oQPkLbBVEmHwMdBxeX+D9cA+r2RQW8aPe8fE6YYD3iPjpiF7KdOMyztAaBMgYIwWiJFKQ0TTAqGXrOLy7wvjsGGm8IUBibtghei6DdDtIujWonO0u4IaxBuBcgXHctEPUmwHFAnnlH5XGZUZZI9kwNy77OD/5RBCaxsH3Gv4qM4Db1z20Hdw2jcwlSfa+HB0zr4bYOdUkZIogpwSa92O8vbjIkqx0dZMydIY+Mm6clIKkc0Myd2foP3fpW6jP3kfaP9i5XB0LdSrXiz9sD+dgJDmvjEZ1dMJoCc4SSgqd347N//vP2FTmNd8Cm9rOrh9Q07fI3BTbyAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;SSR构建逻辑.png&quot;
+        title=&quot;&quot;
+        src=&quot;/static/15d4e944e835243e004ab08e46fa7cd3/b9e4f/1.png&quot;
+        srcset=&quot;/static/15d4e944e835243e004ab08e46fa7cd3/cf440/1.png 148w,
+/static/15d4e944e835243e004ab08e46fa7cd3/d2d38/1.png 295w,
+/static/15d4e944e835243e004ab08e46fa7cd3/b9e4f/1.png 590w,
+/static/15d4e944e835243e004ab08e46fa7cd3/f9b6a/1.png 885w,
+/static/15d4e944e835243e004ab08e46fa7cd3/2d849/1.png 1180w,
+/static/15d4e944e835243e004ab08e46fa7cd3/41fac/1.png 1946w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;所以webpack需要两个入口(服务端, 客户端):&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;entry-client.js&lt;/strong&gt;:
+客户端 entry 只需创建应用程序, 并且将其挂载到DOM, 然后将Store状态同步给客户端bundle：&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; createApp &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;../main&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; app&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; store&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; router &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;createApp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 同步store&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__INITIAL_STATE__&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  store&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replaceState&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__INITIAL_STATE__&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+router&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;onReady&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	router&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;beforeResolve&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;to&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; matched &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; router&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getMatchedComponents&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;to&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; prevMatched &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; router&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getMatchedComponents&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; diffed &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; activated &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; matched&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;c&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; i&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; diffed &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;diffed &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; prevMatched&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; asyncDataHooks &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; activated&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; c&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;asyncData&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; _&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;asyncDataHooks&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    Promise&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;asyncDataHooks&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;hook&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hook&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; store&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; route&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; to &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;client entry asyncData function emit&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+	app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;$mount&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;#app&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;entry-server.js&lt;/strong&gt;:
+服务端入口需要处理路由, 并触发数据预取逻辑&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; createApp &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;../main&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;context&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;resolve&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; reject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; app&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; router&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; store &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;createApp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    router&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;context&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;url&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+	  router&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;onReady&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; matchedComponents &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; router&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getMatchedComponents&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+      &lt;span class=&quot;token comment&quot;&gt;// 对所有匹配的路由组件调用 `asyncData()`&lt;/span&gt;
+      Promise&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+        matchedComponents&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Component&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;asyncData&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; Component&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;asyncData&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; store&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; route&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; router&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;currentRoute &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          context&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;state &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; store&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;state&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;token function&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;app&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;reject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; reject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;具体实现&lt;/h3&gt;
+&lt;!-- &gt; VueSSR + Begg 的实现已经集成进了脚手架工具[K2](http://gitlab.alibaba-inc.com/qinshuo.lqs/k2)中.
+&gt;
+&gt; 感兴趣的同学可以尝试一下, 一键搭建, 即开即用😃 --&gt;
+&lt;p&gt;明确了选型原因和框架特性, 我们就要开始着手搭建一个Vue-SSR框架, 推荐文档: 官方出品的SSR指南 &lt;a href=&quot;https://ssr.vuejs.org/&quot;&gt;https://ssr.vuejs.org/&lt;/a&gt; . 里面讲解了你所需要知道的全部名词解释和API介绍, 基本不需要再单独查资料了. 同时他给出了一个官方出品的 &lt;a href=&quot;https://github.com/vuejs/vue-hackernews-2.0/&quot;&gt;Demo&lt;/a&gt;, demo的作者就是尤雨溪, 你想要参考的内容里面也基本都实现了一遍, 不过这个Demo是基于Express的, 改造成Egg还需要一些工作. &lt;/p&gt;
+&lt;p&gt;Vue-SSR + Egg.js, 在结构上跟普通的Vue服务端渲染也是一样的. 首次请求到达时, 由Egg.js处理, 在服务端执行渲染器逻辑并输出静态页面, 一共输出的还有客户端bundle, 然后客户端bundle接管应用, 继续接下来的任务, 变成一个”普通”的Vue应用. 同时Egg.js还会处理来自页面的异步请求, 处理正常服务端的工作. 下面是应用整体结构的示意:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c3b984632fc7471948f3d2a54f35bcac/af602/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 51.64473684210527%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAAB50lEQVQoz3WSS2/UMBDH80X4bBy5IfWEOHDlwIWCOCAQx6oSAnFHKj1QXiqPpQIqUPeRbbq7eT82tuP48WfstAsqYiI7M7Hzn5/HE1hrYQE/pJQQNC7Mr1n7j+9McI4kSVAUBf62QBuDPs+gsgxVXSMaj8HPInRxDK3UIGa0U/S+1BrVeo2O3kIIcBLW2kDRXpcwMDTVoy9I9vc8ZfXhPdJ7d5E/eYwmDKE3tPD+8vkzHN+8gXx3Bx3rMPtxhpOvM5RJA2MNCRIhm4yRfjyE7Hvw0znat2/AKWZE3WuiXH6HbgswA6wePUS6dR3ZndtYZyVOf64QhylYTaR0ksBld7ireAVGGZ2Z8+GI2GwEe+sK+N59cKK0UkBkOepFiqago4uh5g7M6XjCvpfoFUn0KQyPaNHv8N9kkwH721DzEdpOQRFxmbf49TnEyWiObFl4IWea6hq4SSsJTol4uIPF66toyxAt0bbrhsqgNjfofnT7RdNhGSaoihqSCIeL0X8Eje79hYjoBcrDa2D5MepGeHJLhaYNw9tRGCJsc0rUwZ4/jDF/ZN82znGi7haLPEaZRa5PNnW53IMvJ7vYfreFo/jAx2maYDqdoqqqQRD/scsNfRF/WrzC06MHmJTffMw5Q039647t7DeZgfm+BW/IywAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;SSR应用整体结构.png&quot;
+        title=&quot;&quot;
+        src=&quot;/static/c3b984632fc7471948f3d2a54f35bcac/b9e4f/2.png&quot;
+        srcset=&quot;/static/c3b984632fc7471948f3d2a54f35bcac/cf440/2.png 148w,
+/static/c3b984632fc7471948f3d2a54f35bcac/d2d38/2.png 295w,
+/static/c3b984632fc7471948f3d2a54f35bcac/b9e4f/2.png 590w,
+/static/c3b984632fc7471948f3d2a54f35bcac/f9b6a/2.png 885w,
+/static/c3b984632fc7471948f3d2a54f35bcac/2d849/2.png 1180w,
+/static/c3b984632fc7471948f3d2a54f35bcac/af602/2.png 1824w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;具体来说, SSR的核心思路就是使用&lt;code class=&quot;language-text&quot;&gt;vue-server-renderer&lt;/code&gt;创建一个渲染器(renderer), 然后给这个渲染器传入Vue实例, 渲染器会得到HTML页面, 最后由Egg.js将HTML返回, 实现代码有些繁杂这里就不一一放出来了, 核心流程可以简化成:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 第 1 步：创建一个 Vue 实例&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; app &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Vue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; template&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`&amp;lt;div&gt;Hello World&amp;lt;/div&gt;`&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 第 2 步：创建一个 renderer&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; renderer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;vue-server-renderer&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createRenderer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 第 3 步：将 Vue 实例渲染为 HTML&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; html &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; renderer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;renderToString&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;app&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 第 4 步, 返回 HTML&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;body &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;renderString&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;html&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;具体的实现代码可以在k2搭建的SSR框架中的&lt;code class=&quot;language-text&quot;&gt;app/controller/template.js&lt;/code&gt;文件中找到.&lt;/p&gt;
+&lt;h3&gt;开发环境&lt;/h3&gt;
+&lt;p&gt;SSR + Egg 的生产实现并不难, 但是支持HMR的开发环境搭建就稍麻烦些, 主要是&lt;code class=&quot;language-text&quot;&gt;devMiddleware&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;hotMiddleware&lt;/code&gt;和Egg.js配合使用. 原理是使用这些开发中间件监听并构建Vue文件后放在内存中, 再响应用户的请求.&lt;/p&gt;
+&lt;p&gt;具体来说, 在开发环境下, dev renderer中会执行dev-server并监听Vue代码, 当Vue代码发生变化时更新渲染renderer, 并返回给Egg, Egg会等待dev-server的返回后去执行输出. 因为egg的是基于koa, 所以dev Middleware简单封装一下直接挂载egg中的app上就可以, 具体实现代码可以查看k2搭建的SSR框架中的&lt;code class=&quot;language-text&quot;&gt;build/setup-dev-server.js&lt;/code&gt;文件.&lt;/p&gt;
+&lt;p&gt;这里有个值得注意的地方就是&lt;code class=&quot;language-text&quot;&gt;hotMiddleware&lt;/code&gt;中间键在注册之后就会接管所有请求, 这时候本希望走到Egg的请求就会被指向Vue,  这是不希望看到的, 所以需要在&lt;code class=&quot;language-text&quot;&gt;hotMiddleware&lt;/code&gt;中过滤一下:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// setup-dev-server.js&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hotFn&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;ctx&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// 过滤 HMR&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;url&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;webpack_hmr&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; stream &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;PassThrough&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;body &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; stream&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hotMiddleware&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token function-variable function&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      write&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; stream&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stream&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token function-variable function&quot;&gt;writeHead&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;state&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; headers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;state &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; state&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;headers&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;hotMiddleware headers&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; state&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; headers&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    next
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;use&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;hotFn&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;SSR优化&lt;/h3&gt;
+&lt;p&gt;通过服务端渲染, 我们将应用从IO密集型转为了CPU密集型, CPU的压力会在QPS爆发时剧增, 这时候就需要针对SSR进行一些优化, 常见的优化方式有:&lt;/p&gt;
+&lt;h4&gt;缓存&lt;/h4&gt;
+&lt;p&gt;一般分为页面级别缓存和组件级别缓存.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;页面级别缓存: 对于相同的页面的请求, 其内容也相同(不考虑个性化页面情况), 所以将路由与对应页面缓存下来可以很有效命中缓存, 降低性能开销.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 使用 LRU &lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; microCache &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;LRU&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  max&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  maxAge&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 重要提示：条目在 1 秒后过期。&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 命中缓存&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; hit &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; microCache&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;url&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;hit&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;hit&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 缓存下来&lt;/span&gt;
+microCache&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;url&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; html&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;组件级别缓存: 组件缓存在组件渲染过程进行命中判断, 所以会影响组件渲染结果, 所以要确保组件不依赖上下文状态且无副作用, 换句话说缓存的是不会改变内容的展示型组件. 实现方法是使用&lt;code class=&quot;language-text&quot;&gt;vue-server-renderer&lt;/code&gt;内置的组件级别缓存配置参数, 在创建 renderer 时传入. 更多参数可以参考 &lt;a href=&quot;https://ssr.vuejs.org/zh/api/#cache&quot;&gt;具体缓存实现方式&lt;/a&gt; .&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; renderer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;createRenderer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  cache&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;LRU&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    max&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    maxAge&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;降级方案&lt;/h4&gt;
+&lt;p&gt;核心思路就是当CPU使用率过高的时候即使切换到CSR模式.
+可以结合Egg提供的schedule能力, 在启动时执行一个定时任务, 监控CPU使用率, 当大于阈值时切换到CSR模式. 而Egg也提供了单核schedule能力, 这样可以将定时任务的性能损耗降到很小; 或者在渲染执行时计时, 如果超时则自动返回CSR bundle, 降级为CSR应用, 这样虽然能临时解决CPU高开销无法及时响应的问题, 但用户体验并没有什么实质性改良.&lt;/p&gt;
+&lt;h3&gt;要注意的坑&lt;/h3&gt;
+&lt;p&gt;Vue-SSR的坑还是不少的, 特别是和Egg.js结合时, 经过了一段比较蛋疼的踩坑阶段,  现在终于稳定下来支撑业务. 这里把开发期间&lt;strong&gt;遇到的问题&lt;/strong&gt;总结一下:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;生命周期不同. 这个问题最为明显, 在CSR和SSR中生命周期钩子是不同的. SSR中只有&lt;code class=&quot;language-text&quot;&gt;beforeCreate&lt;/code&gt;和&lt;code class=&quot;language-text&quot;&gt;created&lt;/code&gt;会被执行. 而在CSR中所有周期都会再执行一遍. 另外需要注意的是, 在服务端代码中不要写有全局副作用的代码, 例如写了 &lt;code class=&quot;language-text&quot;&gt;setInterval&lt;/code&gt;而不清除它. 因为在SSR周期没有&lt;code class=&quot;language-text&quot;&gt;beforeDestory&lt;/code&gt;阶段, 所以以往CSR中销毁页面前清除副作用的方法就没法继续使用了, 而此时的&lt;code class=&quot;language-text&quot;&gt;setInterval&lt;/code&gt;就会被永远不会清除了!&lt;/li&gt;
+&lt;li&gt;因为我们采用同构的目的是写一份尽量通用的代码, 让它运行在两端. 所以我们需要对不同端的运行环境特别熟悉才行, Node.js端是没有浏览器对象的, 所以&lt;code class=&quot;language-text&quot;&gt;window&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;document&lt;/code&gt;, DOM操作都没法执行. 同理, 浏览器端是没有&lt;code class=&quot;language-text&quot;&gt;process&lt;/code&gt;对象的. 他们各自的API实现也有差别, 这点需要特别留意. 比较麻烦的就是第三方库的引入, 有时候你并不知道引入的库能不能完全运行在Node端/浏览器端. 如果它只能运行在纯浏览器环境, 那可以在&lt;code class=&quot;language-text&quot;&gt;created&lt;/code&gt;阶段之后引入和执行来避开Node.js下执行.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;避免单例. 在CSR中, 每次我们打开页面都是从服务端下载代码(或缓存), 然后创建一个全局的根Vue实例. 但在SSR中情况有所变化, 因为服务端会一直运行, 如果一直用同一个全局的Vue实例, 就会导致每次客户端的请求到指向了同一个根Vue实例, 就有可能造成状态污染. 所以这里要使用工厂函数在每次请求到来时, 新建一个Vue实例, 执行逻辑返回结果. 同样的, &lt;code class=&quot;language-text&quot;&gt;Store&lt;/code&gt;和&lt;code class=&quot;language-text&quot;&gt;Router&lt;/code&gt;也要这样处理:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// main.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; Vue &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;vue&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; App &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./App.vue&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; createStore &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./store&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; createRouter &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./router&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;createApp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; store &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;createStore&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; router &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;createRouter&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; app &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Vue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    router&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    store&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    render&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;h&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;App&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; app&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; router&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; store &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// router.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; Vue &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;vue&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; Router &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;vue-router&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; Home &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./views/Home&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; About &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./views/About&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+Vue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;use&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Router&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;createRouter&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Router&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    mode&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;history&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    routes&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        path&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        component&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Home&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        path&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;/about&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        component&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; About&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数据预取问题. 在业务中经常会遇到需要我们输出的页面是带有动态数据的, 也就是在渲染页面的时候先异步取一次数据, 然后将返回的数据放入页面中, 最后输出给用户. 其实处理这个逻辑的原理很简单, 就是在服务端整个请求周期中预取数据再注入最后页面就行. 为了尽早的发出请求, 可以在路由模块中执行数据预取逻辑, 在实例化之前就执行异步请求, 然后放入&lt;code class=&quot;language-text&quot;&gt;Vuex&lt;/code&gt;, 然后交给Vue页面去渲染. 这块的代码比较分散, 可以&lt;a href=&quot;https://ssr.vuejs.org/zh/guide/data.html#%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E6%95%B0%E6%8D%AE%E9%A2%84%E5%8F%96-server-data-fetching&quot;&gt;看这里的实现&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;值得注意的是使用&lt;code class=&quot;language-text&quot;&gt;v-html&lt;/code&gt;注入动态获取的HTML内容的时候. 如果HTML内容有&lt;code class=&quot;language-text&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt;所包含的JS代码, 会发现&lt;code class=&quot;language-text&quot;&gt;script&lt;/code&gt;中的事件绑定失效. 其实在这里页面被渲染了两次, 第一次是发生在SSR直接交给浏览器的时候: 此时&lt;code class=&quot;language-text&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt;完整被渲染在浏览器里, 其内容正常执行, 事件绑定也正常的绑定在了当时的DOM元素上. 而第二次渲染时, 走的是CSR: 在这时由于是以&lt;code class=&quot;language-text&quot;&gt;v-html&lt;/code&gt;的方式来渲染替换HTML, 但是&lt;code class=&quot;language-text&quot;&gt;v-html&lt;/code&gt;实质上是&lt;code class=&quot;language-text&quot;&gt;innerHTML&lt;/code&gt;操作, 这样	&lt;code class=&quot;language-text&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt;虽然会被替换上去, 但是其中的内容不会执行(&lt;code class=&quot;language-text&quot;&gt;innerHTML&lt;/code&gt;为安全性考虑而设计). 所以经过这样两次渲染之后, 此时的DOM元素是第二次渲染时得到的, 而正常执行过的JS的事件绑定是绑在在第一次渲染出来的DOM元素上, 这样就出现了虽然DOM存在. 但是无法触发该DOM上的事件的情况.&lt;/p&gt;
+&lt;p&gt;解决方法:
+将获取到的HTML内容进行匹配, 剔出&lt;code class=&quot;language-text&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt;内容, 无论第一次或第二次渲染, 只将&lt;HTML&gt;内容交给&lt;code class=&quot;language-text&quot;&gt;v-html&lt;/code&gt;页面, 然后单独在生命周期&lt;code class=&quot;language-text&quot;&gt;updated&lt;/code&gt;(页面已将HTML内容渲染完成)中将&lt;code class=&quot;language-text&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt;创建出来, 添加到页面里自动执行, 实现绑定.
+并在下一次页面重渲染(可能是页面跳转来到)时判断&lt;code class=&quot;language-text&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt;是否存在, 如果真则先删去再添加, 这样避免添加多余的&lt;code class=&quot;language-text&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt;块.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;而页面为什么会渲染两次呢?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这是由于Vue SSR在初始页面渲染完成后会有一次&lt;code class=&quot;language-text&quot;&gt;hydration&lt;/code&gt;过程, 在这个过程中会照常执行流程&lt;code class=&quot;language-text&quot;&gt;mounted&lt;/code&gt;等生命周期. 此时会有一个自动判定, 判定是否此时的组件渲染出的内容与SSR渲染得到的内容一致, 如果出现不一致就会单独执行一次额外的CSR, 以达到页面被能正确地渲染. 而因为我们使用了&lt;code class=&quot;language-text&quot;&gt;v-html&lt;/code&gt;, 这个过程只有在CSR时才会被执行, 所以导致了两次渲染出来的内容不一致, 触发了Vue SSR的”补偿渲染机制”, 进而执行了第二次渲染.
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/13c8b72d11b89ed2f3a099661be397a6/e3c01/3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 10.620915032679738%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsSAAALEgHS3X78AAAAeklEQVQI1y2Myw6CUAxE+f8/A+RyXwILBWKUxBi9axbtsUQXk85M21PtOSPOoz6i44TGZLlH8xnpg/Wmyfpkd12PWBbzDCMlRF5tS/GeZ91Q1oWK+4bUJ9QdzwZrOqR1aEgGHX4+GvzYx4w+NnS9ofOCXk2XGflP3h++3EiRsVTeG1MAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;image.png&quot;
+        title=&quot;&quot;
+        src=&quot;/static/13c8b72d11b89ed2f3a099661be397a6/b9e4f/3.png&quot;
+        srcset=&quot;/static/13c8b72d11b89ed2f3a099661be397a6/cf440/3.png 148w,
+/static/13c8b72d11b89ed2f3a099661be397a6/d2d38/3.png 295w,
+/static/13c8b72d11b89ed2f3a099661be397a6/b9e4f/3.png 590w,
+/static/13c8b72d11b89ed2f3a099661be397a6/f9b6a/3.png 885w,
+/static/13c8b72d11b89ed2f3a099661be397a6/2d849/3.png 1180w,
+/static/13c8b72d11b89ed2f3a099661be397a6/e3c01/3.png 1224w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cookie传递. 用户的请求会先在服务端被处理, 此时会带客户端的cookie, 但如果在服务端中Egg.js发出异步请求, 这个异步请求中并不带客户端的cookie, 所以如果异步请求需要带携带用户信息的cookie, 此时需要将上下文中的cookie加入Egg的异步请求headers中. 同时返回给客户端时如果涉及到有关cookie的操作也要同步处理一下, 例如用户注销: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; res &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/logout&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  method&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;POST&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  dataType&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;json&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  headers&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// 传递 cookie&lt;/span&gt;
+    cookie&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;request&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;header&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;cookie&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;res&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// 处理客户端 cookie&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;cookies&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;passport_login&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    domain&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;.XXX.com&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;总结&lt;/h3&gt;
+&lt;p&gt;在实现一个展示型web应用, 或者对首屏性能要求较高的场景(例如官网, 技术文档). SSR都是一个很有效且值得投入的技术方案, 一方面享受了框架带来的便利和生态福利, 一方面也兼顾了性能和可扩展性, 对团队的横向探索和技术栈统一也很有好处. 得益于Vue(或React)和Egg.js生态的优势, 丰富的第三方库和繁荣生态支持, 让开发者有更多的选择和优化空间. 同时开发效率也更适合现代web应用的开发节奏, 不需要很高的技术门槛,  就可以上手开发并且支撑大部分的业务场景. 同时Egg.js框架的成熟也让服务端的能力更为强大, 对于安全性和稳定性的设计让我们在处理复杂场景中更加得心应手.&lt;/p&gt;
+&lt;p&gt;当然SSR中的坑也不少, 主要是服务端环境下的API规则的不同和一些数据和逻辑处理的约定(例如生命周期, 环境变量, 数据预取), 但只要注意规避这些问题, 在SSR的开发中还是比较顺滑的. 以目前的API设计来说, SPA的代码无法直接放到服务端就能跑(除非实现CSR应用时就考虑了SSR), 其中想改造的话成本可能还不小. 但是一个新应用想要设计为SSR方案, 基本上开发与维护成本和一个SPA应用差不多, 所以在业务开发中是一个较为可靠的技术方案.&lt;/p&gt;
+&lt;!-- 目前我们实现的[k2](http://gitlab.alibaba-inc.com/qinshuo.lqs/k2)脚手架已经集成了 Begg + Vue SSR 解决方案, 一键部署, 即开即用, 欢迎大家尝试. --&gt;</content:encoded></item><item><title><![CDATA[Gitlab API 指北]]></title><description><![CDATA[前段时间为手上的项目做了一个自动化构建平台, 需求大致就是实现从 gitlab 中拿到新的代码, 并且也会对分支做一些增删改查的操作, 基本实现方法当然就是一系列 gitlab 开放的 API 能力. 本文会整理出来以方便大家学习使用. Docs Gitlab…]]></description><link>https://lqs469.github.io/Gitlab API 指北/Gitlab API 指北/</link><guid isPermaLink="false">https://lqs469.github.io/Gitlab API 指北/Gitlab API 指北/</guid><pubDate>Tue, 20 Aug 2019 04:51:01 GMT</pubDate><content:encoded>&lt;p&gt;前段时间为手上的项目做了一个自动化构建平台, 需求大致就是实现从 gitlab 中拿到新的代码, 并且也会对分支做一些增删改查的操作, 基本实现方法当然就是一系列 gitlab 开放的 API 能力. 本文会整理出来以方便大家学习使用.&lt;/p&gt;
 &lt;h2&gt;Docs&lt;/h2&gt;
 &lt;p&gt;Gitlab 的接入文档写的还是很完善的, 基本上你全都看下来也花不了半天时间. Gitlab文档 &lt;a href=&quot;https://gitlab.com/help/api/README.md&quot;&gt;https://gitlab.com/help/api/README.md&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;TL;TR&lt;/h2&gt;
