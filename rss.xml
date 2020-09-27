@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lqs469]]></title><description><![CDATA[lqs469 Blog]]></description><link>https://lqs469.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 19 May 2020 16:02:37 GMT</lastBuildDate><item><title><![CDATA[NLRealtimeRecords]]></title><link>https://lqs469.github.io/NLRealtimeRecords/</link><guid isPermaLink="false">https://lqs469.github.io/NLRealtimeRecords/</guid><content:encoded></content:encoded></item><item><title><![CDATA[EuroCup2016]]></title><link>https://lqs469.github.io/WorldCup/</link><guid isPermaLink="false">https://lqs469.github.io/WorldCup/</guid><content:encoded></content:encoded></item><item><title><![CDATA[Popstar Game]]></title><link>https://lqs469.github.io/popstar/</link><guid isPermaLink="false">https://lqs469.github.io/popstar/</guid><content:encoded></content:encoded></item><item><title><![CDATA[Star]]></title><link>https://lqs469.github.io/Star/</link><guid isPermaLink="false">https://lqs469.github.io/Star/</guid><content:encoded></content:encoded></item><item><title><![CDATA[Confluence Export]]></title><link>https://lqs469.github.io/confluence-export/</link><guid isPermaLink="false">https://lqs469.github.io/confluence-export/</guid><content:encoded></content:encoded></item><item><title><![CDATA[Xmas hat]]></title><link>https://lqs469.github.io/XmasHat/</link><guid isPermaLink="false">https://lqs469.github.io/XmasHat/</guid><content:encoded></content:encoded></item><item><title><![CDATA[micro-serverless]]></title><link>https://lqs469.github.io/micro-serverless/</link><guid isPermaLink="false">https://lqs469.github.io/micro-serverless/</guid><content:encoded></content:encoded></item><item><title><![CDATA[也许你想要的只是一个静态应用]]></title><description><![CDATA[前言 记得刚开始学习做网站的时候，最先学会写出一个 HTML，再给他加上一些 CSS 样式作为修饰，也许最后再加上一丢丢 Javascript 去辅助出一些效果，duang…]]></description><link>https://lqs469.github.io/也许你想要的只是一个静态应用/也许你想要的只是一个静态应用/</link><guid isPermaLink="false">https://lqs469.github.io/也许你想要的只是一个静态应用/也许你想要的只是一个静态应用/</guid><pubDate>Fri, 10 Apr 2020 20:39:47 GMT</pubDate><content:encoded>&lt;h2&gt;前言&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lqs469]]></title><description><![CDATA[lqs469 Blog]]></description><link>https://lqs469.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 27 Sep 2020 13:47:43 GMT</lastBuildDate><item><title><![CDATA[NLRealtimeRecords]]></title><link>https://lqs469.github.io/NLRealtimeRecords/</link><guid isPermaLink="false">https://lqs469.github.io/NLRealtimeRecords/</guid><content:encoded></content:encoded></item><item><title><![CDATA[Star]]></title><link>https://lqs469.github.io/Star/</link><guid isPermaLink="false">https://lqs469.github.io/Star/</guid><content:encoded></content:encoded></item><item><title><![CDATA[EuroCup2016]]></title><link>https://lqs469.github.io/WorldCup/</link><guid isPermaLink="false">https://lqs469.github.io/WorldCup/</guid><content:encoded></content:encoded></item><item><title><![CDATA[Xmas hat]]></title><link>https://lqs469.github.io/XmasHat/</link><guid isPermaLink="false">https://lqs469.github.io/XmasHat/</guid><content:encoded></content:encoded></item><item><title><![CDATA[Popstar Game]]></title><link>https://lqs469.github.io/popstar/</link><guid isPermaLink="false">https://lqs469.github.io/popstar/</guid><content:encoded></content:encoded></item><item><title><![CDATA[micro-serverless]]></title><link>https://lqs469.github.io/micro-serverless/</link><guid isPermaLink="false">https://lqs469.github.io/micro-serverless/</guid><content:encoded></content:encoded></item><item><title><![CDATA[Confluence Export]]></title><link>https://lqs469.github.io/confluence-export/</link><guid isPermaLink="false">https://lqs469.github.io/confluence-export/</guid><content:encoded></content:encoded></item><item><title><![CDATA[也许你想要的只是一个静态应用]]></title><description><![CDATA[前言 记得刚开始学习做网站的时候，最先学会写出一个 HTML，再给他加上一些 CSS 样式作为修饰，也许最后再加上一丢丢 Javascript 去辅助出一些效果，duang…]]></description><link>https://lqs469.github.io/也许你想要的只是一个静态应用/</link><guid isPermaLink="false">https://lqs469.github.io/也许你想要的只是一个静态应用/</guid><pubDate>Fri, 10 Apr 2020 20:39:47 GMT</pubDate><content:encoded>&lt;h2&gt;前言&lt;/h2&gt;
 &lt;p&gt;记得刚开始学习做网站的时候，最先学会写出一个 HTML，再给他加上一些 CSS 样式作为修饰，也许最后再加上一丢丢 Javascript 去辅助出一些效果，duang ～ 一个最最基础的网站就完成了，然后我们把它丢到服务器上托管着，用户就可以访问到了。再此之后，我们又学会了用 Java、Python 做动态网站，学会用更复杂的 Javascript 去开发前端 MVC 应用、前后端分离、RESTful。。。&lt;/p&gt;
 &lt;p&gt;然鹅，最近几年静态网站似乎又不可思议的火了起来，类似于 Gatsby.js、Next.js 等带 SSG(Static Site Generator) 功能框架受到了一些人的欢迎，这是科技的退步，还是人心的复古，让我们一起走进今天的话题——也许你想要的只是一个静态网站。&lt;/p&gt;
 &lt;p&gt;关于 SSG、JAMstack 究竟是什么，这里就不做赘述了。这里给出一个我认为最简短的解释：&lt;/p&gt;
@@ -71,7 +71,7 @@
 &lt;p&gt;然鹅，因为编译速度还不够快，所以现阶段静态应用的依旧受限，上面我也表达出了，并不是所有应用都适合静态化。实时控制台类型的应用就不一定适合，但其实他也可以最大程度的“静态化”，除去数据呈现部分，控制台的骨架、Header、首屏、甚至载入态都是可以静态化的，在此之上再加上异步请求的数据去更新页面。也许你觉得这样做的意义并不大，的确如此，但是如果只是为了首屏加载或者 SEO 目的，其实你已经一定程度上达到了，剩下追求用户体验的目标就可以更多放到 REST API （异步请求）的优化上了。&lt;/p&gt;
 &lt;p&gt;同理，此类型的应用也可以是 Feed 流类型的应用，比如微博推特，核心内容是不断更新的，甚至用户个性化数据，但是页面骨架不会变，路由不会变，静态应用还是可以发挥作用，加速首屏渲染速度，简化应用模型，一定程度上减少一些服务端压力。&lt;/p&gt;
 &lt;h2&gt;总结&lt;/h2&gt;
-&lt;p&gt;静态应用以及 SSG 的技术栈给前端生态带来一些新的解决思路，当我们熟悉了要么 SPA，要么 SSR 之后，发现原来还可以这么玩，老瓶装新酒焕发生机，这无疑给我们一阵头脑风暴。但不论怎么变化，客户端交付给用户的东西是不变的，围绕这一点，前端工程师或者端工程师可以发挥的空间还有很多。而这项技术本身，随着增量构建和构建本身的不断优化加速、解放潜力，也许 SSG 在未来会成为一个不错的解决方案，甚至成为主流也说不定。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Node.js VM 不完全指北]]></title><description><![CDATA[前言  是 Node.js 顶级模块之一，你可以直接在 Node.js 中使用  引入， 的功能是可以在 V8 虚拟机的上下文中编译和执行 JavaScript 代码。 The vm module enables compiling and running code within…]]></description><link>https://lqs469.github.io/Node.js VM 不完全指北/Node.js VM 不完全指北/</link><guid isPermaLink="false">https://lqs469.github.io/Node.js VM 不完全指北/Node.js VM 不完全指北/</guid><pubDate>Thu, 09 Apr 2020 16:27:40 GMT</pubDate><content:encoded>&lt;h2&gt;前言&lt;/h2&gt;
+&lt;p&gt;静态应用以及 SSG 的技术栈给前端生态带来一些新的解决思路，当我们熟悉了要么 SPA，要么 SSR 之后，发现原来还可以这么玩，老瓶装新酒焕发生机，这无疑给我们一阵头脑风暴。但不论怎么变化，客户端交付给用户的东西是不变的，围绕这一点，前端工程师或者端工程师可以发挥的空间还有很多。而这项技术本身，随着增量构建和构建本身的不断优化加速、解放潜力，也许 SSG 在未来会成为一个不错的解决方案，甚至成为主流也说不定。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Node.js VM 不完全指北]]></title><description><![CDATA[前言  是 Node.js 顶级模块之一，你可以直接在 Node.js 中使用  引入， 的功能是可以在 V8 虚拟机的上下文中编译和执行 JavaScript 代码。 The vm module enables compiling and running code within…]]></description><link>https://lqs469.github.io/Node.js VM 不完全指北/</link><guid isPermaLink="false">https://lqs469.github.io/Node.js VM 不完全指北/</guid><pubDate>Thu, 09 Apr 2020 16:27:40 GMT</pubDate><content:encoded>&lt;h2&gt;前言&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://nodejs.org/api/vm.html#vm_vm_executing_javascript&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;vm&lt;/code&gt;&lt;/a&gt; 是 Node.js 顶级模块之一，你可以直接在 Node.js 中使用 &lt;code class=&quot;language-text&quot;&gt;require&lt;/code&gt; 引入，&lt;code class=&quot;language-text&quot;&gt;vm&lt;/code&gt; 的功能是可以在 V8 虚拟机的上下文中编译和执行 JavaScript 代码。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The vm module enables compiling and running code within V8 Virtual Machine contexts.
@@ -287,28 +287,25 @@ eval: 0.156ms&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;在Vue-SSR构建过程中, 会将代码打包分成两个部分: 服务端bundle; 客户端bundle.
 Node.js会处理服务端bundle用于SSR, 客户端bundle会在用户请求时和已经由SSR渲染出的页面一起返回给用户, 然后在浏览器执行”注水”(&lt;code class=&quot;language-text&quot;&gt;hydrate&lt;/code&gt;), 接管Vue接下来的业务逻辑. 这里就会有一个问题, 服务端是如何将store状态交给客户端的呢, 因为整个构建流程是彼此独立的, 数据预取(在进入渲染页面之前获取到页面所需要的数据)之后交给了store, 而注水过程怎么接收store数据? 其实中间有一个特殊的状态保存: &lt;code class=&quot;language-text&quot;&gt;window.__INITIAL_STATE__&lt;/code&gt;, 这个state会在服务端渲染执行&lt;code class=&quot;language-text&quot;&gt;context.state = store.state;&lt;/code&gt;的时候自动写入&lt;code class=&quot;language-text&quot;&gt;window&lt;/code&gt;中, 所以在客户端代码中就就可以直接通过&lt;code class=&quot;language-text&quot;&gt;store.replaceState()&lt;/code&gt;接收服务端预取的数据了.&lt;/p&gt;
 &lt;p&gt;构建逻辑示意图很经典, 如下:&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/15d4e944e835243e004ab08e46fa7cd3/99e81/1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 45.83761562178828%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAABeElEQVQoz21SyU7DMBDNl3MHiU/gwIUDB4R6AdELCIrEoiK6sURFbVM1KU2adMviJY+x3aRBYMnyeGb0np/fWHmeo9hqSSmRpFmZk2XN1Iu+opcxrs9iWeoiZQ4hJASnohCI40Q3VUk0gQbcgarMPFogJdBcCt1niS36bObD8ebg2K11wtAbUU4oQPkLbBVEmHwMdBxeX+D9cA+r2RQW8aPe8fE6YYD3iPjpiF7KdOMyztAaBMgYIwWiJFKQ0TTAqGXrOLy7wvjsGGm8IUBibtghei6DdDtIujWonO0u4IaxBuBcgXHctEPUmwHFAnnlH5XGZUZZI9kwNy77OD/5RBCaxsH3Gv4qM4Db1z20Hdw2jcwlSfa+HB0zr4bYOdUkZIogpwSa92O8vbjIkqx0dZMydIY+Mm6clIKkc0Myd2foP3fpW6jP3kfaP9i5XB0LdSrXiz9sD+dgJDmvjEZ1dMJoCc4SSgqd347N//vP2FTmNd8Cm9rOrh9Q07fI3BTbyAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 45.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAABeElEQVQoz21SyU7DMBDNl3MHiU/gwIUDB4R6AdELCIrEoiK6sURFbVM1KU2adMviJY+x3aRBYMnyeGb0np/fWHmeo9hqSSmRpFmZk2XN1Iu+opcxrs9iWeoiZQ4hJASnohCI40Q3VUk0gQbcgarMPFogJdBcCt1niS36bObD8ebg2K11wtAbUU4oQPkLbBVEmHwMdBxeX+D9cA+r2RQW8aPe8fE6YYD3iPjpiF7KdOMyztAaBMgYIwWiJFKQ0TTAqGXrOLy7wvjsGGm8IUBibtghei6DdDtIujWonO0u4IaxBuBcgXHctEPUmwHFAnnlH5XGZUZZI9kwNy77OD/5RBCaxsH3Gv4qM4Db1z20Hdw2jcwlSfa+HB0zr4bYOdUkZIogpwSa92O8vbjIkqx0dZMydIY+Mm6clIKkc0Myd2foP3fpW6jP3kfaP9i5XB0LdSrXiz9sD+dgJDmvjEZ1dMJoCc4SSgqd347N//vP2FTmNd8Cm9rOrh9Q07fI3BTbyAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;SSR构建逻辑.png&quot;
-        title=&quot;&quot;
+        title=&quot;SSR构建逻辑.png&quot;
         src=&quot;/static/15d4e944e835243e004ab08e46fa7cd3/fcda8/1.png&quot;
         srcset=&quot;/static/15d4e944e835243e004ab08e46fa7cd3/12f09/1.png 148w,
 /static/15d4e944e835243e004ab08e46fa7cd3/e4a3f/1.png 295w,
@@ -317,12 +314,11 @@ Node.js会处理服务端bundle用于SSR, 客户端bundle会在用户请求时�
 /static/15d4e944e835243e004ab08e46fa7cd3/c83ae/1.png 1180w,
 /static/15d4e944e835243e004ab08e46fa7cd3/99e81/1.png 1946w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;所以webpack需要两个入口(服务端, 客户端):&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;entry-client.js&lt;/strong&gt;:
 客户端 entry 只需创建应用程序, 并且将其挂载到DOM, 然后将Store状态同步给客户端bundle：&lt;/p&gt;
@@ -392,28 +388,25 @@ router&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
 &gt; 感兴趣的同学可以尝试一下, 一键搭建, 即开即用😃 --&gt;
 &lt;p&gt;明确了选型原因和框架特性, 我们就要开始着手搭建一个Vue-SSR框架, 推荐文档: 官方出品的SSR指南 &lt;a href=&quot;https://ssr.vuejs.org/&quot;&gt;https://ssr.vuejs.org/&lt;/a&gt; . 里面讲解了你所需要知道的全部名词解释和API介绍, 基本不需要再单独查资料了. 同时他给出了一个官方出品的 &lt;a href=&quot;https://github.com/vuejs/vue-hackernews-2.0/&quot;&gt;Demo&lt;/a&gt;, demo的作者就是尤雨溪, 你想要参考的内容里面也基本都实现了一遍, 不过这个Demo是基于Express的, 改造成Egg还需要一些工作. &lt;/p&gt;
 &lt;p&gt;Vue-SSR + Egg.js, 在结构上跟普通的Vue服务端渲染也是一样的. 首次请求到达时, 由Egg.js处理, 在服务端执行渲染器逻辑并输出静态页面, 一共输出的还有客户端bundle, 然后客户端bundle接管应用, 继续接下来的任务, 变成一个”普通”的Vue应用. 同时Egg.js还会处理来自页面的异步请求, 处理正常服务端的工作. 下面是应用整体结构的示意:&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/c3b984632fc7471948f3d2a54f35bcac/92bb4/2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 51.64473684210527%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAAB50lEQVQoz3WSS2/UMBDH80X4bBy5IfWEOHDlwIWCOCAQx6oSAnFHKj1QXiqPpQIqUPeRbbq7eT82tuP48WfstAsqYiI7M7Hzn5/HE1hrYQE/pJQQNC7Mr1n7j+9McI4kSVAUBf62QBuDPs+gsgxVXSMaj8HPInRxDK3UIGa0U/S+1BrVeo2O3kIIcBLW2kDRXpcwMDTVoy9I9vc8ZfXhPdJ7d5E/eYwmDKE3tPD+8vkzHN+8gXx3Bx3rMPtxhpOvM5RJA2MNCRIhm4yRfjyE7Hvw0znat2/AKWZE3WuiXH6HbgswA6wePUS6dR3ZndtYZyVOf64QhylYTaR0ksBld7ireAVGGZ2Z8+GI2GwEe+sK+N59cKK0UkBkOepFiqago4uh5g7M6XjCvpfoFUn0KQyPaNHv8N9kkwH721DzEdpOQRFxmbf49TnEyWiObFl4IWea6hq4SSsJTol4uIPF66toyxAt0bbrhsqgNjfofnT7RdNhGSaoihqSCIeL0X8Eje79hYjoBcrDa2D5MepGeHJLhaYNw9tRGCJsc0rUwZ4/jDF/ZN82znGi7haLPEaZRa5PNnW53IMvJ7vYfreFo/jAx2maYDqdoqqqQRD/scsNfRF/WrzC06MHmJTffMw5Q039647t7DeZgfm+BW/IywAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 51.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAAB50lEQVQoz3WSS2/UMBDH80X4bBy5IfWEOHDlwIWCOCAQx6oSAnFHKj1QXiqPpQIqUPeRbbq7eT82tuP48WfstAsqYiI7M7Hzn5/HE1hrYQE/pJQQNC7Mr1n7j+9McI4kSVAUBf62QBuDPs+gsgxVXSMaj8HPInRxDK3UIGa0U/S+1BrVeo2O3kIIcBLW2kDRXpcwMDTVoy9I9vc8ZfXhPdJ7d5E/eYwmDKE3tPD+8vkzHN+8gXx3Bx3rMPtxhpOvM5RJA2MNCRIhm4yRfjyE7Hvw0znat2/AKWZE3WuiXH6HbgswA6wePUS6dR3ZndtYZyVOf64QhylYTaR0ksBld7ireAVGGZ2Z8+GI2GwEe+sK+N59cKK0UkBkOepFiqago4uh5g7M6XjCvpfoFUn0KQyPaNHv8N9kkwH721DzEdpOQRFxmbf49TnEyWiObFl4IWea6hq4SSsJTol4uIPF66toyxAt0bbrhsqgNjfofnT7RdNhGSaoihqSCIeL0X8Eje79hYjoBcrDa2D5MepGeHJLhaYNw9tRGCJsc0rUwZ4/jDF/ZN82znGi7haLPEaZRa5PNnW53IMvJ7vYfreFo/jAx2maYDqdoqqqQRD/scsNfRF/WrzC06MHmJTffMw5Q039647t7DeZgfm+BW/IywAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;SSR应用整体结构.png&quot;
-        title=&quot;&quot;
+        title=&quot;SSR应用整体结构.png&quot;
         src=&quot;/static/c3b984632fc7471948f3d2a54f35bcac/fcda8/2.png&quot;
         srcset=&quot;/static/c3b984632fc7471948f3d2a54f35bcac/12f09/2.png 148w,
 /static/c3b984632fc7471948f3d2a54f35bcac/e4a3f/2.png 295w,
@@ -422,12 +415,11 @@ router&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
 /static/c3b984632fc7471948f3d2a54f35bcac/c83ae/2.png 1180w,
 /static/c3b984632fc7471948f3d2a54f35bcac/92bb4/2.png 1824w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;具体来说, SSR的核心思路就是使用&lt;code class=&quot;language-text&quot;&gt;vue-server-renderer&lt;/code&gt;创建一个渲染器(renderer), 然后给这个渲染器传入Vue实例, 渲染器会得到HTML页面, 最后由Egg.js将HTML返回, 实现代码有些繁杂这里就不一一放出来了, 核心流程可以简化成:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 第 1 步：创建一个 Vue 实例&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; app &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Vue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; template&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&amp;lt;div&gt;Hello World&amp;lt;/div&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -567,28 +559,25 @@ Vue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
 并在下一次页面重渲染(可能是页面跳转来到)时判断&lt;code class=&quot;language-text&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt;是否存在, 如果真则先删去再添加, 这样避免添加多余的&lt;code class=&quot;language-text&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt;块.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;而页面为什么会渲染两次呢?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;这是由于Vue SSR在初始页面渲染完成后会有一次&lt;code class=&quot;language-text&quot;&gt;hydration&lt;/code&gt;过程, 在这个过程中会照常执行流程&lt;code class=&quot;language-text&quot;&gt;mounted&lt;/code&gt;等生命周期. 此时会有一个自动判定, 判定是否此时的组件渲染出的内容与SSR渲染得到的内容一致, 如果出现不一致就会单独执行一次额外的CSR, 以达到页面被能正确地渲染. 而因为我们使用了&lt;code class=&quot;language-text&quot;&gt;v-html&lt;/code&gt;, 这个过程只有在CSR时才会被执行, 所以导致了两次渲染出来的内容不一致, 触发了Vue SSR的”补偿渲染机制”, 进而执行了第二次渲染.
-
-  &lt;a
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/13c8b72d11b89ed2f3a099661be397a6/d9b5d/3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 10.620915032679738%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsSAAALEgHS3X78AAAAeklEQVQI1y2Myw6CUAxE+f8/A+RyXwILBWKUxBi9axbtsUQXk85M21PtOSPOoz6i44TGZLlH8xnpg/Wmyfpkd12PWBbzDCMlRF5tS/GeZ91Q1oWK+4bUJ9QdzwZrOqR1aEgGHX4+GvzYx4w+NnS9ofOCXk2XGflP3h++3EiRsVTeG1MAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 10.81081081081081%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsSAAALEgHS3X78AAAAeklEQVQI1y2Myw6CUAxE+f8/A+RyXwILBWKUxBi9axbtsUQXk85M21PtOSPOoz6i44TGZLlH8xnpg/Wmyfpkd12PWBbzDCMlRF5tS/GeZ91Q1oWK+4bUJ9QdzwZrOqR1aEgGHX4+GvzYx4w+NnS9ofOCXk2XGflP3h++3EiRsVTeG1MAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;image.png&quot;
-        title=&quot;&quot;
+        title=&quot;image.png&quot;
         src=&quot;/static/13c8b72d11b89ed2f3a099661be397a6/fcda8/3.png&quot;
         srcset=&quot;/static/13c8b72d11b89ed2f3a099661be397a6/12f09/3.png 148w,
 /static/13c8b72d11b89ed2f3a099661be397a6/e4a3f/3.png 295w,
@@ -597,12 +586,11 @@ Vue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
 /static/13c8b72d11b89ed2f3a099661be397a6/c83ae/3.png 1180w,
 /static/13c8b72d11b89ed2f3a099661be397a6/d9b5d/3.png 1224w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Cookie传递. 用户的请求会先在服务端被处理, 此时会带客户端的cookie, 但如果在服务端中Egg.js发出异步请求, 这个异步请求中并不带客户端的cookie, 所以如果异步请求需要带携带用户信息的cookie, 此时需要将上下文中的cookie加入Egg的异步请求headers中. 同时返回给客户端时如果涉及到有关cookie的操作也要同步处理一下, 例如用户注销: &lt;/p&gt;
@@ -626,7 +614,7 @@ Vue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
 &lt;h3&gt;总结&lt;/h3&gt;
 &lt;p&gt;在实现一个展示型web应用, 或者对首屏性能要求较高的场景(例如官网, 技术文档). SSR都是一个很有效且值得投入的技术方案, 一方面享受了框架带来的便利和生态福利, 一方面也兼顾了性能和可扩展性, 对团队的横向探索和技术栈统一也很有好处. 得益于Vue(或React)和Egg.js生态的优势, 丰富的第三方库和繁荣生态支持, 让开发者有更多的选择和优化空间. 同时开发效率也更适合现代web应用的开发节奏, 不需要很高的技术门槛,  就可以上手开发并且支撑大部分的业务场景. 同时Egg.js框架的成熟也让服务端的能力更为强大, 对于安全性和稳定性的设计让我们在处理复杂场景中更加得心应手.&lt;/p&gt;
 &lt;p&gt;当然SSR中的坑也不少, 主要是服务端环境下的API规则的不同和一些数据和逻辑处理的约定(例如生命周期, 环境变量, 数据预取), 但只要注意规避这些问题, 在SSR的开发中还是比较顺滑的. 以目前的API设计来说, SPA的代码无法直接放到服务端就能跑(除非实现CSR应用时就考虑了SSR), 其中想改造的话成本可能还不小. 但是一个新应用想要设计为SSR方案, 基本上开发与维护成本和一个SPA应用差不多, 所以在业务开发中是一个较为可靠的技术方案.&lt;/p&gt;
-&lt;!-- 目前我们实现的[k2](http://gitlab.alibaba-inc.com/qinshuo.lqs/k2)脚手架已经集成了 Begg + Vue SSR 解决方案, 一键部署, 即开即用, 欢迎大家尝试. --&gt;</content:encoded></item><item><title><![CDATA[Gitlab API 指北]]></title><description><![CDATA[前段时间为手上的项目做了一个自动化构建平台, 需求大致就是实现从 gitlab 中拿到新的代码, 并且也会对分支做一些增删改查的操作, 基本实现方法当然就是一系列 gitlab 开放的 API 能力. 本文会整理出来以方便大家学习使用. Docs Gitlab…]]></description><link>https://lqs469.github.io/Gitlab API 指北/Gitlab API 指北/</link><guid isPermaLink="false">https://lqs469.github.io/Gitlab API 指北/Gitlab API 指北/</guid><pubDate>Tue, 20 Aug 2019 04:51:01 GMT</pubDate><content:encoded>&lt;p&gt;前段时间为手上的项目做了一个自动化构建平台, 需求大致就是实现从 gitlab 中拿到新的代码, 并且也会对分支做一些增删改查的操作, 基本实现方法当然就是一系列 gitlab 开放的 API 能力. 本文会整理出来以方便大家学习使用.&lt;/p&gt;
+&lt;!-- 目前我们实现的[k2](http://gitlab.alibaba-inc.com/qinshuo.lqs/k2)脚手架已经集成了 Begg + Vue SSR 解决方案, 一键部署, 即开即用, 欢迎大家尝试. --&gt;</content:encoded></item><item><title><![CDATA[Gitlab API不完全指北]]></title><description><![CDATA[前段时间为手上的项目做了一个自动化构建平台, 需求大致就是实现从 gitlab 中拿到新的代码, 并且也会对分支做一些增删改查的操作, 基本实现方法当然就是一系列 gitlab 开放的 API 能力. 本文会整理出来以方便大家学习使用. Docs Gitlab…]]></description><link>https://lqs469.github.io/Gitlab API 指北/</link><guid isPermaLink="false">https://lqs469.github.io/Gitlab API 指北/</guid><pubDate>Tue, 20 Aug 2019 04:51:01 GMT</pubDate><content:encoded>&lt;p&gt;前段时间为手上的项目做了一个自动化构建平台, 需求大致就是实现从 gitlab 中拿到新的代码, 并且也会对分支做一些增删改查的操作, 基本实现方法当然就是一系列 gitlab 开放的 API 能力. 本文会整理出来以方便大家学习使用.&lt;/p&gt;
 &lt;h2&gt;Docs&lt;/h2&gt;
 &lt;p&gt;Gitlab 的接入文档写的还是很完善的, 基本上你全都看下来也花不了半天时间. Gitlab文档 &lt;a href=&quot;https://gitlab.com/help/api/README.md&quot;&gt;https://gitlab.com/help/api/README.md&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;TL;TR&lt;/h2&gt;
@@ -760,7 +748,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;GroupProjects&l
 &lt;blockquote&gt;
 &lt;p&gt;友情提示:
 node-gitlab 的文档少得可怜, 可能作者觉得官方文档已经足够了, 建议直接看&lt;code class=&quot;language-text&quot;&gt;/src/services&lt;/code&gt;下的源码, 找同名的方法即可.&lt;/p&gt;
-&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[10x工程师]]></title><description><![CDATA[硅谷里提到了一个很有趣的概念， 叫做“10x工程师”。Big Head 形容 Richard 的时候说到： “Richard is a 10xer. I’m barely a 1xer.” — Big Head, HBO’s Silicon Valley Silicon…]]></description><link>https://lqs469.github.io/10x工程师/10x工程师/</link><guid isPermaLink="false">https://lqs469.github.io/10x工程师/10x工程师/</guid><pubDate>Sun, 14 Jul 2019 00:36:41 GMT</pubDate><content:encoded>&lt;p&gt;硅谷里提到了一个很有趣的概念， 叫做“10x工程师”。Big Head 形容 Richard 的时候说到：&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[10x工程师]]></title><description><![CDATA[硅谷里提到了一个很有趣的概念， 叫做“10x工程师”。Big Head 形容 Richard 的时候说到： “Richard is a 10xer. I’m barely a 1xer.” — Big Head, HBO’s Silicon Valley Silicon…]]></description><link>https://lqs469.github.io/10x工程师/</link><guid isPermaLink="false">https://lqs469.github.io/10x工程师/</guid><pubDate>Sun, 14 Jul 2019 00:36:41 GMT</pubDate><content:encoded>&lt;p&gt;硅谷里提到了一个很有趣的概念， 叫做“10x工程师”。Big Head 形容 Richard 的时候说到：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“Richard is a 10xer. I’m barely a 1xer.”&lt;/p&gt;
 &lt;p&gt;— Big Head, HBO’s Silicon Valley&lt;/p&gt;
@@ -1186,40 +1174,36 @@ regexGreekSymbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&l
 &lt;p&gt;&lt;a href=&quot;https://reach.tech/router&quot;&gt;Reach-Router&lt;/a&gt; 是&lt;strong&gt;前&lt;/strong&gt; ReactRouter 成员 Ryan Florence 开发的一套基于 react 的路由控件. 那么已经有比较成熟的 ReactRouter 了, 为什么要”再”做一套 Router 呢, 最初的原因有兴趣(hào shi)的同学可以去了解一下, 本文会介绍 ReachRouter 并且说明具体比 React-Router 好在哪里.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;Overview&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/a1ae7f25f0842a04f991cc43c8a25bc5/2a195/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 39.35483870967742%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsSAAALEgHS3X78AAABIUlEQVQY042PTVLDMAyFc/9zsOIO7NjAjjK0qZs6KU3z1yS1a8eOJTtByQwLBhZ8izeyR096irTSOU92PH96ft3H8dtmw7NTXlTnoijrprvdhJTGmGEw1tpxhQpediNg1B2yzcNjVst3fhF9VzdNVVVN01yvV1IhRN/39FPXdbVCRVFcXuJPbV0E1un2Pk/hLkXbdtRKBuq4rbRtW5bLLAIR559EECaFEwJstzvG2HFFSumcA0QHYNeclNZ7P30TpmkxI5kheMT9niUraZpyzik2rXLWeoTRWEQ//2Ixa5gAHGMHztNDktAU0phgyUd6Pl6q7fGklPrbrFygmwetrBnMoEn1QC+ljZE4Sxc0zn+y3KwhaPBc2LMcM2Fzaef/8QU4jsS4znpSEQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 39.189189189189186%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsSAAALEgHS3X78AAABIUlEQVQY042PTVLDMAyFc/9zsOIO7NjAjjK0qZs6KU3z1yS1a8eOJTtByQwLBhZ8izeyR096irTSOU92PH96ft3H8dtmw7NTXlTnoijrprvdhJTGmGEw1tpxhQpediNg1B2yzcNjVst3fhF9VzdNVVVN01yvV1IhRN/39FPXdbVCRVFcXuJPbV0E1un2Pk/hLkXbdtRKBuq4rbRtW5bLLAIR559EECaFEwJstzvG2HFFSumcA0QHYNeclNZ7P30TpmkxI5kheMT9niUraZpyzik2rXLWeoTRWEQ//2Ixa5gAHGMHztNDktAU0phgyUd6Pl6q7fGklPrbrFygmwetrBnMoEn1QC+ljZE4Sxc0zn+y3KwhaPBc2LMcM2Fzaef/8QU4jsS4znpSEQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;7B44554A 6DDF 4F85 B1C8 263D85F6EB43&quot;
-        title=&quot;&quot;
+        title=&quot;7B44554A 6DDF 4F85 B1C8 263D85F6EB43&quot;
         src=&quot;/static/a1ae7f25f0842a04f991cc43c8a25bc5/fcda8/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png&quot;
         srcset=&quot;/static/a1ae7f25f0842a04f991cc43c8a25bc5/12f09/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png 148w,
 /static/a1ae7f25f0842a04f991cc43c8a25bc5/e4a3f/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png 295w,
 /static/a1ae7f25f0842a04f991cc43c8a25bc5/fcda8/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png 590w,
 /static/a1ae7f25f0842a04f991cc43c8a25bc5/2a195/7B44554A-6DDF-4F85-B1C8-263D85F6EB43.png 620w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;从 RF 的 Tweet 上简单的发布可以看出来, ReachR (以下都简称 ReachR)主打的是:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Accessibility, 也就是无障碍, 易用性.&lt;/li&gt;
@@ -1431,20 +1415,18 @@ regexGreekSymbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&l
 &lt;h3&gt;新生命周期模型&lt;/h3&gt;
 &lt;p&gt;为了配合异步渲染机制, 并且简化渲染更新流程, react 将去除三种生命周期方法, 加入两种生命周期方法. 在逐渐替换的版本迭代中, 旧版本将方法定位为不安全, 未来将不再继续维护, 预计下一次大版本更新会被废除.&lt;/p&gt;
 &lt;p&gt;在这个示意图中能够很清晰的看到改版后的组件渲染更新和数据之间的逻辑和生命周期的步骤:
-
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 55.24156791248861%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAAB+UlEQVQoz1WSia6jMAxF+f+P6zJd9Fq6QFsogRAgZIFud+z0tZpBsqwbkeNrx9Hr9QJ/nIfBoxQF9vsdalnBWou+70MWQmCz2UBKCescjDEhioL/3yNN06AjBr3jCWM98rJFfMxwrTro3hBQo9caXdcFKGfd6VCIgzUXaZomFI7wz9f2HvuswzLOkRQGHWn+sRAleqpeVdUXXNd1cPTpwpHrAGRxPl/Q0kUGnkqPn2OF9V5gfSixSWU408bDO75oCWQDjO9y1tTBBx6VZYnZbE7QM7wfgpOmaYMTjtO1QUzQJFfYJgKVopkaAv22/AEyLACfzycejwc4G+vQaAepNFrKHBehybHAdpvhmHcolEPd9lCt/j7Mf0CG3e8Pgt7RdBapcGF+nLnVQ8YOK+SS4JXFRXokwqKoTXDJQO7kA494uEmSIMuy0PI43mktPK3QDY70c7hi6GKo6xLiPIXM/5De4uaK0JH37xXy3oeIxnF87xpBHjcL3AQeLgdGAdsm8O0BrtkR5BDi6c54+RMVkqGz9xLju8uRUgrr1Yoc5rgR0HQp6ipGT7BOpVDySEt+QCViyDKG0fR4NsM4KAzjAON4ngq97Un/OuRd8+RQO435foHJZobFYQVDLUhLI5Ep6SWmdD7fLXAkrayiB1SYxRPMtlOKCc05w1/3U0K0KtVJfgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
-      &lt;img
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAAB+UlEQVQoz1WSia6jMAxF+f+P6zJd9Fq6QFsogRAgZIFud+z0tZpBsqwbkeNrx9Hr9QJ/nIfBoxQF9vsdalnBWou+70MWQmCz2UBKCescjDEhioL/3yNN06AjBr3jCWM98rJFfMxwrTro3hBQo9caXdcFKGfd6VCIgzUXaZomFI7wz9f2HvuswzLOkRQGHWn+sRAleqpeVdUXXNd1cPTpwpHrAGRxPl/Q0kUGnkqPn2OF9V5gfSixSWU408bDO75oCWQDjO9y1tTBBx6VZYnZbE7QM7wfgpOmaYMTjtO1QUzQJFfYJgKVopkaAv22/AEyLACfzycejwc4G+vQaAepNFrKHBehybHAdpvhmHcolEPd9lCt/j7Mf0CG3e8Pgt7RdBapcGF+nLnVQ8YOK+SS4JXFRXokwqKoTXDJQO7kA494uEmSIMuy0PI43mktPK3QDY70c7hi6GKo6xLiPIXM/5De4uaK0JH37xXy3oeIxnF87xpBHjcL3AQeLgdGAdsm8O0BrtkR5BDi6c54+RMVkqGz9xLju8uRUgrr1Yoc5rgR0HQp6ipGT7BOpVDySEt+QCViyDKG0fR4NsM4KAzjAON4ngq97Un/OuRd8+RQO435foHJZobFYQVDLUhLI5Ep6SWmdD7fLXAkrayiB1SYxRPMtlOKCc05w1/3U0K0KtVJfgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;lifecycle&quot;
-        title=&quot;&quot;
+        title=&quot;lifecycle&quot;
         src=&quot;/static/f427f1e779602498d7cd3a411101caa7/fcda8/lifecycle.png&quot;
         srcset=&quot;/static/f427f1e779602498d7cd3a411101caa7/12f09/lifecycle.png 148w,
 /static/f427f1e779602498d7cd3a411101caa7/e4a3f/lifecycle.png 295w,
@@ -1453,10 +1435,10 @@ regexGreekSymbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&l
 /static/f427f1e779602498d7cd3a411101caa7/c83ae/lifecycle.png 1180w,
 /static/f427f1e779602498d7cd3a411101caa7/b5c8e/lifecycle.png 2194w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
     &lt;/span&gt;
-  &lt;/span&gt;
-  
 在线查看示意图: &lt;a href=&quot;http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/&quot;&gt;React lifecycle methods diagram&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;计划去除的三个方法&lt;/h3&gt;
 &lt;ul&gt;
@@ -1578,28 +1560,25 @@ $ iproxy &lt;span class=&quot;token number&quot;&gt;8100&lt;/span&gt; &lt;span c
 &lt;/ol&gt;
 &lt;h3&gt;运行脚本&lt;/h3&gt;
 &lt;p&gt;WDA启动之后, 可以尝试打开&lt;code class=&quot;language-text&quot;&gt;http://127.0.0.1:8100/status&lt;/code&gt;查看设备状态, 正常情况会有JSON返回, 打开&lt;code class=&quot;language-text&quot;&gt;http://127.0.0.1:8100/inspector&lt;/code&gt; 能看到这样：&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/371358516a4155f6b3f29d19ddf5c9a2/d5ef8/inspec.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 75.06092607636067%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAACSUlEQVQ4y32SW28SURDH98t6ifHNtH3xCxiN6ZNvxofqQ6MvDTGRShUhxohVoVxaWQJ21+5y2wu7sPc9f+ccWAIpMMmfAc7Mb+acGWk2m8F1XRiGAb3fh+O4SJIEURQjiklRJM4dx8FkMhHyfR/x4iymWM/zYNu2iJF4MmMMYRii2+3CJDA3lqbif259KqSqqjjn4gW4pRTDzTRNtNttKIoCyXA8jO0pomSezD9TNve8CO+c+yw5s5SCeMGsaGaS7jDII4bOKIU8TNAZM9SvXdR7FsKYYTAYENQUiRyaLjpfhWVn3EudvodSXcfVkKGpxWj1E1yoAckTQMZSaJou3itL3gTMJP0dR6gqgYA1tAj1m5AUoaXH8MP5Nfmj83dcNc5aBS6v3CPgbzVEjbqqkupaguYAAuyFiQhy3SldfQjLsmgAlphoNkz+2mvAzjBApTfDT8VDTU9Qamg4KVbxi3570bxDvlq6rot14d+zIW3sUCbgDyXE+XWAk3IDe/sHeHD/Do7e5hAQL03iBbAv1iMIgrV3uwVsE/AoV8bB42d4+S6PJ4cv8PT5IT58vYBPQxnSlN3pdG3vNg1lCfxUaeHR3j4e3ruLV6+P8Y2u/+XKQEXxMQ1i/KOFtix7ZRhsd4c11cGb/Hcc5woo1FSUOg5K8gRl2caMhhIE/q2V2Qms30xR7JBkhzRB8Y+Jz6SSbIkON3W2E1hVJ8g3Rji7HKNAOrs0yBsENZbAbZCNwPOuife1AT42Rzgl8Cl5XqDQGsP1463J24D/AfH8c12t2fAXAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAACSUlEQVQ4y32SW28SURDH98t6ifHNtH3xCxiN6ZNvxofqQ6MvDTGRShUhxohVoVxaWQJ21+5y2wu7sPc9f+ccWAIpMMmfAc7Mb+acGWk2m8F1XRiGAb3fh+O4SJIEURQjiklRJM4dx8FkMhHyfR/x4iymWM/zYNu2iJF4MmMMYRii2+3CJDA3lqbif259KqSqqjjn4gW4pRTDzTRNtNttKIoCyXA8jO0pomSezD9TNve8CO+c+yw5s5SCeMGsaGaS7jDII4bOKIU8TNAZM9SvXdR7FsKYYTAYENQUiRyaLjpfhWVn3EudvodSXcfVkKGpxWj1E1yoAckTQMZSaJou3itL3gTMJP0dR6gqgYA1tAj1m5AUoaXH8MP5Nfmj83dcNc5aBS6v3CPgbzVEjbqqkupaguYAAuyFiQhy3SldfQjLsmgAlphoNkz+2mvAzjBApTfDT8VDTU9Qamg4KVbxi3570bxDvlq6rot14d+zIW3sUCbgDyXE+XWAk3IDe/sHeHD/Do7e5hAQL03iBbAv1iMIgrV3uwVsE/AoV8bB42d4+S6PJ4cv8PT5IT58vYBPQxnSlN3pdG3vNg1lCfxUaeHR3j4e3ruLV6+P8Y2u/+XKQEXxMQ1i/KOFtix7ZRhsd4c11cGb/Hcc5woo1FSUOg5K8gRl2caMhhIE/q2V2Qms30xR7JBkhzRB8Y+Jz6SSbIkON3W2E1hVJ8g3Rji7HKNAOrs0yBsENZbAbZCNwPOuife1AT42Rzgl8Cl5XqDQGsP1463J24D/AfH8c12t2fAXAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;inspec&quot;
-        title=&quot;&quot;
+        title=&quot;inspec&quot;
         src=&quot;/static/371358516a4155f6b3f29d19ddf5c9a2/fcda8/inspec.png&quot;
         srcset=&quot;/static/371358516a4155f6b3f29d19ddf5c9a2/12f09/inspec.png 148w,
 /static/371358516a4155f6b3f29d19ddf5c9a2/e4a3f/inspec.png 295w,
@@ -1608,50 +1587,45 @@ $ iproxy &lt;span class=&quot;token number&quot;&gt;8100&lt;/span&gt; &lt;span c
 /static/371358516a4155f6b3f29d19ddf5c9a2/c83ae/inspec.png 1180w,
 /static/371358516a4155f6b3f29d19ddf5c9a2/d5ef8/inspec.png 2462w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;其他API看&lt;a href=&quot;https://github.com/facebook/WebDriverAgent/wiki/Queries&quot;&gt;这里&lt;/a&gt;, 其实这里的Wiki也不全, 我看过WDA源码之后找到这个&lt;a href=&quot;https://github.com/facebook/WebDriverAgent/blob/master/WebDriverAgentLib/Commands/FBElementCommands.m#L60&quot;&gt;文件&lt;/a&gt;, 里面应该是完整的API代码, 比较语义化, 应该能看得懂(主要会用到&lt;code class=&quot;language-text&quot;&gt;screenshot&lt;/code&gt;和&lt;code class=&quot;language-text&quot;&gt;touchAndHold&lt;/code&gt;的API).&lt;/p&gt;
 &lt;p&gt;一切正常之后, 打开微信跳一跳, 开始游戏后在本项目根目录运行&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;为了更利于分析图像，我先对图像进行了一个劣化处理，以方便更好的划分边缘，(Ps: 欢迎和我谈论改进, 乐趣在开发过程, 所以我自己也就最多几千分就没挂着了, 不知道后面几万分会怎么样…先写这么多,  欢迎提issue或直接找我.)&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 500px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/bb6f44fa707fcbbb77fc1269d41aebec/41099/demo.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 500px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 46%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMEBf/EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/aAAwDAQACEAMQAAAB7cqxO6Qmf//EABgQAQEAAwAAAAAAAAAAAAAAAAExABAR/9oACAEBAAEFAm9wjon/xAAVEQEBAAAAAAAAAAAAAAAAAAAQQf/aAAgBAwEBPwGH/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAx/9oACAECAQE/ARV//8QAFxABAAMAAAAAAAAAAAAAAAAAEAAhgf/aAAgBAQAGPwKW6f/EABoQAAIDAQEAAAAAAAAAAAAAAAABITFBUYH/2gAIAQEAAT8hYqOJ6Vl/R4Kz/9oADAMBAAIAAwAAABDsH//EABYRAQEBAAAAAAAAAAAAAAAAAAABQf/aAAgBAwEBPxDUR//EABYRAAMAAAAAAAAAAAAAAAAAAAEQIf/aAAgBAgEBPxA6X//EAB4QAAIBAwUAAAAAAAAAAAAAAAERABAhMUFhcYHw/9oACAEBAAE/EFIrEZcSRBQgbMaQ2RLaYeE8O6T/2Q==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 45.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMEBf/EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/aAAwDAQACEAMQAAAB7cqxO6Qmf//EABgQAQEAAwAAAAAAAAAAAAAAAAExABAR/9oACAEBAAEFAm9wjon/xAAVEQEBAAAAAAAAAAAAAAAAAAAQQf/aAAgBAwEBPwGH/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAx/9oACAECAQE/ARV//8QAFxABAAMAAAAAAAAAAAAAAAAAEAAhgf/aAAgBAQAGPwKW6f/EABoQAAIDAQEAAAAAAAAAAAAAAAABITFBUYH/2gAIAQEAAT8hYqOJ6Vl/R4Kz/9oADAMBAAIAAwAAABDsH//EABYRAQEBAAAAAAAAAAAAAAAAAAABQf/aAAgBAwEBPxDUR//EABYRAAMAAAAAAAAAAAAAAAAAAAEQIf/aAAgBAgEBPxA6X//EAB4QAAIBAwUAAAAAAAAAAAAAAAERABAhMUFhcYHw/9oACAEBAAE/EFIrEZcSRBQgbMaQ2RLaYeE8O6T/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;demo&quot;
-        title=&quot;&quot;
+        title=&quot;demo&quot;
         src=&quot;/static/bb6f44fa707fcbbb77fc1269d41aebec/41099/demo.jpg&quot;
         srcset=&quot;/static/bb6f44fa707fcbbb77fc1269d41aebec/a80bd/demo.jpg 148w,
 /static/bb6f44fa707fcbbb77fc1269d41aebec/1c91a/demo.jpg 295w,
 /static/bb6f44fa707fcbbb77fc1269d41aebec/41099/demo.jpg 500w&quot;
         sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h3&gt;关于不同设备的参数&lt;/h3&gt;
 &lt;p&gt;参数在配置文件 &lt;code class=&quot;language-text&quot;&gt;/config.json&lt;/code&gt; 中配置&lt;/p&gt;
 &lt;p&gt;我使用的iphone7, 也是配置文件中默认参数, 欢迎其他设备的同学提供对应的设备参数(PR, issue均可).&lt;/p&gt;
@@ -1667,39 +1641,35 @@ $ iproxy &lt;span class=&quot;token number&quot;&gt;8100&lt;/span&gt; &lt;span c
 &lt;blockquote&gt;
 &lt;p&gt;美餐App。一个服务于阿里部分没有食堂的BU的神奇外卖App，主要任务是每天能够定时定点的投喂外卖给加班的程序猿，而美餐的订餐最后截止时间在每天的下午5点准时停止。所以如果你错过了投食的申请时间，那么抱歉，对于没有时间出去吃一顿的加班汪来说，你就要饿肚子了…&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 500px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/b01df5aefb62e8041b5c7fa772192815/0b533/1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 500px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 73.00000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAABlklEQVQoz5VTy07DMBDkzzlxQvA7CIkDEuIlxI0DAvEoEk2buPFj/Uxcm4lTWkCAYKQkG2dmZ73ebIUQvLc+2L6Lfdf341UQgsNHay0RGWNwd86VxRW2wCESSklBjdJcKRJCgAeNQ1LvsTKvZzWbMrZACucNMq7Exdkb7St+w+SzJicEH01SSn1BzinlZR4eaVxciRFprRljRBomRMMlpURGsOu6ZqwJocPrcrlci/G6EoMN0lC5ELIAwShGzDkHDy1I7/joHOHWNDXuoqBo+Vg2orZtkeiLeOOstWO1IOVIOuxZK6ckWjVsFRXBOcYI6jfiGNNc3N2+Hr2050/N6YSdTdj5Mzvh9jGnDFuIYQsBZLlgU3aK+b45OH7Yvp7vX7zuXk53r6q9i+nOhA4hrmYVzEfqd2VHNEzPqjkOWojhuJUkwZV3Q8MWi0VVVejo6Py1YeMwoT1lpML7bAXsEzycIqblR2dQ8z/xyXk9Omv8VTzU0BkybQi9NdISRqIzVmGG/+KMMelD52Ifyx9Tgs7/sp21+A2zXmJNdodYuQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 72.97297297297297%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAABlklEQVQoz5VTy07DMBDkzzlxQvA7CIkDEuIlxI0DAvEoEk2buPFj/Uxcm4lTWkCAYKQkG2dmZ73ebIUQvLc+2L6Lfdf341UQgsNHay0RGWNwd86VxRW2wCESSklBjdJcKRJCgAeNQ1LvsTKvZzWbMrZACucNMq7Exdkb7St+w+SzJicEH01SSn1BzinlZR4eaVxciRFprRljRBomRMMlpURGsOu6ZqwJocPrcrlci/G6EoMN0lC5ELIAwShGzDkHDy1I7/joHOHWNDXuoqBo+Vg2orZtkeiLeOOstWO1IOVIOuxZK6ckWjVsFRXBOcYI6jfiGNNc3N2+Hr2050/N6YSdTdj5Mzvh9jGnDFuIYQsBZLlgU3aK+b45OH7Yvp7vX7zuXk53r6q9i+nOhA4hrmYVzEfqd2VHNEzPqjkOWojhuJUkwZV3Q8MWi0VVVejo6Py1YeMwoT1lpML7bAXsEzycIqblR2dQ8z/xyXk9Omv8VTzU0BkybQi9NdISRqIzVmGG/+KMMelD52Ifyx9Tgs7/sp21+A2zXmJNdodYuQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;1&quot;
-        title=&quot;&quot;
+        title=&quot;1&quot;
         src=&quot;/static/b01df5aefb62e8041b5c7fa772192815/0b533/1.png&quot;
         srcset=&quot;/static/b01df5aefb62e8041b5c7fa772192815/12f09/1.png 148w,
 /static/b01df5aefb62e8041b5c7fa772192815/e4a3f/1.png 295w,
 /static/b01df5aefb62e8041b5c7fa772192815/0b533/1.png 500w&quot;
         sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h3&gt;前言&lt;/h3&gt;
 &lt;p&gt;什么 ？又过了订餐时间 ? …&lt;/p&gt;
 &lt;p&gt;”啪啪啪…“，在一阵急促的键盘敲击声中，时间不知不觉已经到了4点60分，忙碌的程序猿小哥已经坐在显示器前超过3个小时了，办公室又热又闷，可以明显觉察到空气是不流通的，电脑的风扇散热提醒他应该调整一下姿势，于是他决定起来走一走，站起身，突然他觉得身体有点异样，饿了…&lt;/p&gt;
@@ -1763,137 +1733,122 @@ $ iproxy &lt;span class=&quot;token number&quot;&gt;8100&lt;/span&gt; &lt;span c
 &lt;li&gt;然后下一步，最后会给你一个webhook，那个就是用来发送推送的hook&lt;/li&gt;
 &lt;li&gt;然后只需要在代码里合适的时机post这个webhook 就可以触发机器人在当前聊天群里的动作了&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 500px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/9d00a3eaf5e5c95a6a7f53f9371cb66d/0b533/2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 500px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 103.60000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC+0lEQVQ4y41UyZLbOAzt//+a1BxyzkwuqUollaSyddJ2223JlixSFBftst880EvstFOVwxMBEHwEQEB3Xddh7HvM0hyPmULwAdb9hgubrjy0DSiVQZluUFYOPgT05BCuO/lMQ4+P8wQfF2s462CsP6MSEmPjwYp6ph1y47HNNbJlilxVcM5fE3ZU+jqgcRbWWpL+gq0qLJcLlKXmQUZDHy97lJ338N6hJ8cVYT8McEpH4nG3xzBO6McRwzSh4b4qy4NOnOzjbodpv0cINZqmuSDsu3iDr2vsJX3WQyUrPD08YPnjBxb390jn86N+j6fFCkW2xcDIBkYoWVwT8iM3lkmCt6/+hSkMCkVnpjQJeGjHNHeUdyLzwr1cThKxh3WKpm1vE77/7zXKbQGjDYIxaHh7T4KJ+4KRpRmlK0g4CokpYZfLWJbrGlKp6VQzglAU8NmGyFClKcxmg4yrVryIe05AW4T48kx3SXgSZI04Fl7gmZbVGsmXL2jz7FCvY0Znv+O5E8fdJfslWrGzbum373jxz8uYesOoAzO55f8swluQEtTrNR5nM+zZJoGp/zWhrIMUnZB1oC6NW0sTk6iRmjH9lo8h+yf/P6Ysj+LYW9oZzq5jw4Y4NYaTsmIHyFpRF7uPE3KAnHsWodwaR6n2SOwWyleHVycaWaV+R10IRZdVGrr6vbFFEIM4dG2HUpeojtEUSp2hOX5ii2XhK8sYjtIJjPImoWw4dr70XODBjI+RsGlXiyXS1Qrp01PEhukXeQ7PS1tGbG9FKII8gGEk5eMcjrNcLuZRVrMH9uFnqPlDlIvZT+j5jBOygOMAWJaquzUpBwzwPeBHQIcRWdXCNDusdYBp96g6nKHrCaa+0dhnJTbzgNlK4d2nryh0hcUyQV6UUZYfreIqstjabkThJ/6luthiXXf5gz0S9sOInyR88+Eehe34Z26xYXTJljUt6yivVUBaOCg3ILcj6rZ7HuFV2IP8QPd07A9g1A1Rt0OUT3po+Jjt9diK/D+DSUv3LdoolAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 103.37837837837837%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC+0lEQVQ4y41UyZLbOAzt//+a1BxyzkwuqUollaSyddJ2223JlixSFBftst880EvstFOVwxMBEHwEQEB3Xddh7HvM0hyPmULwAdb9hgubrjy0DSiVQZluUFYOPgT05BCuO/lMQ4+P8wQfF2s462CsP6MSEmPjwYp6ph1y47HNNbJlilxVcM5fE3ZU+jqgcRbWWpL+gq0qLJcLlKXmQUZDHy97lJ338N6hJ8cVYT8McEpH4nG3xzBO6McRwzSh4b4qy4NOnOzjbodpv0cINZqmuSDsu3iDr2vsJX3WQyUrPD08YPnjBxb390jn86N+j6fFCkW2xcDIBkYoWVwT8iM3lkmCt6/+hSkMCkVnpjQJeGjHNHeUdyLzwr1cThKxh3WKpm1vE77/7zXKbQGjDYIxaHh7T4KJ+4KRpRmlK0g4CokpYZfLWJbrGlKp6VQzglAU8NmGyFClKcxmg4yrVryIe05AW4T48kx3SXgSZI04Fl7gmZbVGsmXL2jz7FCvY0Znv+O5E8fdJfslWrGzbum373jxz8uYesOoAzO55f8swluQEtTrNR5nM+zZJoGp/zWhrIMUnZB1oC6NW0sTk6iRmjH9lo8h+yf/P6Ysj+LYW9oZzq5jw4Y4NYaTsmIHyFpRF7uPE3KAnHsWodwaR6n2SOwWyleHVycaWaV+R10IRZdVGrr6vbFFEIM4dG2HUpeojtEUSp2hOX5ii2XhK8sYjtIJjPImoWw4dr70XODBjI+RsGlXiyXS1Qrp01PEhukXeQ7PS1tGbG9FKII8gGEk5eMcjrNcLuZRVrMH9uFnqPlDlIvZT+j5jBOygOMAWJaquzUpBwzwPeBHQIcRWdXCNDusdYBp96g6nKHrCaa+0dhnJTbzgNlK4d2nryh0hcUyQV6UUZYfreIqstjabkThJ/6luthiXXf5gz0S9sOInyR88+Eehe34Z26xYXTJljUt6yivVUBaOCg3ILcj6rZ7HuFV2IP8QPd07A9g1A1Rt0OUT3po+Jjt9diK/D+DSUv3LdoolAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;2&quot;
-        title=&quot;&quot;
+        title=&quot;2&quot;
         src=&quot;/static/9d00a3eaf5e5c95a6a7f53f9371cb66d/0b533/2.png&quot;
         srcset=&quot;/static/9d00a3eaf5e5c95a6a7f53f9371cb66d/12f09/2.png 148w,
 /static/9d00a3eaf5e5c95a6a7f53f9371cb66d/e4a3f/2.png 295w,
 /static/9d00a3eaf5e5c95a6a7f53f9371cb66d/0b533/2.png 500w&quot;
         sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;推送格式有个很好的功能就是支持markdown，这样就可以很方便的组织内容。更加详细的推送内容格式和方法参考这里的官方文档&lt;a href=&quot;https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.karFPe&amp;#x26;treeId=257&amp;#x26;articleId=105735&amp;#x26;docType=1&quot;&gt;钉钉开放平台 - 文档中心&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;我选用NodeJS来做推送服务，首先是抓取数据，做过滤，格式转换，然后当 ”status“值为“AVAILABLE”且当前时间比结束时间早3个小时的时候通知我，代码会隔一分钟访问一次接口，这样就不会在同一分钟内通知我两遍，这样推送的代码就完成了。另外我还在推送内容里加上一张来自&lt;code class=&quot;language-text&quot;&gt;lorempixel.com&lt;/code&gt;的随机美图来促进我的食欲。&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 500px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/a5712efaa549b7c9f6fb74b6c3d4f984/0b533/3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 500px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 57.400000000000006%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABqklEQVQoz2P4+/f/ts0rzQx47C1ErE2EXI2km6PMZ+S6+TgqqSqxy4gzbN264f///19//Pnx+z8aYgBKnD25syhWqybDNC1YQ1eaO9JKYV9P6uLqkEAr8UR/2aOHdwDVfPuJQ/Opk7sTIrVyUi1yksy0JbnNFIVmZruurvCN91COC5Y7fnQnPs0nT+zWUBfg4GKRkeZ1M5ES42KMNJbcUusXG6Lu7Shy+OA2nJr//P9/797t2TPay8uK8woKp0/tmTete9GU7j1r5ixfNHHJgr47d28D1Xz/9Q+LZiD++fvvmzdv3719++XL5/8Y4PdfoM7/mDqhmn/8+nP//r2HDx/eu3fv0aOHQParly8/fvjw/v37jx8/fPvxG6tOkOaff/5/+vL94oUL165du3LlytOnT1++fPHx46fv379/+/btBxD8+otT8/ff/3/9+f/8+fNnT0Hg2bNnL168ANv58dOnT3///v315993PJp//v4H9t2/b7/+vf/27/PPfx+///ny4/efP3/+/fsLlMWpGcr6+RfovO8//377+e87iP0PiIDafmILZDgCADx2IWGKN3pxAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 57.432432432432435%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABqklEQVQoz2P4+/f/ts0rzQx47C1ErE2EXI2km6PMZ+S6+TgqqSqxy4gzbN264f///19//Pnx+z8aYgBKnD25syhWqybDNC1YQ1eaO9JKYV9P6uLqkEAr8UR/2aOHdwDVfPuJQ/Opk7sTIrVyUi1yksy0JbnNFIVmZruurvCN91COC5Y7fnQnPs0nT+zWUBfg4GKRkeZ1M5ES42KMNJbcUusXG6Lu7Shy+OA2nJr//P9/797t2TPay8uK8woKp0/tmTete9GU7j1r5ixfNHHJgr47d28D1Xz/9Q+LZiD++fvvmzdv3719++XL5/8Y4PdfoM7/mDqhmn/8+nP//r2HDx/eu3fv0aOHQParly8/fvjw/v37jx8/fPvxG6tOkOaff/5/+vL94oUL165du3LlytOnT1++fPHx46fv379/+/btBxD8+otT8/ff/3/9+f/8+fNnT0Hg2bNnL168ANv58dOnT3///v315993PJp//v4H9t2/b7/+vf/27/PPfx+///ny4/efP3/+/fsLlMWpGcr6+RfovO8//377+e87iP0PiIDafmILZDgCADx2IWGKN3pxAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;3&quot;
-        title=&quot;&quot;
+        title=&quot;3&quot;
         src=&quot;/static/a5712efaa549b7c9f6fb74b6c3d4f984/0b533/3.png&quot;
         srcset=&quot;/static/a5712efaa549b7c9f6fb74b6c3d4f984/12f09/3.png 148w,
 /static/a5712efaa549b7c9f6fb74b6c3d4f984/e4a3f/3.png 295w,
 /static/a5712efaa549b7c9f6fb74b6c3d4f984/0b533/3.png 500w&quot;
         sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;最后把工程放入Docker里，每天在后台跑着，通过机器人定时推送给我消息，就再也不用担心错过订餐啦~&lt;/p&gt;
 &lt;h3&gt;终极问题——吃什么？&lt;/h3&gt;
 &lt;p&gt;吾日三省吾身，早中晚餐该吃啥。对于有选择恐惧症的我来说，每天在思考吃什么这个终极哲学问题上浪费了大量的时间，而且在美餐App上并没有图示和评价，所以这大概是一次基于个人经验和口口相传的盲选… 为了解决这个问题，我们抓到的数据不正好派上用场嘛，于是我把所有时间点的所有店铺的数据都抓下来看看。&lt;/p&gt;
 &lt;h3&gt;看看数据&lt;/h3&gt;
 &lt;p&gt;然而真实情况是数据量并不大，（这也是内部订餐的局限，没办法像饿了么美团外卖一样去爬到大量数据，不过那些外卖平台也没办法得到实际卖出的情况），我尝试过抓取几个月前半年以前的数据，但是发现美餐好像定期的删除之前的数据，所有的数据大概只会保存一个月左右的。&lt;/p&gt;
 &lt;p&gt;全部出现过的店铺数据：&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/f5942573ebd119b9f37731a135afec2e/4971b/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 40.30612244897959%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAABt0lEQVQoz0VQW4+TQBjt//8TPmyzusb4YGJMuk2Nl1rXRpaClMtSYGBguA3QdmkD0Rxnpja+nTnffOfyTW4XOV5/TPH+e4XpnOHuc4M3yw438wv/asFwO08wvU9xM6N48SFWeHqf4OWcYjoTsxnBu1WDt185Jn7S4tO3DRZfNCzXDkyXQXIk7/FD9+AEJTQzhEc4bIHD7Kiw6VI8WgRbP4duRXjQXBhOislwfoZl6DAeNfAyx6HjOO4b4M+IOPTVm8YR+mOH50OL3+MZ5/6AqshQMIqWl2CUgARP4FWBSdd1MA0TOz9ASlNwzrHfHzAMIxzbQVGIVEGItm1RVzX6vleYJhQxicFYjjAM1N8szTCRw61lYbVcYaNvxHKgFsZxhOs4qOsaURihExyv+T/BTphTwYfCsFA7T64HlknBpoEhhLSfGkhEIN9XQcexUVWVSigF26bF6XQSDTpQIRgKoyLPEex28Bz3ItiIitYvS1T2YW+38DxPpRqGQQmqBCKJPM01ocQ0SRSfC0GZUFZmGRM3FM4bXcf6YQ3XvrhcE8YxUTdVlaUg/19Z/kviGGVZquqerMwY/gIlGURSP5dAogAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 40.54054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAABt0lEQVQoz0VQW4+TQBjt//8TPmyzusb4YGJMuk2Nl1rXRpaClMtSYGBguA3QdmkD0Rxnpja+nTnffOfyTW4XOV5/TPH+e4XpnOHuc4M3yw438wv/asFwO08wvU9xM6N48SFWeHqf4OWcYjoTsxnBu1WDt185Jn7S4tO3DRZfNCzXDkyXQXIk7/FD9+AEJTQzhEc4bIHD7Kiw6VI8WgRbP4duRXjQXBhOislwfoZl6DAeNfAyx6HjOO4b4M+IOPTVm8YR+mOH50OL3+MZ5/6AqshQMIqWl2CUgARP4FWBSdd1MA0TOz9ASlNwzrHfHzAMIxzbQVGIVEGItm1RVzX6vleYJhQxicFYjjAM1N8szTCRw61lYbVcYaNvxHKgFsZxhOs4qOsaURihExyv+T/BTphTwYfCsFA7T64HlknBpoEhhLSfGkhEIN9XQcexUVWVSigF26bF6XQSDTpQIRgKoyLPEex28Bz3ItiIitYvS1T2YW+38DxPpRqGQQmqBCKJPM01ocQ0SRSfC0GZUFZmGRM3FM4bXcf6YQ3XvrhcE8YxUTdVlaUg/19Z/kviGGVZquqerMwY/gIlGURSP5dAogAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;DDE43401 A029 4CFE A246 9ECFD3FA9EB1&quot;
-        title=&quot;&quot;
+        title=&quot;DDE43401 A029 4CFE A246 9ECFD3FA9EB1&quot;
         src=&quot;/static/f5942573ebd119b9f37731a135afec2e/fcda8/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png&quot;
         srcset=&quot;/static/f5942573ebd119b9f37731a135afec2e/12f09/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png 148w,
 /static/f5942573ebd119b9f37731a135afec2e/e4a3f/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png 295w,
 /static/f5942573ebd119b9f37731a135afec2e/fcda8/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png 590w,
 /static/f5942573ebd119b9f37731a135afec2e/4971b/DDE43401-A029-4CFE-A246-9ECFD3FA9EB1.png 784w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;高德望京周围店铺地理位置图：&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/bf6b98cb148e668e1b3daff521b49a1f/8bb81/749E6AD5-7507-4136-B9C0-4997234B6C03.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 69.6629213483146%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAAB8ElEQVQ4y11TW5KjMAzkGBkgvGz8wAaS7NZWzf0Ppu0W9iS7HyqwbLdarXaTU5Jfr5cYa2SZBonGypazJOQZ27Zp1HVKUdcxRo1rn//Xt3HOiTFGnLPivZMDG09czPuuABng+b8CBCVYCKGAX2A5A/DNIMo8z+JRIOJgRI4XKotPRjEGBeD+ujrN1yIKmDMq4xCZMplZoBSq7TI/TZMsyyLWWhnHQYEZOW8/BZrrgNGN2taTRfj/0SolqIwTous6sDNynm9dVUMCGjsLtayabWRUmfGL3MMHBTRg98TazLxzAb6Hs0kTgkf1hGqrXqiMXpg8gX+rPpAEALv3EsplDtD7FbqPRdMCeBxZE9SlasXv4zwVkIzJygMsFvbsJkavejrntdWUCiB16PteAfOH79jqwUBuJyt8v2GPAGDv7TVIlWUrJAogB/L11cowDD++qloeOEgwavZIWf5AlvMA+9dTHbGCxNuLUVk30zSqqakhWX4KvBU9lS3yNsD4B8GT3G43tREB6/TneZKmbVu533sk3aXXYtTc9VUwF0MUj+HtOemr2LGeoR9JUNvqkHEcOeUgXdsVU7Oa/2fa1V98VpzwzqeIfABgf7/rWS2KPQXkBVKnhjQrmVYNWV1tlS9dKcGOsChu0dmA8xYsq0QE/Asrh5q7eZnEOwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 69.5945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAAB8ElEQVQ4y11TW5KjMAzkGBkgvGz8wAaS7NZWzf0Ppu0W9iS7HyqwbLdarXaTU5Jfr5cYa2SZBonGypazJOQZ27Zp1HVKUdcxRo1rn//Xt3HOiTFGnLPivZMDG09czPuuABng+b8CBCVYCKGAX2A5A/DNIMo8z+JRIOJgRI4XKotPRjEGBeD+ujrN1yIKmDMq4xCZMplZoBSq7TI/TZMsyyLWWhnHQYEZOW8/BZrrgNGN2taTRfj/0SolqIwTous6sDNynm9dVUMCGjsLtayabWRUmfGL3MMHBTRg98TazLxzAb6Hs0kTgkf1hGqrXqiMXpg8gX+rPpAEALv3EsplDtD7FbqPRdMCeBxZE9SlasXv4zwVkIzJygMsFvbsJkavejrntdWUCiB16PteAfOH79jqwUBuJyt8v2GPAGDv7TVIlWUrJAogB/L11cowDD++qloeOEgwavZIWf5AlvMA+9dTHbGCxNuLUVk30zSqqakhWX4KvBU9lS3yNsD4B8GT3G43tREB6/TneZKmbVu533sk3aXXYtTc9VUwF0MUj+HtOemr2LGeoR9JUNvqkHEcOeUgXdsVU7Oa/2fa1V98VpzwzqeIfABgf7/rWS2KPQXkBVKnhjQrmVYNWV1tlS9dKcGOsChu0dmA8xYsq0QE/Asrh5q7eZnEOwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;749E6AD5 7507 4136 B9C0 4997234B6C03&quot;
-        title=&quot;&quot;
+        title=&quot;749E6AD5 7507 4136 B9C0 4997234B6C03&quot;
         src=&quot;/static/bf6b98cb148e668e1b3daff521b49a1f/fcda8/749E6AD5-7507-4136-B9C0-4997234B6C03.png&quot;
         srcset=&quot;/static/bf6b98cb148e668e1b3daff521b49a1f/12f09/749E6AD5-7507-4136-B9C0-4997234B6C03.png 148w,
 /static/bf6b98cb148e668e1b3daff521b49a1f/e4a3f/749E6AD5-7507-4136-B9C0-4997234B6C03.png 295w,
@@ -1902,36 +1857,32 @@ $ iproxy &lt;span class=&quot;token number&quot;&gt;8100&lt;/span&gt; &lt;span c
 /static/bf6b98cb148e668e1b3daff521b49a1f/c83ae/749E6AD5-7507-4136-B9C0-4997234B6C03.png 1180w,
 /static/bf6b98cb148e668e1b3daff521b49a1f/8bb81/749E6AD5-7507-4136-B9C0-4997234B6C03.png 1602w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;可以看到店铺大致都是分布在公司的周围，毕竟太远的也不会承接这么大规模的送餐。
 有一个比较好玩的是有一个很奇葩的店铺开在黄海上，恩… 这一定是个脏数据…&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/c36b55ee2c2cb979a6f561ca18e1a2b0/0d98f/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 42.476489028213166%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAABN0lEQVQoz1WRyW6EMBBE+YcBm3Ug0Qx4Y/NEkSJFyiW55P//p9JtxgQOpUaN/VzdlRhjwNJaQ1uDT7/ibRyhuU89YzSstSTzrDacH4YebdtCSgkhxF6THcZyFl+jxbtWGJ4w/m81yWxAR1qWGe31ijRNAyjCuq7bgBFqCaDIiZvIIUG5p6g+PjzcSs6cgXIKZVHuoAir6zpwduA2EsHI5bou8H7BMs0wnpz/KpgfevRbo51aZFkGIcUJyPXgUAdYBCulMM8jjTbhfr9th2lflasgXwhwiTv7BzZNHc4mmmB+XfHwHtFtfIRH5lH4QhCBirGAvOUQqTi544D6vkcSkwsLd3Z3GcFN0+wjBkgnUZockr7FAXhK+bhDdsU75CRjWFdKtCgKlGVJcInXS4aKLmeHYPI8D/UP/sbha69lIVoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 42.567567567567565%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAABXElEQVQoz2WSyXKDMBBE+YYYJKDYbWM0Yo8rlUMqR5/y/7/TmRGLcXLoEqKYp+4WHhGBjEHD+pgmfI0DGjIgluF31tIqu4rQNA3qukaeZ9BaQym1r9422PCHn32HB++vAqIVRqsERhZd12KaRiRJAt/3HUgUBAHSNBUgLU4EzADDAwIQFyLbWsz3CUYO6CyutyviKEYYhjtMnMVx7L53wC2WuH3n2CPHHqcB9sbvH4T+pwPxSt+ElFIEpwBKqxegHFBVFTxxR66zJZYxDVp2db/PLl5WpcjKDOfhjGRIoGOGBPpfdwLMixzeOAyY5wmb0yecXPGhDqECHvQZkmmEhqMK6ACTtSxLZ8br+SL6vt9vcO+UnyWClO2ihTz8phBNERRD1ekVKA5F3tGRrG3bug63fZalbmiTgGvuL5T9ocMoilyv3vMfW+JuQKJnt5fLxbktimK50T9xjw5/AX3S/M+uVyx5AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;AFAC8BC9 008E 4097 8D44 08942DFDE6C8&quot;
-        title=&quot;&quot;
+        title=&quot;AFAC8BC9 008E 4097 8D44 08942DFDE6C8&quot;
         src=&quot;/static/c36b55ee2c2cb979a6f561ca18e1a2b0/fcda8/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png&quot;
         srcset=&quot;/static/c36b55ee2c2cb979a6f561ca18e1a2b0/12f09/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png 148w,
 /static/c36b55ee2c2cb979a6f561ca18e1a2b0/e4a3f/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png 295w,
@@ -1940,37 +1891,33 @@ $ iproxy &lt;span class=&quot;token number&quot;&gt;8100&lt;/span&gt; &lt;span c
 /static/c36b55ee2c2cb979a6f561ca18e1a2b0/c83ae/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png 1180w,
 /static/c36b55ee2c2cb979a6f561ca18e1a2b0/0d98f/AFAC8BC9-008E-4097-8D44-08942DFDE6C8.png 1276w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;得到数据之后，我们先来计算::每日总订餐率::，取了60天的数据，去除了一些干扰数据之后，用当天所有实际餐厅订餐数除以餐厅可订总数，得到每日总订餐数（r为出现餐厅数量，order为该餐厅订餐数，dish为该餐厅可订总量）：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/80661bde2bab76ac6a84b2c7aa7cfa88/gif1.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;这样可以反映出当天的总体订餐情况，可以看到起数据还是有明显起伏的。然后我检查了他们对应的时间，其中10-29日达到了100%订餐，也就是所有店铺的餐全部订光了，检查了一下数据，发现那一天只有一家店铺在提供晚饭，所以被订光也是可以理解的了。&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/4f1a9e79e542802a870b6a7799a1a757/b04e4/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 43.01801801801802%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAAA6klEQVQoz4WRyRLDIAxD+/+/mHvObXZWV49CSpdpmXFwsBCSfRmGwcZxNFbO+X+A+4G9WF0fxZQs1Wg5RH6aLHpf8rPeE+77boRVQG6ApqRTlEIwf7tZWNdXxT2h12vOuafKusfjsLAsJaIe5JycByFMMZYH2tlJeOjivm2WRIyVoBxbQSRRFwhyJ2WeyyIG567X8h8lxs9zwbEeCkWaqiIAufart4WiXgkOTlxrFYTYPZrlPxP8mPa3KQdJxTYKikX2twhv5wyvx5Z/HEDIZ1WTmfQiy5DP6gn/nBOb+kqNfVJ/qbG3esOz7joaxTI0Jw3eAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 43.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAAA6klEQVQoz4WRyRLDIAxD+/+/mHvObXZWV49CSpdpmXFwsBCSfRmGwcZxNFbO+X+A+4G9WF0fxZQs1Wg5RH6aLHpf8rPeE+77boRVQG6ApqRTlEIwf7tZWNdXxT2h12vOuafKusfjsLAsJaIe5JycByFMMZYH2tlJeOjivm2WRIyVoBxbQSRRFwhyJ2WeyyIG567X8h8lxs9zwbEeCkWaqiIAufart4WiXgkOTlxrFYTYPZrlPxP8mPa3KQdJxTYKikX2twhv5wyvx5Z/HEDIZ1WTmfQiy5DP6gn/nBOb+kqNfVJ/qbG3esOz7joaxTI0Jw3eAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;53EC41A0 2753 4FDA 8B7B C383DA2400AF&quot;
-        title=&quot;&quot;
+        title=&quot;53EC41A0 2753 4FDA 8B7B C383DA2400AF&quot;
         src=&quot;/static/4f1a9e79e542802a870b6a7799a1a757/fcda8/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png&quot;
         srcset=&quot;/static/4f1a9e79e542802a870b6a7799a1a757/12f09/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png 148w,
 /static/4f1a9e79e542802a870b6a7799a1a757/e4a3f/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png 295w,
@@ -1978,49 +1925,44 @@ $ iproxy &lt;span class=&quot;token number&quot;&gt;8100&lt;/span&gt; &lt;span c
 /static/4f1a9e79e542802a870b6a7799a1a757/efc66/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png 885w,
 /static/4f1a9e79e542802a870b6a7799a1a757/b04e4/53EC41A0-2753-4FDA-8B7B-C383DA2400AF.png 888w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;之后计算餐厅的::平均订餐率::（虽然餐厅数据量级比较小，但订餐率也能在某种程度上反映餐厅的订餐实际情况，也不失为一种判断标准），具体来说就是将餐厅出现天数中的订餐量之和除以可订餐总量之和，餐厅订餐率如下：（days为出现天数，order为订餐数，dish为可订总量）：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/ce7cb862e78b15b72e6adf7881c3c8bf/gif.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;这也就侧面反映了餐厅的受欢迎程度。计算后发现近60天的订餐率最高的是金百万，有87.7%的订餐率，成为最受大家欢迎的店铺，其次是丽华快餐，订餐率达到87.1%，第三名是小芝麻。而最不受欢迎的店铺果然是兰州牛肉拉面，订餐率只有12.3%，这也挺符合大家平时的口评…&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/0ae615ea1b60da0a5470261f0334ffa6/4b446/51E15540-5B67-4332-9169-BB79D4F49ED5.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 45.61003420752566%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAACKElEQVQoz1WS20/TYBjG909546XXxCtN9EYTb7whRqORC9SoGSEmJuIRMUGMRDQiARnGGMBlE9lQkNPYZAzWjUJHd2iBHdqu7c+vncT4JU/ztc/bX9++3xOQJIlMJkO9XsdbTrOJa9u4rst/S9w6ruPL8zzZzr/9kQJH9ZZpQlEBOYuZWPTe95+ZQlW7RtNp+lBP/l7AWt8RYNGA8xce8C61Ws03lLkfbMzOi2LLL15fTZJaWKFfG2bfOGTLyLJjKb6nN20WEjnsao2CCtFZx8f7HR7uV4mG0sw8esF032tSwvNsKZEkNhfjcWUQ27WJmN+5mjtPoZFkzYD2zrfcH71B7Pc+YyF/YC2gXjngzYM5ViYivLzcQ1dkl/Bmlnh8jXvxAW7rfRRkhaH1Yc5uHeNSso1eqcyt7o+ceXqS4MMkXc92WJKyfzvUqvT3zDA68Z5g202uj6S4OPCK4IefdM8/54r0hN5Tn7g22sE55TgXVk9wN63ScWeE0z1tdHanaA9uMLm82gJadZOZWILxpUlmx6OEVyQ+i3l+W0wTTceZkuJEBn8xvfyVUH6I0Po7IlsyU+FFQrExJsNpvkTEfMvlFnBP3UOW8+zmZExxIFpJJbuZYTuXRZa22ZVkVK3AjvDVfAm77oq/qnBwoIlaHUXJU6/p/mEFDMOgVCrRaBgYpiGiIoC6jlosUtE0iqUiDaOB67iUK2VMyziKpR8py7JEbLzI4MfmD7CbgXyCu6g2AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 45.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAACKElEQVQoz1WS20/TYBjG909546XXxCtN9EYTb7whRqORC9SoGSEmJuIRMUGMRDQiARnGGMBlE9lQkNPYZAzWjUJHd2iBHdqu7c+vncT4JU/ztc/bX9++3xOQJIlMJkO9XsdbTrOJa9u4rst/S9w6ruPL8zzZzr/9kQJH9ZZpQlEBOYuZWPTe95+ZQlW7RtNp+lBP/l7AWt8RYNGA8xce8C61Ws03lLkfbMzOi2LLL15fTZJaWKFfG2bfOGTLyLJjKb6nN20WEjnsao2CCtFZx8f7HR7uV4mG0sw8esF032tSwvNsKZEkNhfjcWUQ27WJmN+5mjtPoZFkzYD2zrfcH71B7Pc+YyF/YC2gXjngzYM5ViYivLzcQ1dkl/Bmlnh8jXvxAW7rfRRkhaH1Yc5uHeNSso1eqcyt7o+ceXqS4MMkXc92WJKyfzvUqvT3zDA68Z5g202uj6S4OPCK4IefdM8/54r0hN5Tn7g22sE55TgXVk9wN63ScWeE0z1tdHanaA9uMLm82gJadZOZWILxpUlmx6OEVyQ+i3l+W0wTTceZkuJEBn8xvfyVUH6I0Po7IlsyU+FFQrExJsNpvkTEfMvlFnBP3UOW8+zmZExxIFpJJbuZYTuXRZa22ZVkVK3AjvDVfAm77oq/qnBwoIlaHUXJU6/p/mEFDMOgVCrRaBgYpiGiIoC6jlosUtE0iqUiDaOB67iUK2VMyziKpR8py7JEbLzI4MfmD7CbgXyCu6g2AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;51E15540 5B67 4332 9169 BB79D4F49ED5&quot;
-        title=&quot;&quot;
+        title=&quot;51E15540 5B67 4332 9169 BB79D4F49ED5&quot;
         src=&quot;/static/0ae615ea1b60da0a5470261f0334ffa6/fcda8/51E15540-5B67-4332-9169-BB79D4F49ED5.png&quot;
         srcset=&quot;/static/0ae615ea1b60da0a5470261f0334ffa6/12f09/51E15540-5B67-4332-9169-BB79D4F49ED5.png 148w,
 /static/0ae615ea1b60da0a5470261f0334ffa6/e4a3f/51E15540-5B67-4332-9169-BB79D4F49ED5.png 295w,
 /static/0ae615ea1b60da0a5470261f0334ffa6/fcda8/51E15540-5B67-4332-9169-BB79D4F49ED5.png 590w,
 /static/0ae615ea1b60da0a5470261f0334ffa6/4b446/51E15540-5B67-4332-9169-BB79D4F49ED5.png 877w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;通过这样就找到公司附近这段时间最优质的外卖，对于我这种选择恐惧症来说，大大缩短了选择的时间，还可以定期的看一看最近的店铺情况，会第一时间发现有新的店铺加入，这样就在订餐的时候，掌握更多更好的信息。比较遗憾的是，美餐并不提供每个餐厅里菜品的订餐数据，不然我们就可以根据这个选择最受欢迎的菜品。&lt;/p&gt;
 &lt;h3&gt;写在最后&lt;/h3&gt;
 &lt;p&gt;作者因为实际需求的关系所以只做了美餐的数据爬取和分析，希望本文能够抛砖引玉，有兴趣的同学也可以对饿了么美团外卖这些外卖平台做一些数据的挖掘分析，拯救每天思考吃什么的终极哲学问题。&lt;/p&gt;
@@ -2030,39 +1972,35 @@ $ iproxy &lt;span class=&quot;token number&quot;&gt;8100&lt;/span&gt; &lt;span c
 &lt;p&gt;fb团队从开始设计 Fiber 时，就把它当做是 React 框架在未来发展的基础结构。Fiber 对框架的渲染和任务调度都有新的设计和实现，以实现在正确时的时间里做正确的事的目标，并对框架的积极响应能力做了很大的提升。一个有很多组件和复杂结构的SPA渲染起来有可能会变得很慢，Fiber 能够优先处理重要元素的渲染（加入了优先级制度），并且显著提高了渲染的速度，通过这种任务调度的能力使应用程序变得更好。&lt;/p&gt;
 &lt;p&gt;而 Fiber 最为激动人心的地方就是实现了&lt;strong&gt;异步渲染&lt;/strong&gt;。一种通过对浏览器周期性地执行调度的方法来协调渲染工作的策略，在这一新特性的支持下，React 的渲染能够避免阻塞主线程，应用也可以更快的响应交互（然而在v16中，默认并没有开启异步渲染 …）。&lt;/p&gt;
 &lt;p&gt;要理解 Fiber 的工作过程，首先来看一下 React 实现渲染的过程。在 React 中主要有两个部分去执行他们对应的过程：Reconciler 和 Renderer，可以理解为前者任务是渲染之前的 diff 算法等一系列过程，而后者的任务就是 React 对于不用平台（DOM，Canvas，Native…）的渲染执行过程。这两部分的分离意味着不同的渲染引擎能共享 React核心提供的协调算法，而使用它们各自的渲染器，这样可以更好做到算法优化的最大化。&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 581px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/bff5ebc77ea50ac8f6079716541835ce/92d15/1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 581px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 50.602409638554214%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABUElEQVQoz4WRiW6DMAyGef/3m6aqareOqwTKlRDu/LMNmWg3aUKfTHwfQRiH8CRphPs9FlSWyPtoT9MYWbaRks/R5gnmdQazugWPrsdH0eBKvCUlSnqvWMS+EEljcMpqvKclktpgcVvskWDlEErmSLbDiK9S40acVAM9jsBuZ1lQgetD41K08u9t6+ELNsUihi3Q/bDuzsMyI6bu4lpjmCexsY7xDXkC3103TRRgpCoHhJXGSAFuD5gJQz656WUKpS0sJf8zISs5OKxa2WPVD7Ivhu01vUs7SMGwMojqTvy48HHkp4QTLTSikXx1ZSzOtxS258M4maBgnWpxybUcjDs8dveUkGVB42xjO2hK8BnnsF0H9uCOGuqUx+aONR2Q+TXy8UJuxxdxu57319NK7LzttLQ9TWNEri9fkOUZ/kMVm7xEMU63EOcwQl4o4dX3G8WOA+1DNEEZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 50.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABUElEQVQoz4WRiW6DMAyGef/3m6aqareOqwTKlRDu/LMNmWg3aUKfTHwfQRiH8CRphPs9FlSWyPtoT9MYWbaRks/R5gnmdQazugWPrsdH0eBKvCUlSnqvWMS+EEljcMpqvKclktpgcVvskWDlEErmSLbDiK9S40acVAM9jsBuZ1lQgetD41K08u9t6+ELNsUihi3Q/bDuzsMyI6bu4lpjmCexsY7xDXkC3103TRRgpCoHhJXGSAFuD5gJQz656WUKpS0sJf8zISs5OKxa2WPVD7Ivhu01vUs7SMGwMojqTvy48HHkp4QTLTSikXx1ZSzOtxS258M4maBgnWpxybUcjDs8dveUkGVB42xjO2hK8BnnsF0H9uCOGuqUx+aONR2Q+TXy8UJuxxdxu57319NK7LzttLQ9TWNEri9fkOUZ/kMVm7xEMU63EOcwQl4o4dX3G8WOA+1DNEEZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;1&quot;
-        title=&quot;&quot;
+        title=&quot;1&quot;
         src=&quot;/static/bff5ebc77ea50ac8f6079716541835ce/92d15/1.png&quot;
         srcset=&quot;/static/bff5ebc77ea50ac8f6079716541835ce/12f09/1.png 148w,
 /static/bff5ebc77ea50ac8f6079716541835ce/e4a3f/1.png 295w,
 /static/bff5ebc77ea50ac8f6079716541835ce/92d15/1.png 581w&quot;
         sizes=&quot;(max-width: 581px) 100vw, 581px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    
+    &lt;/span&gt;
 （Reconciler 和 Renderer。图为React Conf 2017上，Lin Clark做的A Cartoon Intro to Fiber分享的ppt视频。）&lt;/p&gt;
 &lt;p&gt;每当组件触发更新或者渲染、卸载时，Reconciler 会对组件的状态与新状态进行 diff 算法，比如执行&lt;code class=&quot;language-text&quot;&gt;setState()&lt;/code&gt; 时，Reconciler在一系列相关逻辑执行完毕之后，将会在组建中触发 &lt;code class=&quot;language-text&quot;&gt;render()&lt;/code&gt;去渲染或者更新 React 节点的元素。在老版本中，Reconciler 的整体调度方式叫做 Stack Reconciler ，他会独立维护一个所有组件组成的“实例”树，它包含所有用户和框架所定义的组件，而用户无法访问到这个实例树并且不会对外暴露。而在v16中，这个 stack 换成了这次的主角 Fiber，叫做 Fiber Reconciler。新的 Fiber Reconciler 算法意在解决原来有一些积压已久的问题：&lt;/p&gt;
 &lt;ul&gt;
@@ -2073,78 +2011,70 @@ $ iproxy &lt;span class=&quot;token number&quot;&gt;8100&lt;/span&gt; &lt;span c
 &lt;li&gt;最好支持&lt;code class=&quot;language-text&quot;&gt;error boundaries&lt;/code&gt;（下文会介绍到）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;在原来的调度算法实现中，会递归调用组件实例树，每一个更新都是立即执行，由于浏览器JS单线程的原因，整个更新渲染过程会同步进行，这样其实也是比较合理的方案，因为渲染本来就不需要等待IO，只是单纯去执行浏览器计算即可，但是当组件的复杂程度越来越大之后，浏览器的计算不足以应付繁重的任务，于是就开始排队，而且这个排队过程中会占住浏览器主线程，使用户的操作完全被阻塞，没有响应，造成很差的用户体验。这个问题在复杂组件的场景会很常见，那么首先要明白问题的关键，在与用户的交互中，界面是没有必要每一个更新的都立即执行的，这样的做法中无用的开销会很高；另外，不同类型的组件之间有相对的重要程度，有的需要马上与用户交互，有的则不会被重视到，那么就要引入优先级的概念来安排渲染顺序。&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/2d6f76460c4b1a47889899f09977f130/0a47e/2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 32.49999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsSAAALEgHS3X78AAABIklEQVQoz32RX0+DMBTF+f5PPvgp9EEfTHwwU+ODMYtxOKPJXMzUAeLYRoFBW9py1ltQUaM0v5z7p/eEC57UCsae2ug/Uf/kqqe60fCO7mMkG4mMK6RV3aPN1z/4qDH+O3eGfsQwmCxQa9M1lDPPxBe5+J7TMCGUQSG1qxVStYYplzibJuC2WRG1Rm6baTfU0ppSTMO1MXbFBndRjjgXnz1a2+NKYfCY4HD8Bj/IME02WBQSQrfmXGmnq1JC2trS6t4oxDjMsHP+hOOHd5xOl7icrdy39OiH0JOUAsPXFKOA4cCaX9v46nmN4Qtpit2LGW7mDCeTBPt+hNsos+bCzTbOw7jj0d7KAldsHHRxzkqEWYWAWazGBXcx1dC9BCnN6h5bxdkYiQX9bGoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 32.43243243243243%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsSAAALEgHS3X78AAABDklEQVQY022OX0vDMBTF+/0f/RqiDz74ICgMQWSOyVQczLl1jtltpilt1yzNv+NN2o6C3nLIyc29v56IVRLnzxuwSoELhdSffYlWfU/K/GzvLrSGpS8C1WuSYxhnkMaewFmrZkGfgE1fB3/UFmVtUEpN3nRAi6JWuJnu6FGjthbGWYKbMNSdxjnU9ENBvlI6zF6/bxHzCnN2wM9BwrMiT5VGY7jiuJwkGMxT3M4YZvsKcSqwIMX8iPvPFAsmMF7nOBsscffBcDH5xktSYLzJse+AxjVRfXlwIWtMdwUelilGXxmeSKN1hqu3LR5jTn1OiUpKqGjDoSkXYJ4VEnqjrKG2DQ9/y/1zb/Z0qy7YL62zy90LFVl0AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;2&quot;
-        title=&quot;&quot;
+        title=&quot;2&quot;
         src=&quot;/static/2d6f76460c4b1a47889899f09977f130/fcda8/2.png&quot;
         srcset=&quot;/static/2d6f76460c4b1a47889899f09977f130/12f09/2.png 148w,
 /static/2d6f76460c4b1a47889899f09977f130/e4a3f/2.png 295w,
 /static/2d6f76460c4b1a47889899f09977f130/fcda8/2.png 590w,
 /static/2d6f76460c4b1a47889899f09977f130/0a47e/2.png 600w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    
+    &lt;/span&gt;
 （图为“一调到底”的调用栈执行方式，主线程一直被占用，来自Lin Clark做的A Cartoon Intro to Fiber分享的ppt视频）&lt;/p&gt;
 &lt;p&gt;首先，我们都知道 React 组件实质是一个函数，只要是一样的输入，就会得到同样的输出组件。而浏览器跟踪程序执行的方式是调用栈，不断的入栈与出栈来实现组件的渲染过程。但是问题就是，如果我们只依赖调用栈去执行程序，我们就只能老老实实等待它变空，无法提升什么效率了。那么我们要做的工作就是去自定义调用栈，或者操作调用栈。而这就是 Fiber 的设计目的，实现 React 组件的堆栈操作，按照你想要的方式和时机去执行，一个虚拟的堆栈结构。&lt;/p&gt;
 &lt;p&gt;从 Fiber 的设计思想来说，Fiber 是一个基于组件的执行单元，多个 Fiber 可能对应于同一个组件，你可以对它暂停，继续，修改优先级等操作。在对 Fiber 的调度过程中，为了实现及时的 “打断” 和 “继续”，我们把调度过程分为两个阶段，第一阶段叫做 Render /Reconcilication  Phase 过程，用于建立Fiber树，任务树，并且得到需要改变的节点表，但是此时并不会开始执行改变，第二阶段叫做 Commit  Phase 过程，用于执行DOM上的上述改变。在第一阶段中，执行过程是可以被随时打断，所以我们可以要求主线程在正确的时机放下手中的任务去执行更优先的任务，但是第二阶段的渲染过程不可以被打断，一旦启动就会执行到结束。&lt;/p&gt;
 &lt;p&gt;新的结构中，更新执行的过程被被切分成了很多“帧”，每一帧的时间很短，在每一帧执行一小段任务，在每一小段任务执行完毕之后 Fiber 就会检查调度任务的模块，看是否有别的优先级更高的任务需要执行，这样唯一的主线程就不会被长时间占用，其他任务就有机会被执行。维护每一帧的执行与切换，就是 React Fiber 算法。&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/2944689de58540873e661adbc35689d2/0a47e/3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 44.166666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAABNUlEQVQoz52SW0/CQBCF+f+/RVAE5CImJhrjm8jdGPVFoAUUb0Avuz3OmW6hMT4Y25zO2d3pt9OdFkxiYBMLwCL5p+BEVsE687YNsY1j1cZF9VE61hj9mHP6DCN8BKHCC4RB7MB7R3M0R7XnoSI6Gfio9VN/fr9ES9aaQx8NmT/uzTSvrjk+rh5f8bxaK2cHXG0CBRzcTHB0O1WVOlOda4/naAisIiCq2EnX6MvdGa6fXrQ6k+QqXHxtdcdiZyKV+g46U09oNsecQ4HV3QaMrFxwcjsg6TwbvlhyQILL3akTwfL5fQEMPFRdZC59TbRrCh+xq5Kg03Eq+pbEtqgx9HD5sJSzXODsbo4L8dyAORwz8optrsuM2l2z7zAVZGOz72qQywmNwTqKYPMVZvrrf2d/8RnjG2qMoNpTvGbSAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 43.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAABNUlEQVQoz52SW0/CQBCF+f+/RVAE5CImJhrjm8jdGPVFoAUUb0Avuz3OmW6hMT4Y25zO2d3pt9OdFkxiYBMLwCL5p+BEVsE687YNsY1j1cZF9VE61hj9mHP6DCN8BKHCC4RB7MB7R3M0R7XnoSI6Gfio9VN/fr9ES9aaQx8NmT/uzTSvrjk+rh5f8bxaK2cHXG0CBRzcTHB0O1WVOlOda4/naAisIiCq2EnX6MvdGa6fXrQ6k+QqXHxtdcdiZyKV+g46U09oNsecQ4HV3QaMrFxwcjsg6TwbvlhyQILL3akTwfL5fQEMPFRdZC59TbRrCh+xq5Kg03Eq+pbEtqgx9HD5sJSzXODsbo4L8dyAORwz8optrsuM2l2z7zAVZGOz72qQywmNwTqKYPMVZvrrf2d/8RnjG2qMoNpTvGbSAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;3&quot;
-        title=&quot;&quot;
+        title=&quot;3&quot;
         src=&quot;/static/2944689de58540873e661adbc35689d2/fcda8/3.png&quot;
         srcset=&quot;/static/2944689de58540873e661adbc35689d2/12f09/3.png 148w,
 /static/2944689de58540873e661adbc35689d2/e4a3f/3.png 295w,
 /static/2944689de58540873e661adbc35689d2/fcda8/3.png 590w,
 /static/2944689de58540873e661adbc35689d2/0a47e/3.png 600w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    
+    &lt;/span&gt;
 （任务分成多帧之后，中断任使得主线程可以得到处理另外的任务的机会，图来自Lin Clark做的A Cartoon Intro to Fiber分享的ppt视频）&lt;/p&gt;
 &lt;p&gt;在每一帧的执行过程中，React 会去询问主线程是否有余下时间继续接下来的任务，如果有时间那么React就会开始执行任务，但是这样也就会出现一个问题，就是时间不够用的情况，任务没有完成，时间就到了，而此时有优先级更高的任务进来，把之前的任务打断，这时候优先级更高的任务会被主线程优先执行，而低优先级任务则会作废，在下一次有机会时再次被执行，这个就是第一阶段 Render /reconcilication  Phase 过程中被打断的情况。而整个一帧一帧不断切换、继续的执行过程，就叫做 work loop，这让 React 可以在它与主线程的来回切换之间做一些计算来提升交互。&lt;/p&gt;
 &lt;p&gt;关于 Fiber 具体实现过程，我会专门写一篇关于 React Fiber 算法的源码分析，敬请期待…（大概可能也许吧）&lt;/p&gt;
@@ -2175,28 +2105,25 @@ render() {
 &lt;/ul&gt;
 &lt;p&gt;在曾经的版本中如果没有返回一个符合规范的JSX，就会报错：“&lt;em&gt;A valid React element (or null) must be returned. You may have returned undefined, an array or some other invalid object&lt;/em&gt;”（或者别的啥）。在原有的算法结构里并不支持多元素的返回结果，所以在老版本的&lt;code class=&quot;language-text&quot;&gt;react-dom.js&lt;/code&gt;的&lt;code class=&quot;language-text&quot;&gt;ReactCompositeComponent.mountComponent&lt;/code&gt;函数中对不合规定的返回结果做了报错处理。&lt;/p&gt;
 &lt;p&gt;在经历了多个版本的“声讨”，终于不用在一层套一层的DOM了…  其实在几年前关于多子元素返回的&lt;a href=&quot;https://github.com/facebook/react/issues/2127&quot;&gt;争论&lt;/a&gt;就有很多，这样做也的确能让结构和语法更优美一些，fb的工程师也参与了很多的社区讨论，但是因为结构复杂的原因，在没有改变原有结构的情况下一直没有合适的解决方案。在“多方”的“讨论”之下，fb也终于决定开始着手支持这一特性&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/d4502ecaed8f9857d85cf19df4d6ca68/5b587/4.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 92.87128712871288%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsSAAALEgHS3X78AAAC10lEQVQ4y3VUy27TUBDtl/MJbGEBEmILrEACdqygVKJBysN51XacOI3fseP36zAzsZOGtlcZzfWN7/GcmTNz1TYN2rZFVRTIswy+H8BxXPGu65G58DyPzhw4tLfJ27Yj5/x/HMeo6wZNh3MFWrzhVdOhqmpYLu9wd6dCmUxlv9mYYtvtPdbGWrxB3jS32O0sAqzRrysG6wGjwwEmXczzHGmaimVphqqq5BL7ft/fYV833TP9LiL0gwCL2RzxIcZ+HwqdNEk78AwJ7dmyLEfbnAPp1yPKDb0U04UoigSQjfd5XqAoSjGOsCxLZMSCl5v7GLijE8YJsD/g5CvKMXeqqmO1MqCTrdcmdE2HrhuST86lT0x2t9cYfXjzPODOsjAajTFRFKxUE9bOwf39jj7kSSUf8BO3/TnD/P2Pc1H+B/Q8H4vFkqqsSWRcbY6KPVeWJRWGEUpKA6/V52sMXrx7HpApD4djTKdzKNMZxuMJ5vMlNKLLZ7PZQuSi0gfCJEO0GEP/9okK/AxlFvR6vRF9GZ3mLMsWEUfRQYoid7qIRqWBl/ZHNG3zNKBl25hMFKE9HI6gUmSGsSHaKykM51PXVlJ9Xtr8Fl++vj4X5STQLuEcCVPjnDHVKdFmihw5R8jGOWRtSgBbFTeD74+r3C/f9zvJaCIZpnysskO63ONA3ZTEiURYpCWm5hBvf706U+7BQt9GGHhI0lyi2VMU3BU1ib2hd1j0FQ2Bk1U1GCJRDcS//56r3GtrcPMHfwdDRPR11wvg+XuEUUztGCLNCpQEUFCHXFpFlU5xKKunW49rx2NJRhXpjenxoEiSRCzNaiRZgzRvqfXYeGwd710U5WgQSQTdHPS6eRfQwOC8Hj31dxiLD4II/j6n54R6vDhH+FAyPJZk5lGvcmV57xEYDwVOzcMxVvMo63J5moePpk1NUyU/oCzI8pT2GVIBLOSSgHX+aBXdbS50/A8jLq3g5HAfpgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 92.56756756756756%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsSAAALEgHS3X78AAAC10lEQVQ4y3VUy27TUBDtl/MJbGEBEmILrEACdqygVKJBysN51XacOI3fseP36zAzsZOGtlcZzfWN7/GcmTNz1TYN2rZFVRTIswy+H8BxXPGu65G58DyPzhw4tLfJ27Yj5/x/HMeo6wZNh3MFWrzhVdOhqmpYLu9wd6dCmUxlv9mYYtvtPdbGWrxB3jS32O0sAqzRrysG6wGjwwEmXczzHGmaimVphqqq5BL7ft/fYV833TP9LiL0gwCL2RzxIcZ+HwqdNEk78AwJ7dmyLEfbnAPp1yPKDb0U04UoigSQjfd5XqAoSjGOsCxLZMSCl5v7GLijE8YJsD/g5CvKMXeqqmO1MqCTrdcmdE2HrhuST86lT0x2t9cYfXjzPODOsjAajTFRFKxUE9bOwf39jj7kSSUf8BO3/TnD/P2Pc1H+B/Q8H4vFkqqsSWRcbY6KPVeWJRWGEUpKA6/V52sMXrx7HpApD4djTKdzKNMZxuMJ5vMlNKLLZ7PZQuSi0gfCJEO0GEP/9okK/AxlFvR6vRF9GZ3mLMsWEUfRQYoid7qIRqWBl/ZHNG3zNKBl25hMFKE9HI6gUmSGsSHaKykM51PXVlJ9Xtr8Fl++vj4X5STQLuEcCVPjnDHVKdFmihw5R8jGOWRtSgBbFTeD74+r3C/f9zvJaCIZpnysskO63ONA3ZTEiURYpCWm5hBvf706U+7BQt9GGHhI0lyi2VMU3BU1ib2hd1j0FQ2Bk1U1GCJRDcS//56r3GtrcPMHfwdDRPR11wvg+XuEUUztGCLNCpQEUFCHXFpFlU5xKKunW49rx2NJRhXpjenxoEiSRCzNaiRZgzRvqfXYeGwd710U5WgQSQTdHPS6eRfQwOC8Hj31dxiLD4II/j6n54R6vDhH+FAyPJZk5lGvcmV57xEYDwVOzcMxVvMo63J5moePpk1NUyU/oCzI8pT2GVIBLOSSgHX+aBXdbS50/A8jLq3g5HAfpgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;4&quot;
-        title=&quot;&quot;
+        title=&quot;4&quot;
         src=&quot;/static/d4502ecaed8f9857d85cf19df4d6ca68/fcda8/4.png&quot;
         srcset=&quot;/static/d4502ecaed8f9857d85cf19df4d6ca68/12f09/4.png 148w,
 /static/d4502ecaed8f9857d85cf19df4d6ca68/e4a3f/4.png 295w,
@@ -2204,12 +2131,11 @@ render() {
 /static/d4502ecaed8f9857d85cf19df4d6ca68/efc66/4.png 885w,
 /static/d4502ecaed8f9857d85cf19df4d6ca68/5b587/4.png 1010w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    
+    &lt;/span&gt;
 （图为 github 上对新版本要做的feature的讨论结果)&lt;/p&gt;
 &lt;h2&gt;更好的错误处理&lt;/h2&gt;
 &lt;p&gt;在以往的 React App 开发中，一遇到 React 的错误发生，将会是一片腥红的报错屏，页面停止工作，只能刷新恢复。现在不再会这样了。新版本使用了更为弹性的错误处理策略，如果在组件中存在渲染错误，那么整个组件树将不会从根节点被渲染出来，这样避免了错误数据的出现。&lt;/p&gt;
